@@ -25,11 +25,15 @@ public class Ranged : Character
         float dist = Vector2.Distance(tp, p);
         Vector2 dir = (player.position - transform.position).normalized;
         if (dist > desiredDist)
+        {
             MoveCharacter(dir);
-        else if (dist < moveAwayDist) {
+        }    
+        else if (dist < moveAwayDist) 
+        {
             MoveCharacter(dir*(-1));
-        }
-        else {
+        }   
+        else 
+        {
             rb.velocity = Vector2.zero;
         }
         Aim(player.position);

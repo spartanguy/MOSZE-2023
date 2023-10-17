@@ -6,15 +6,15 @@ public class Character : MonoBehaviour
 {
 
     public Transform firepoint;
-    [SerializeField] 
-    protected float moveSpeed;
+    protected float moveSpeed = 5;
     public Rigidbody2D rb;    
     public GameObject bulletPrefab;
     protected Gun gun = Guns.pistol;
     protected bool readyToFire = true;
     protected bool pickup = true;
-    [SerializeField] 
+    [SerializeField]
     protected int health = 5;
+    public int damageBuff, speedBuff, attackspeedBuff;
 
     protected void MoveCharacter(Vector2 direction)
     {
@@ -42,7 +42,7 @@ public class Character : MonoBehaviour
         }
 
         float f = gun.GetFireRate();
-        Invoke(nameof(FireCooldown), gun.GetFireRate());
+        Invoke(nameof(FireCooldown), gun.GetFireRate()*getAttackSpeedBuff());
     }
 
     protected void Aim(Vector3 target) 
@@ -61,11 +61,16 @@ public class Character : MonoBehaviour
         pickup = true;
     }
 
+    protected float getAttackSpeedBuff()
+    {
+        return (float)(1 - (attackspeedBuff * 0.1));
+    }
+
     public void Damage(int damage, GameObject go) {
         health -= damage;
         if (health <= 0)
         {
             Destroy(go);
         }
-    }   
+    }
 }

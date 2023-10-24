@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5092906834316743046}
   - component: {fileID: 6627176142988536176}
-  - component: {fileID: 5899194359489419871}
   - component: {fileID: 6527496276807924876}
+  - component: {fileID: 7790868934669706516}
   m_Layer: 0
   m_Name: AttackSpeed
   m_TagString: Upgrade
@@ -86,18 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5899194359489419871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2771403150477688849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a992c4528732c154e98014b470ccff00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &6527496276807924876
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -133,3 +121,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!114 &7790868934669706516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2771403150477688849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a1f7e609dc43a43a46a5c5d1e6d160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -173,10 +173,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firepoint: {fileID: 4296734354154996879}
-  moveSpeed: 2
   rb: {fileID: 7251356307527706868}
   bulletPrefab: {fileID: 3997948411031634298, guid: 1d0006c672028f4408f51623458a8f15, type: 3}
   health: 5
+  damageBuff: 0
+  speedBuff: 0
+  attackspeedBuff: 0
   desiredDist: 0
   moveAwayDist: 0
 --- !u!1 &9081339009700617994

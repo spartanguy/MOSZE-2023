@@ -173,11 +173,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firepoint: {fileID: 7984308824869926733}
-  moveSpeed: 5
   rb: {fileID: 8254279791348484867}
   bulletPrefab: {fileID: 3997948411031634298, guid: 078cdc5557339114598990614624789b, type: 3}
   health: 5
-  cam: {fileID: 0}
+  damageBuff: 0
+  speedBuff: 0
+  attackspeedBuff: 0
+  maxHp: 5
+  cam: {fileID: 130601668941206077, guid: 69ce5b18fcdb21b46a6fc8c3d52ea0b5, type: 3}
   currentWeapon: {fileID: 2160116635939693460, guid: b1d87d7079465e845bf67fe610309e6e, type: 3}
 --- !u!1 &3435629757271891845
 GameObject:

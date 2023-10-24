@@ -6,22 +6,22 @@ public class Character : MonoBehaviour
 {
 
     public Transform firepoint;
-    protected float moveSpeed = 5;
+    public float moveSpeed = 5;
     public Rigidbody2D rb;    
     public GameObject bulletPrefab;
-    protected Gun gun = Guns.pistol;
-    protected bool readyToFire = true;
-    protected bool pickup = true;
+    public Gun gun = Guns.pistol;
+    public bool readyToFire = true;
+    public bool pickup = true;
     [SerializeField]
-    protected int health = 5;
+    public int health = 5;
     public int damageBuff, speedBuff, attackspeedBuff;
 
-    protected void MoveCharacter(Vector2 direction)
+    public void MoveCharacter(Vector2 direction)
     {
         rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
     }
 
-    protected void Shoot()
+    public void Shoot()
     {
         if (gun == null) return;
         if (!readyToFire) return;
@@ -45,25 +45,25 @@ public class Character : MonoBehaviour
         Invoke(nameof(FireCooldown), gun.GetFireRate()*getAttackSpeedBuff());
     }
 
-    protected void Aim(Vector3 target) 
+    public void Aim(Vector3 target) 
     {
         Vector2 dir = transform.position - target;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(new Vector3(0,0, angle + 90));
     }
 
-    protected void FireCooldown() 
+    public void FireCooldown() 
     {
         readyToFire = true;
     }
-    protected void PickupCooldown() 
+    public void PickupCooldown() 
     {
         pickup = true;
     }
 
-    protected float getAttackSpeedBuff()
+    public float getAttackSpeedBuff()
     {
-        return (float)(1 - (attackspeedBuff * 0.1));
+        return (float)(1 - (attackspeedBuff * 0.05));
     }
 
     public void Damage(int damage, GameObject go) {

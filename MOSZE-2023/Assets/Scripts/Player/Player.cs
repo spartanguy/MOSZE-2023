@@ -65,14 +65,13 @@ public class Player : Character
         }
     }
 
-    public int GetHp()
-    {
-        return maxHp;
-    }
-
     public void SetHp(int i)
     {
         maxHp += i;
+    }
+    public void SetSpeed()
+    {
+        moveSpeed += (float)(speedBuff*0.20);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {

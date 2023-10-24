@@ -11,7 +11,6 @@ public class Bullet : MonoBehaviour
             Character a = (Character)other.gameObject.GetComponent(typeof(Character));
             GameObject b = other.gameObject;
             a.Damage(damage,b);
-            Debug.Log("hit");
             Destroy(gameObject);
         }
         else{Destroy(gameObject);}

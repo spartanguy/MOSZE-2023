@@ -14,6 +14,9 @@ public class Melee : Character
         player = Player.Instance.transform;
         damage = 1;
         readyToHit = true;
+        health = health + Game.Instance.GetEnemyHealth();
+        speedBuff = Game.Instance.GetSpeedMultiplier();
+        SetSpeed();
     }
 
     void FixedUpdate()

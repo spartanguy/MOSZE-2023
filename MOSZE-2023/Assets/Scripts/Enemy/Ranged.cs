@@ -15,6 +15,11 @@ public class Ranged : Character
         gun = Guns.GetRandomGun();
         desiredDist = GetFireRange(gun);
         moveAwayDist = desiredDist/2;
+        health = health + Game.Instance.GetEnemyHealth();
+        attackSpeedBuff = Game.Instance.GetFirerateMultiplier();
+        speedBuff = Game.Instance.GetSpeedMultiplier();
+        SetSpeed();
+        
     }
 
     void FixedUpdate()
@@ -24,6 +29,7 @@ public class Ranged : Character
         Vector2 p = transform.position;
         float dist = Vector2.Distance(tp, p);
         Vector2 dir = (player.position - transform.position).normalized;
+        
         if (dist > desiredDist)
         {
             MoveCharacter(dir);
@@ -47,7 +53,7 @@ public class Ranged : Character
     protected float GetFireRange(Gun gun)
     {
         if (gun.GetDescription() == "Pistol"){return 5;}
-        if (gun.GetDescription() == "Shotgun"){return 2;}
+        if (gun.GetDescription() == "Shotgun"){return 3;}
         if (gun.GetDescription() == "Rifle"){return 3;}
         if (gun.GetDescription() == "Sniper"){return 8;}
         else {return 0;}

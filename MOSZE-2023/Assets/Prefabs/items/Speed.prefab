@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4936635394242361222}
   - component: {fileID: 4095979287826879258}
   - component: {fileID: 3283054296537665997}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Speed
   m_TagString: Upgrade
   m_Icon: {fileID: 0}

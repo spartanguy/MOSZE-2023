@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7251356307527706868}
   - component: {fileID: -3007303072697803606}
   - component: {fileID: 1176841238001204932}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ranged_Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -101,8 +101,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 0.5
+  m_AngularDrag: 0.5
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -144,7 +144,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -172,13 +172,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1e38b971cb03e14dabc86d1c3f9ef0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionOffset: 0.05
+  movementFilter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
   firepoint: {fileID: 4296734354154996879}
+  moveSpeed: 5
   rb: {fileID: 7251356307527706868}
   bulletPrefab: {fileID: 3997948411031634298, guid: 1d0006c672028f4408f51623458a8f15, type: 3}
+  readyToFire: 1
+  pickup: 1
   health: 5
-  damageBuff: 0
   speedBuff: 0
-  attackspeedBuff: 0
+  attackSpeedBuff: 0
   desiredDist: 0
   moveAwayDist: 0
 --- !u!1 &9081339009700617994
@@ -191,7 +208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4296734354154996879}
   - component: {fileID: 923153089419107908}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: firepoint
   m_TagString: Enemy
   m_Icon: {fileID: 0}

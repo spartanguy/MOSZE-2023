@@ -20,19 +20,16 @@ public class Game : MonoBehaviour {
         playing = true;
     }
 
-    public float GetFirerateMultiplier() {
-        float f = Timer.Instance.GetMinutes() / 3;
-        if (f == 0) f = 1;
-        
-        if (f == 5) f = 5;
-        return 5 / f;
+    public int GetFirerateMultiplier() {
+        int f = Mathf.FloorToInt(Timer.Instance.GetMinutes() / 1); //#3
+        if (f == 0){return 0;}
+        else {return f;}
     }
 
-    public float GetSpeedMultiplier() {
-        float f = Timer.Instance.GetMinutes() / 30;
-        if (f > 0.5f) f = 0.5f;
-        
-        return 0.5f + f;
+    public int GetSpeedMultiplier() {
+         int f = Mathf.FloorToInt(Timer.Instance.GetMinutes() / 1); //#1
+        if (f == 0){return 0;}
+        else {return f;}
     }
 
     public int GetEnemyAmount() {
@@ -42,7 +39,6 @@ public class Game : MonoBehaviour {
         if (ma < 3) ma = 3;
         if (ma > 10) ma = 10;
         if (mi < 2) mi = 2;
-        print("min: " + mi + ", m: " + ma);
         return Random.Range(mi, ma);
     }
 
@@ -50,15 +46,12 @@ public class Game : MonoBehaviour {
         int min = Timer.Instance.GetMinutes() / 4;
         int m = 2 + min;
         if (m > enemies.Length) m = enemies.Length;
-        print("max: " + m);
         int max = Random.Range(0, m);
-        print("r: " + max);
-
         return enemies[max];
     }
 
     public int GetEnemyHealth() {
-        int min = Timer.Instance.GetMinutes() / 3;
+        int min = Timer.Instance.GetMinutes() / 1; //3
         return min;
     }
 }

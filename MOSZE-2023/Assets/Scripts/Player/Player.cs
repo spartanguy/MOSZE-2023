@@ -35,9 +35,7 @@ public class Player : Character
         {
             Shoot();
         }
-
     }
-
     private void OnTriggerStay2D(Collider2D other) {           
         if (other.gameObject.CompareTag("Weapons") && pickup == true) 
         {   
@@ -56,7 +54,6 @@ public class Player : Character
             }
         }
     }
-
     public void Heal() 
     {
         if (health < maxHp)
@@ -64,16 +61,10 @@ public class Player : Character
             health++;
         }
     }
-
     public void SetHp(int i)
     {
         maxHp += i;
     }
-    public void SetSpeed()
-    {
-        moveSpeed += (float)(speedBuff*0.20);
-    }
-
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Upgrade")) 
         {        

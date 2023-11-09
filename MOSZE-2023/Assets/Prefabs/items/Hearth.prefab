@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7554105251657966076}
   - component: {fileID: 4702512007489897470}
   - component: {fileID: -636413440973235015}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hearth
   m_TagString: Upgrade
   m_Icon: {fileID: 0}

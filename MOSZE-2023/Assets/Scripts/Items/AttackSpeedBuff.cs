@@ -6,7 +6,7 @@ public class AttackSpeedBuff : Item
 {
     public override void Upgrade()
     {
-        Player.Instance.attackspeedBuff++;
+        Player.Instance.attackSpeedBuff++;
         Destroy(gameObject);
     }
 }

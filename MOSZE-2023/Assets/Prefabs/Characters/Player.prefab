@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8254279791348484867}
   - component: {fileID: 4300005447388390712}
   - component: {fileID: 7466736876212182973}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -98,11 +98,11 @@ Rigidbody2D:
   m_GameObject: {fileID: 2005856714264851641}
   m_BodyType: 0
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -131,7 +131,7 @@ BoxCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 100000
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -144,7 +144,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.21133333}
@@ -172,13 +172,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f087ba7b8304fe4bb4b1e06b13a7f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionOffset: 0.05
+  movementFilter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
   firepoint: {fileID: 7984308824869926733}
+  moveSpeed: 5
   rb: {fileID: 8254279791348484867}
   bulletPrefab: {fileID: 3997948411031634298, guid: 078cdc5557339114598990614624789b, type: 3}
+  readyToFire: 1
+  pickup: 1
   health: 5
-  damageBuff: 0
   speedBuff: 0
-  attackspeedBuff: 0
+  attackSpeedBuff: 0
   maxHp: 5
   cam: {fileID: 130601668941206077, guid: 69ce5b18fcdb21b46a6fc8c3d52ea0b5, type: 3}
   currentWeapon: {fileID: 2160116635939693460, guid: b1d87d7079465e845bf67fe610309e6e, type: 3}
@@ -192,7 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7984308824869926733}
   - component: {fileID: 4261285854403833371}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: gunpoint
   m_TagString: Player
   m_Icon: {fileID: 0}

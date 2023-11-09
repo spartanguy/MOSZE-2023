@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6627176142988536176}
   - component: {fileID: 6527496276807924876}
   - component: {fileID: 7790868934669706516}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttackSpeed
   m_TagString: Upgrade
   m_Icon: {fileID: 0}

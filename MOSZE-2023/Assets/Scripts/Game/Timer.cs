@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Timer : MonoBehaviour {
 
+    [SerializeField]
     private float timer = 0;
     
     public static Timer Instance { get; set; }

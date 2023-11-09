@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-
     public Transform firepoint;
     public float moveSpeed = 5;
     public Rigidbody2D rb;    
@@ -14,7 +13,12 @@ public class Character : MonoBehaviour
     public bool pickup = true;
     [SerializeField]
     public int health = 5;
-    public int damageBuff, speedBuff, attackspeedBuff;
+    public int speedBuff, attackSpeedBuff;
+
+    public void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     public void MoveCharacter(Vector2 direction)
     {
@@ -28,6 +32,11 @@ public class Character : MonoBehaviour
         readyToFire = false;
         for (int i = 0; i < gun.GetBullets(); i++) {
             GameObject b = Instantiate(bulletPrefab, firepoint.position + firepoint.up, transform.rotation);
+            if (gameObject.layer == LayerMask.NameToLayer("Player")) 
+            {
+                b.layer = LayerMask.NameToLayer("PlayerBullet");
+            }
+            else b.layer = LayerMask.NameToLayer("EnemyBullet");
             Rigidbody2D brb = b.GetComponent<Rigidbody2D>();
             
             ((Bullet) b.GetComponent(typeof(Bullet))).SetDamage(gun.GetDamage());
@@ -51,7 +60,6 @@ public class Character : MonoBehaviour
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(new Vector3(0,0, angle + 90));
     }
-
     public void FireCooldown() 
     {
         readyToFire = true;
@@ -60,12 +68,14 @@ public class Character : MonoBehaviour
     {
         pickup = true;
     }
-
     public float getAttackSpeedBuff()
     {
-        return (float)(1 - (attackspeedBuff * 0.05));
+        return (float)(1 - (attackSpeedBuff * 0.05));
     }
-
+    public void SetSpeed()
+    {
+        moveSpeed += (float)(speedBuff*0.20);
+    }
     public void Damage(int damage, GameObject go) {
         health -= damage;
         if (health <= 0)

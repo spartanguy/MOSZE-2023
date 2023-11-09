@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsTestProject>true</IsTestProject>
+    <RootNamespace>NUnit.VisualStudio.TestAdapter.Tests</RootNamespace>
+    <AssemblyName>NUnit.VisualStudio.TestAdapter.Tests</AssemblyName>
+    <TargetFrameworks>net462;netcoreapp3.1</TargetFrameworks>
+    <!--<TargetFrameworks>netcoreapp3.1</TargetFrameworks>-->   <!-- For testing and debugging-->
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NSubstitute" Version="5.1.0" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="2.10.0" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.8.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net462' ">
+    <PackageReference Include="Microsoft.TestPlatform.ObjectModel" Version="11.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETCoreApp'">
+    <PackageReference Include="Microsoft.TestPlatform.ObjectModel" Version="17.7.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\empty-assembly\empty-assembly.csproj" />
+    <ProjectReference Include="..\mock-assembly\mock-assembly.csproj" />
+    <ProjectReference Include="..\NUnitTestAdapter\NUnit.TestAdapter.csproj" />
+    <ProjectReference Include="..\NUnit3AdapterExternalTests\NUnit3AdapterExternalTests.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\native-assembly\NativeTests.dll" Link="NativeTests.dll" CopyToOutputDirectory="PreserveNewest" />
+    <Compile Update="NavigationDataTests.cs" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="temp.snk" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <Target Name="PreventTestPlatformObjectModelCopyLocal" AfterTargets="ResolveReferences">
+    <ItemGroup>
+      <ReferenceCopyLocalPaths Remove="@(ReferenceCopyLocalPaths)" Condition="'%(Filename)' == 'Microsoft.VisualStudio.TestPlatform.ObjectModel'" />
+    </ItemGroup>
+  </Target>
+
+</Project>

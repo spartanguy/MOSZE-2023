@@ -1,0 +1,26 @@
+version: 4.2.{build}
+image: Visual Studio 2022
+
+build_script:
+  - ps: .\build.ps1 -Target "Appveyor"
+
+# disable built-in tests.
+test: off
+
+artifacts:
+- path: package\*.nupkg
+- path: package\*.zip
+
+deploy:
+  - provider: NuGet
+    server: https://www.myget.org/F/nunit/api/v2
+    api_key:
+      secure: wtAvJDVl2tfwiVcyLExFHLvZVfUWiQRHsfdHBFCNEATeCHo1Nd8JP642PfY8xhji
+    skip_symbols: true
+    on:
+      branch: master
+
+# Holds the build machine open and displays information on how to RDP into the box.
+# Useful for figuring out why your builds are not working, but comment out when you are done :)
+#on_finish:
+#  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))

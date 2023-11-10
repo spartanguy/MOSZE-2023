@@ -4,7 +4,7 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class Game : MonoBehaviour {
-    
+    public PhraseList mainList;
     public GameObject player;
     private Vector3 Spwn;
     public int score = 0;
@@ -12,6 +12,7 @@ public class Game : MonoBehaviour {
     public bool playing;
     public static Game Instance { get; set; }
     private void Awake() {
+        mainList = new PhraseList();
         Instance = this;
         Spwn = new Vector3(0,0,0);
     }

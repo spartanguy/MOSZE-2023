@@ -9,7 +9,7 @@ public class Player : Character
     [SerializeField] 
     protected int maxHp = 5;
     public Camera cam;
-    public GameObject currentWeapon;
+    public GameObject currentWeapon = null;
     protected SpriteRenderer weaponSprite;
     protected SpriteRenderer firepointSprite;
 
@@ -17,15 +17,16 @@ public class Player : Character
     private void Awake() {
         Instance = this;
         firepointSprite = firepoint.GetComponent<SpriteRenderer>();
-        weaponSprite = currentWeapon.GetComponent<SpriteRenderer>();
         health = maxHp;
     }
 
     private void FixedUpdate() {
         Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition); 
         Aim(mousePos);
-        firepointSprite.sprite = weaponSprite.sprite;
-        
+        if (Instance.gun != null)
+        {
+            firepointSprite.sprite = weaponSprite.sprite;
+        }
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
         Vector2 movement = new Vector2(x, y).normalized;
@@ -41,10 +42,14 @@ public class Player : Character
         {   
             if (Input.GetButton("Fire2"))
             {
-                GameObject newWeapon = Instantiate(currentWeapon, firepoint.position + firepoint.up, new Quaternion(0,0,0,0));
-                newWeapon.SetActive(true);
-                Destroy(currentWeapon);
+                if (currentWeapon != null)
+                {
+                    GameObject newWeapon = Instantiate(currentWeapon, firepoint.position + firepoint.up, new Quaternion(0,0,0,0));
+                    newWeapon.SetActive(true);
+                    Destroy(currentWeapon);                   
+                }
                 currentWeapon = other.gameObject;
+                weaponSprite = currentWeapon.GetComponent<SpriteRenderer>();
                 other.gameObject.SetActive(false);
                 Weapon w = (Weapon) other.GetComponent(typeof(Weapon));
                 Instance.gun = w.GetGun();

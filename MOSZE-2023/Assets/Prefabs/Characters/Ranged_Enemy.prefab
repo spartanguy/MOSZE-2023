@@ -114,7 +114,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &-3007303072697803606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -172,21 +172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1e38b971cb03e14dabc86d1c3f9ef0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionOffset: 0.05
-  movementFilter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
   firepoint: {fileID: 4296734354154996879}
   moveSpeed: 5
   rb: {fileID: 7251356307527706868}
@@ -196,6 +181,7 @@ MonoBehaviour:
   health: 5
   speedBuff: 0
   attackSpeedBuff: 0
+  shield: 0
   desiredDist: 0
   moveAwayDist: 0
 --- !u!1 &9081339009700617994

@@ -349,6 +349,7 @@
 "Assets/Scripts/Items/Hearth.cs"
 "Assets/Scripts/Items/HearthUpgrade.cs"
 "Assets/Scripts/Items/Item.cs"
+"Assets/Scripts/Items/Shield.cs"
 "Assets/Scripts/Items/SpeedBuff.cs"
 "Assets/Scripts/Player/Character.cs"
 "Assets/Scripts/Player/Player.cs"

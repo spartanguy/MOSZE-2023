@@ -172,21 +172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f087ba7b8304fe4bb4b1e06b13a7f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionOffset: 0.05
-  movementFilter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
   firepoint: {fileID: 7984308824869926733}
   moveSpeed: 5
   rb: {fileID: 8254279791348484867}
@@ -196,9 +181,10 @@ MonoBehaviour:
   health: 5
   speedBuff: 0
   attackSpeedBuff: 0
+  shield: 0
   maxHp: 5
   cam: {fileID: 130601668941206077, guid: 69ce5b18fcdb21b46a6fc8c3d52ea0b5, type: 3}
-  currentWeapon: {fileID: 2160116635939693460, guid: b1d87d7079465e845bf67fe610309e6e, type: 3}
+  currentWeapon: {fileID: 0}
 --- !u!1 &3435629757271891845
 GameObject:
   m_ObjectHideFlags: 0

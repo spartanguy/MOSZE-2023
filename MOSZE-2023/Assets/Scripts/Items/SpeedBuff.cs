@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpeedBuff : Item
 {
-       public override void Upgrade()
+    public override void Upgrade()
     {
         Player.Instance.speedBuff++;
         Player.Instance.SetSpeed();

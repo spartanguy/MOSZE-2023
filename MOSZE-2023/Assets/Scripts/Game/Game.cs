@@ -7,6 +7,7 @@ public class Game : MonoBehaviour {
     
     public GameObject player;
     private Vector3 Spwn;
+    public int score = 0;
     public GameObject[] enemies;
     public bool playing;
     public static Game Instance { get; set; }

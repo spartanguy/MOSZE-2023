@@ -40,12 +40,18 @@ public class PhraseList
 public class Npc : MonoBehaviour
 {
     public static Npc Instance { get; set; }
+    public List<GameObject> rewardList;
     public string monologe;
-    public bool IsQuestDone = false;
+    public Quest quest;
+    public bool isAccepted = false;
+    public bool isRewarded = false;
+    public bool isCompleted = false;
+    public bool isFailed = false;
 
     private void Awake() {
         Instance = this;
         monologe = Game.Instance.mainList.getRandomPhrase();
+        quest = Quests.GetRandomQuest();
     }
 
     void Update()
@@ -59,11 +65,48 @@ public class Npc : MonoBehaviour
             {
                 Interact();
             }
+            /*if (Input.GetKeyDown(KeyCode.X))
+            {
+                isCompleted = true;
+            }
+            if (Input.GetKeyDown(KeyCode.Y))
+            {
+                isFailed = true;
+            }*/
         }
     }
 
     void Interact()
     {
-        Debug.Log(monologe);
+        if (!isAccepted && !isCompleted && !isFailed)
+        {
+            Debug.Log(monologe);
+            Debug.Log(quest.GetQuestName());
+            Debug.Log(quest.GetQuestDescription());
+            Debug.Log("Will u accept? (press e)");
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                isAccepted = true;
+            }
+        }
+        else if(isAccepted && !isCompleted && !isFailed)
+        {
+            Debug.Log("Work on it");
+        }
+        else if(isCompleted && !isRewarded)
+        {
+            Debug.Log("Here is your reward!");
+            isRewarded = true;
+            Instantiate(rewardList[Random.Range(0,rewardList.Count)], this.transform.position + this.transform.up, new Quaternion(0,0,0,0));
+
+        }
+        else if(isCompleted && isRewarded)
+        {
+            Debug.Log("Nice One!");
+        }
+        else if(isFailed)
+        {
+            Debug.Log("You fucked up");
+        }
     }    
 }

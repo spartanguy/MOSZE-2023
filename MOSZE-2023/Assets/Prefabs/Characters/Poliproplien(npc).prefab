@@ -99,8 +99,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c5d358be3cd72348bd8e48e91762387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rewardList:
+  - {fileID: 2771403150477688849, guid: 5e39243147c4e6d42bf26d7dcb90effd, type: 3}
+  - {fileID: 8495335830716099996, guid: 2d8776e3bff62c64b8ea64ba5fb2dd1c, type: 3}
+  - {fileID: 2300055059444118920, guid: 18f63d645c7912d48aaceb2b3143131b, type: 3}
+  - {fileID: 3570529539019425292, guid: 642795ebe1db568458f41f5e5f8a1473, type: 3}
   monologe: 
-  IsQuestDone: 0
+  isAccepted: 0
+  isRewarded: 0
+  isCompleted: 0
+  isFailed: 0
 --- !u!60 &-4405604861423527495
 PolygonCollider2D:
   m_ObjectHideFlags: 0

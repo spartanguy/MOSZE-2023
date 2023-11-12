@@ -354,6 +354,7 @@
 "Assets/Scripts/Items/Item.cs"
 "Assets/Scripts/Items/Shield.cs"
 "Assets/Scripts/Items/SpeedBuff.cs"
+"Assets/Scripts/MainMenuScripts/MainMenu.cs"
 "Assets/Scripts/Quests/Quest.cs"
 "Assets/Scripts/Quests/Quests.cs"
 "Assets/Scripts/Weapons/Bullet.cs"

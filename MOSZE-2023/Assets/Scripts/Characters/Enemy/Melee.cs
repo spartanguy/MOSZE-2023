@@ -8,6 +8,7 @@ public class Melee : Character
     protected Transform player;
     protected int damage;
     protected bool readyToHit;
+    public GameObject drop;
 
     private void Awake() {
         Instance = this;
@@ -37,21 +38,17 @@ public class Melee : Character
             Invoke(nameof(getHitReady), 1f);
         }
         MoveCharacter(dir);
-
     }
-
-    /*void OnTriggerStay2D(Collider2D other) {
-        if (other.tag == "Player")
-        {   
-            if(readyToHit == false){return;}
-            Character a = (Character)other.gameObject.GetComponent(typeof(Character));
-            GameObject b = other.gameObject;
-            a.Damage(damage,b);
-            readyToHit = false;
-            Invoke(nameof(getHitReady), 1f);
-        }    
-    }*/
-
+    public override void killCharacter(GameObject chara)
+    {
+        int random = Random.Range(0,4);
+        Game.Instance.score += 25;
+        if (random == 2)
+        {
+            Instantiate(drop,this.transform.position,new Quaternion(0,0,0,0));
+        }
+        Destroy(chara);
+    }
     protected void getHitReady()
     {
         readyToHit = true;

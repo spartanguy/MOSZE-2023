@@ -8,7 +8,7 @@ public class Character : MonoBehaviour
     public float moveSpeed = 5;
     public Rigidbody2D rb;    
     public GameObject bulletPrefab;
-    public Gun gun /*= Guns.pistol*/;
+    public Gun gun;
     public bool readyToFire = true;
     public bool pickup = true;
     [SerializeField]
@@ -76,6 +76,10 @@ public class Character : MonoBehaviour
     {
         moveSpeed += (float)(speedBuff*0.20);
     }
+    public virtual void killCharacter(GameObject chara)
+    {
+        Destroy(chara);
+    }
     public void Damage(int damage, GameObject go) {
         if (shield > 0)
         {
@@ -91,11 +95,7 @@ public class Character : MonoBehaviour
         else {health -= damage;}
         if (health <= 0)
         {
-            if (this.tag == "Enemy")
-            {
-                Game.Instance.score += 25;
-            }
-            Destroy(go);
+            killCharacter(go);
         }
     }
 }

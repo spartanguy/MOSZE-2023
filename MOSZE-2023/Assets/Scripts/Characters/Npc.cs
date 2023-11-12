@@ -65,14 +65,14 @@ public class Npc : MonoBehaviour
             {
                 Interact();
             }
-            /*if (Input.GetKeyDown(KeyCode.X))
+            if (Input.GetKeyDown(KeyCode.X))
             {
                 isCompleted = true;
             }
             if (Input.GetKeyDown(KeyCode.Y))
             {
                 isFailed = true;
-            }*/
+            }
         }
     }
 

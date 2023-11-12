@@ -8,6 +8,7 @@ public class Ranged : Character
     protected Transform player;
     public float desiredDist;
     public float moveAwayDist;
+    public GameObject drop;
 
     private void Awake() {
         Instance = this;
@@ -49,7 +50,16 @@ public class Ranged : Character
             Shoot();
         }
     }
-
+    public override void killCharacter(GameObject chara)
+    {
+        int random = Random.Range(0,4);
+        Game.Instance.score += 25;
+        if (random == 2)
+        {
+            Instantiate(drop,this.transform.position,new Quaternion(0,0,0,0));
+        }
+        Destroy(chara);
+    }
     protected float GetFireRange(Gun gun)
     {
         if (gun.GetDescription() == "Pistol"){return 5;}

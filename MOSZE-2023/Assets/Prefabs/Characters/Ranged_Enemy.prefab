@@ -184,6 +184,7 @@ MonoBehaviour:
   shield: 0
   desiredDist: 0
   moveAwayDist: 0
+  drop: {fileID: 6380028321467586322, guid: 4ed5bb1a2b52345428ce60fa5b8fd481, type: 3}
 --- !u!1 &9081339009700617994
 GameObject:
   m_ObjectHideFlags: 0

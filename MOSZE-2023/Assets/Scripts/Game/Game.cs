@@ -15,10 +15,11 @@ public class Game : MonoBehaviour {
         mainList = new PhraseList();
         Instance = this;
         Spwn = new Vector3(0,0,0);
+        StartGame();
     }
     public void StartGame() {
         GameObject p = Instantiate(player, Spwn, Quaternion.identity);
-        Timer.Instance.StartTimer();
+        Invoke("",0.1f);
         playing = true;
     }
 

@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 366ed3c870ed7ed4e93f7471f3d999cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newGameLevel: Main
+  newGameLevel: MainGame
   noSavedGameDialog: {fileID: 620791437}
 --- !u!4 &216016228
 Transform:

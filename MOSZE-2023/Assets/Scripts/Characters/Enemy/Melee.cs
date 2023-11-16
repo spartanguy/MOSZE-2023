@@ -27,7 +27,6 @@ public class Melee : Character
         Vector2 p = transform.position;                                                         
         float dist = Vector2.Distance(tp, p);
         Vector2 dir = (tp - p).normalized;
-        Debug.Log(dist);
         if (dist < 1.1)
         {
             if(readyToHit == false){return;}

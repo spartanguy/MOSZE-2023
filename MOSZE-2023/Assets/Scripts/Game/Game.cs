@@ -8,7 +8,7 @@ public class Game : MonoBehaviour {
     public GameObject player;
     private Vector3 Spwn;
     public int score = 0;
-    public GameObject[] enemies;
+    public List<GameObject> enemies;
     public bool playing;
     public static Game Instance { get; set; }
     private void Awake() {
@@ -46,11 +46,8 @@ public class Game : MonoBehaviour {
     }
 
     public GameObject GetEnemy() {
-        int min = Timer.Instance.GetMinutes() / 4;
-        int m = 2 + min;
-        if (m > enemies.Length) m = enemies.Length;
-        int max = Random.Range(0, m);
-        return enemies[max];
+        int e = Random.Range(0,enemies.Count);
+        return enemies[e];
     }
 
     public int GetEnemyHealth() {

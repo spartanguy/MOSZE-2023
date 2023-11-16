@@ -357,6 +357,7 @@
 "Assets/Scripts/MainMenuScripts/MainMenu.cs"
 "Assets/Scripts/Quests/Quest.cs"
 "Assets/Scripts/Quests/Quests.cs"
+"Assets/Scripts/Room.cs"
 "Assets/Scripts/Weapons/Bullet.cs"
 "Assets/Scripts/Weapons/Gun.cs"
 "Assets/Scripts/Weapons/Guns.cs"

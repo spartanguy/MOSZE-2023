@@ -348,6 +348,7 @@
 "Assets/Scripts/Characters/Player.cs"
 "Assets/Scripts/Game/Game.cs"
 "Assets/Scripts/Game/Timer.cs"
+"Assets/Scripts/HealthManager.cs"
 "Assets/Scripts/InGameScripts/InGameMenu.cs"
 "Assets/Scripts/Items/AttackSpeedBuff.cs"
 "Assets/Scripts/Items/Hearth.cs"

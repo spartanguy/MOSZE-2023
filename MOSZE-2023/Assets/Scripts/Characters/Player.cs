@@ -12,10 +12,9 @@ public class Player : Character
     public GameObject currentWeapon = null;
     protected SpriteRenderer weaponSprite;
     protected SpriteRenderer firepointSprite;
-
     
     private void Awake() {
-        Instance = this;
+        Instance = this; 
         firepointSprite = firepoint.GetComponent<SpriteRenderer>();
         health = maxHp;
     }
@@ -75,6 +74,13 @@ public class Player : Character
         {        
             ((Item)other.GetComponent(typeof(Item))).Upgrade();
         }
+    }
+
+    public int getMaxHp() {
+        return maxHp;
+    }
+    public int getHealth(){
+        return health;
     }
 }
 

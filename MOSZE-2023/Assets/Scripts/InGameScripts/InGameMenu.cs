@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    // Ezzel a methoddal lehet az ingame menubol visszalepni a main menube 
+    
 
     public static bool GameIsPaused = false;
     public GameObject ingameMenu;
 
+    //Ez a funkció figyeli, hogy megnyomták-e az IngameMenu előhozó billentyűt.
     void Update () {
         if(Input.GetKeyDown(KeyCode.L)) {
             if(GameIsPaused){
@@ -19,11 +20,13 @@ public class PauseMenu : MonoBehaviour
             }
         }
     }
+    //Ez a funkció fogja az IngameMenu-t eltuntetni, és ezzel folytatódik aj áték
     public void Resume(){
         ingameMenu.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
+    //Ez a funkció állítja le a játékot az InGameMenu elhozatalakor.
     void Pause() {
         ingameMenu.SetActive(true);
         Time.timeScale = 0f;
@@ -33,6 +36,7 @@ public class PauseMenu : MonoBehaviour
     public void SaveGameMenu(){
         Debug.Log("Loading menuuu");
     }
+    //Ezzel a funkcióval lehet visszamenni a MainMenübe
     public void BackToMainmenu() {
         SceneManager.LoadScene("NewMainMenu");
     }

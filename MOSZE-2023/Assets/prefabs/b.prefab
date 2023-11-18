@@ -33,8 +33,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8421456573118742404}
   - {fileID: 4519253276946374222}
+  - {fileID: 573357376309299825}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6359446349049066203
@@ -195,7 +195,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 573357376309299825}
-  - component: {fileID: 109773006423363826}
   - component: {fileID: 2149819269554780021}
   - component: {fileID: 3301854329025020280}
   m_Layer: 0
@@ -217,24 +216,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8421456573118742404}
+  m_Children:
+  - {fileID: 8421456573118742404}
+  m_Father: {fileID: 560945599860489107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &109773006423363826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918348250090755643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 608fb90836a89de49ba27a372c27fd01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  falV: {fileID: 5002195041809256416, guid: 8d7a28ea36959534084ec4604d835cea, type: 3}
-  falF: {fileID: 7899318133414966621, guid: 9199dc31a07a51b4bbc83b8028b81a96, type: 3}
-  falIrany: 1
 --- !u!61 &2149819269554780021
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -267,7 +252,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 4, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -278,7 +263,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5, y: 5}
+  m_Size: {x: 6, y: 6}
   m_EdgeRadius: 0
 --- !u!114 &3301854329025020280
 MonoBehaviour:
@@ -293,6 +278,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies: []
+  falak: []
+  falV: {fileID: 8788233891365741657, guid: d1cc02005cf3ff94ba87e9c5cdc3414e, type: 3}
+  falF: {fileID: 7899318133414966621, guid: 9199dc31a07a51b4bbc83b8028b81a96, type: 3}
 --- !u!1 &6189422622728092226
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,9 +293,9 @@ GameObject:
   - component: {fileID: 1224830137427012530}
   - component: {fileID: 5721080017322798913}
   - component: {fileID: 4561053610005817463}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: destroyer (4)
-  m_TagString: SpawnPoint
+  m_TagString: destroyer
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -324,9 +312,8 @@ Transform:
   m_LocalPosition: {x: -4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 573357376309299825}
-  m_Father: {fileID: 560945599860489107}
+  m_Children: []
+  m_Father: {fileID: 573357376309299825}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1224830137427012530
 Rigidbody2D:
@@ -412,6 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f2853425574de4282c8d21687f0eea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fallIrany: f
 --- !u!1 &8915205560353344767
 GameObject:
   m_ObjectHideFlags: 0

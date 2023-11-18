@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class destroyer : MonoBehaviour
 {
-   void OnTriggerEnter2D(Collider2D other){
+    public string fallIrany;
+    void OnTriggerEnter2D(Collider2D other){
     if(other.gameObject.CompareTag("Szoba")){
         Destroy(other.gameObject);
         }

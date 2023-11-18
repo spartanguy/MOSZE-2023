@@ -12,17 +12,18 @@ public class Room : MonoBehaviour
     [SerializeField] 
     private List<GameObject> falak;
 
-    
     public GameObject falV;
     public GameObject falF;
-
-    public int falIrany;
+    private destroyer destroyerIrany;
 
     private void Awake() {
         enemies = new List<GameObject>();
         roomSize = 6f;
     }
     private void OnTriggerEnter2D(Collider2D other) {
+        
+        destroyerIrany = GameObject.FindGameObjectWithTag("destroyer").GetComponent<destroyer>();
+
         if (started){
             Kamera_kontroller.instance.aktualSzoba = this;
             return;
@@ -30,10 +31,10 @@ public class Room : MonoBehaviour
         if (other.gameObject.CompareTag("jatekos")) {
             Kamera_kontroller.instance.aktualSzoba = this;
             started = true;
-            if (falIrany == 2){
-                falak.Add(Instantiate(falV, transform.position, Quaternion.identity));
-            } else if (falIrany == 1){
-               falak.Add(Instantiate(falF, transform.position, Quaternion.identity));
+            if (destroyerIrany.fallIrany == "v"){
+                falak.Add(Instantiate(falV, destroyerIrany.transform.position, Quaternion.identity));
+            } else if (destroyerIrany.fallIrany == "f"){
+                falak.Add(Instantiate(falF, destroyerIrany.transform.position, Quaternion.identity));
             };
             SpawnEnemies();
             
@@ -60,9 +61,11 @@ public class Room : MonoBehaviour
         }
     }
     private void SpawnEnemies() {
-        int n = Game.Instance.GetEnemyAmount();
-        for (int i = 0; i < n; i++) {
-            SpawnOneEnemy();
+        if (GameObject.FindGameObjectWithTag("Szoba")){
+            int n = Game.Instance.GetEnemyAmount();
+            for (int i = 0; i < n; i++) {
+                SpawnOneEnemy();
+            }
         }
     }
     private void SpawnOneEnemy() {

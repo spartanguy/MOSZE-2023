@@ -73,6 +73,7 @@ public class Player : Character
         if (other.gameObject.CompareTag("Upgrade")) 
         {        
             ((Item)other.GetComponent(typeof(Item))).Upgrade();
+            BuffManager.Instance.setBuffs();
         }
     }
 

@@ -54,4 +54,7 @@ public class Game : MonoBehaviour {
         int min = Timer.Instance.GetMinutes() / 1; //3
         return min;
     }
+    public int GetScore() {
+        return score;
+    }
 }

@@ -98,4 +98,14 @@ public class Character : MonoBehaviour
             killCharacter(go);
         }
     }
+
+    public int getSpeedBuffUI(){
+        return speedBuff;
+    }
+    public int getAttackSpeedBuffUI(){
+        return attackSpeedBuff;
+    }
+    public int getShieldUI(){
+        return shield;
+    }
 }

@@ -15,7 +15,6 @@ public class Room : MonoBehaviour
     public GameObject falV;
     public GameObject falF;
     private destroyer destroyerIrany;
-
     private void Awake() {
         enemies = new List<GameObject>();
         roomSize = 6f;
@@ -30,14 +29,13 @@ public class Room : MonoBehaviour
         }
         if (other.gameObject.CompareTag("jatekos")) {
             Kamera_kontroller.instance.aktualSzoba = this;
-            started = true;
             if (destroyerIrany.fallIrany == "v"){
                 falak.Add(Instantiate(falV, destroyerIrany.transform.position, Quaternion.identity));
             } else if (destroyerIrany.fallIrany == "f"){
                 falak.Add(Instantiate(falF, destroyerIrany.transform.position, Quaternion.identity));
             };
-            SpawnEnemies();
-            
+            started = true;
+            SpawnEnemies();     
         }
 
     }

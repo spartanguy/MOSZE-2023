@@ -11,6 +11,7 @@ public class szobaSpawner : MonoBehaviour
     public float waitTime = 4f;
 
 
+
     void Start(){
         Destroy(gameObject, waitTime);
         Invoke("Spawn", 0.1f);

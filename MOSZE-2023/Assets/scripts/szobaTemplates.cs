@@ -19,10 +19,13 @@ public class szobaTemplates : MonoBehaviour
 
     public GameObject NPC;
     private bool spawnedNPC;
+    private int szobaDb, szobaHely;
+
 
 
 
     void Update(){
+
         if(varakIdo<=0 && spawnedBOSS==false){
             for(int i=0; i<szobak.Count; i++){
                 if(i==szobak.Count-1){
@@ -34,24 +37,17 @@ public class szobaTemplates : MonoBehaviour
             varakIdo-=Time.deltaTime;
         };
 
-        for (int k=0; k<2; k++){
-            if(varakIdo<=(varakIdo/2) && spawnedNPC==false){
-                for(int j=0; j<(szobak.Count); j++){
-                    if(j==szobak.Count-4){
-                    Instantiate(NPC, szobak[j].transform.position, Quaternion.identity);
+        if (varakIdo<=0 && spawnedNPC == false){
+            szobaDb  =((Random.Range(0, szobak.Count))/2)+1;
+            Debug.Log(szobaDb);
+            for(int j=0; j<=szobaDb; j++){
+                szobaHely = (Random.Range(0, szobak.Count))+1;
+                Debug.Log(szobaHely);
+                Instantiate(NPC, szobak[szobaHely].transform.position, Quaternion.identity);
+                if(j==szobaDb){
                     spawnedNPC=true;
-                        }
-                    }       
-                }else if(varakIdo<=0 && spawnedNPC==true){
-                for(int j=0; j<(szobak.Count); j++){
-                    if(j==szobak.Count-4){
-                        Instantiate(NPC, szobak[j].transform.position, Quaternion.identity);
-                        spawnedNPC=true;
-                    }
-                } 
-            } else {
-            varakIdo-=Time.deltaTime;
+                }
             }
-        };   
+        }
     }
 }

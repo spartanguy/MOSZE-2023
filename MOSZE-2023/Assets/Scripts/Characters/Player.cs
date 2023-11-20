@@ -15,7 +15,7 @@ public class Player : Character
     
     private void Awake() {
         Instance = this; 
-        firepointSprite = firepoint.GetComponent<SpriteRenderer>();
+        firepointSprite = firepoint.GetChild(0).GetComponent<SpriteRenderer>();
         health = maxHp;
     }
 
@@ -43,7 +43,7 @@ public class Player : Character
             {
                 if (currentWeapon != null)
                 {
-                    GameObject newWeapon = Instantiate(currentWeapon, firepoint.position + firepoint.up, new Quaternion(0,0,0,0));
+                    GameObject newWeapon = Instantiate(currentWeapon, firepoint.position + firepoint.up, Quaternion.identity);
                     newWeapon.SetActive(true);
                     Destroy(currentWeapon);                   
                 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     public Transform firepoint;
+    public Transform gunEnd;
     public float moveSpeed = 5;
     public Rigidbody2D rb;    
     public GameObject bulletPrefab;
@@ -31,7 +32,7 @@ public class Character : MonoBehaviour
         if (!readyToFire) return;
         readyToFire = false;
         for (int i = 0; i < gun.GetBullets(); i++) {
-            GameObject b = Instantiate(bulletPrefab, firepoint.position + firepoint.up, transform.rotation);
+            GameObject b = Instantiate(bulletPrefab, gunEnd.position, firepoint.transform.rotation);
             if (gameObject.layer == LayerMask.NameToLayer("Player")) 
             {
                 b.layer = LayerMask.NameToLayer("PlayerBullet");
@@ -45,7 +46,7 @@ public class Character : MonoBehaviour
             if (s > 0.5f) s = 0.5f;
             b.transform.localScale *= 1 + s;
 
-            Vector2 dir = transform.rotation * Vector2.up;
+            Vector2 dir = firepoint.transform.rotation * Vector2.right;
             Vector2 pdir = Vector2.Perpendicular(dir) * Random.Range(-gun.GetSpread(), gun.GetSpread());
             brb.velocity = (dir + pdir) * gun.GetSpeed();
         }
@@ -56,9 +57,19 @@ public class Character : MonoBehaviour
 
     public void Aim(Vector3 target) 
     {
-        Vector2 dir = transform.position - target;
+        Vector3 dir = (firepoint.transform.position - target).normalized;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(new Vector3(0,0, angle + 90));
+        firepoint.transform.eulerAngles = new Vector3(0,0,angle + 180 );
+        if (angle >= -90 && angle <= 90)
+        {
+            this.GetComponent<SpriteRenderer>().flipX = true;
+            firepoint.GetChild(0).GetComponent<SpriteRenderer>().flipY = true;
+        }
+        else
+        {
+            this.GetComponent<SpriteRenderer>().flipX = false;
+            firepoint.GetChild(0).GetComponent<SpriteRenderer>().flipY = false;
+        }
     }
 
     public void FireCooldown() 

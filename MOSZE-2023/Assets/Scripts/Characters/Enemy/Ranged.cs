@@ -5,15 +5,26 @@ using UnityEngine;
 public class Ranged : Character
 {
     public static Ranged Instance { get; set; }
+    public List<GameObject> weaponList;
     protected Transform player;
     public float desiredDist;
     public float moveAwayDist;
     public GameObject drop;
+    public GameObject weapon;
+    protected SpriteRenderer firepointSprite;
 
     private void Awake() {
         Instance = this;
+        //Játékos becélzása
         player = Player.Instance.transform;
-        gun = Guns.GetRandomGun();
+        //Random fegyver választás
+        weapon = weaponList[Random.Range(0,weaponList.Count)];
+        //Ellenfél fegyverRenderer megkeresése
+        firepointSprite = firepoint.GetChild(0).GetComponent<SpriteRenderer>();
+        Weapon w = (Weapon)weapon.GetComponent(typeof(Weapon));
+        w.asd();
+        gun = w.GetGun();
+        firepointSprite.sprite = weapon.GetComponent<SpriteRenderer>().sprite;
         desiredDist = GetFireRange(gun);
         moveAwayDist = desiredDist/2;
         health = health + Game.Instance.GetEnemyHealth();

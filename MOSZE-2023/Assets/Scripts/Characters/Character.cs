@@ -60,26 +60,32 @@ public class Character : MonoBehaviour
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(new Vector3(0,0, angle + 90));
     }
+
     public void FireCooldown() 
     {
         readyToFire = true;
     }
+
     public void PickupCooldown() 
     {
         pickup = true;
     }
+
     public float getAttackSpeedBuff()
     {
         return (float)(1 - (attackSpeedBuff * 0.05));
     }
+
     public void SetSpeed()
     {
         moveSpeed += (float)(speedBuff*0.20);
     }
+
     public virtual void killCharacter(GameObject chara)
     {
         Destroy(chara);
     }
+
     public void Damage(int damage, GameObject go) {
         if (shield > 0)
         {
@@ -102,9 +108,11 @@ public class Character : MonoBehaviour
     public int getSpeedBuffUI(){
         return speedBuff;
     }
+
     public int getAttackSpeedBuffUI(){
         return attackSpeedBuff;
     }
+    
     public int getShieldUI(){
         return shield;
     }

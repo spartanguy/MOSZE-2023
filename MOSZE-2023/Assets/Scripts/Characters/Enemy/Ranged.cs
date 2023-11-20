@@ -56,7 +56,7 @@ public class Ranged : Character
         Game.Instance.score += 25;
         if (random == 2)
         {
-            Instantiate(drop,this.transform.position,new Quaternion(0,0,0,0));
+            Instantiate(drop,this.transform.position,Quaternion.identity);
         }
         Destroy(chara);
     }

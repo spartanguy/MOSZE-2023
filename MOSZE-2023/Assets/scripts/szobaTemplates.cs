@@ -11,7 +11,7 @@ public class szobaTemplates : MonoBehaviour
     public GameObject[] megnyitBal;
     public GameObject zaro;
 
-    public List<GameObject> szobak = new List<GameObject>();
+    public List<GameObject> szobak;
 
     public float varakIdo;
     public GameObject BOSS;
@@ -26,6 +26,7 @@ public class szobaTemplates : MonoBehaviour
 
     void Update(){
 
+
         if(varakIdo<=0 && spawnedBOSS==false){
             for(int i=0; i<szobak.Count; i++){
                 if(i==szobak.Count-1){
@@ -38,12 +39,14 @@ public class szobaTemplates : MonoBehaviour
         };
 
         if (varakIdo<=0 && spawnedNPC == false){
-            szobaDb  =((Random.Range(0, szobak.Count))/2)+1;
-            Debug.Log(szobaDb);
+            szobaDb  =((szobak.Count)/2);
             for(int j=0; j<=szobaDb; j++){
-                szobaHely = (Random.Range(0, szobak.Count))+1;
-                Debug.Log(szobaHely);
+                szobaHely = (Random.Range(1, szobak.Count));
                 Instantiate(NPC, szobak[szobaHely].transform.position, Quaternion.identity);
+                Room szob = (Room)szobak[szobaHely].gameObject.GetComponentInChildren(typeof(Room));
+                Debug.Log(szobak[szobaHely]);
+                Debug.Log(szob);
+                szob.szobaType = "NPC";
                 if(j==szobaDb){
                     spawnedNPC=true;
                 }

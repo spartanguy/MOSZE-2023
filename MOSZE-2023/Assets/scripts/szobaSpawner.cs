@@ -22,16 +22,16 @@ public class szobaSpawner : MonoBehaviour
         if(spawned == false){
             if(megnyitIrany==1){
                 random = Random.Range(0, templates.megnyitLent.Length);
-                Instantiate(templates.megnyitLent[random], transform.position, templates.megnyitLent[random].transform.rotation);
+                Instantiate(templates.megnyitLent[random], transform.position, Quaternion.identity);
             }else if(megnyitIrany==2){
                 random = Random.Range(0, templates.megnyitBal.Length);
-                Instantiate(templates.megnyitBal[random], transform.position, templates.megnyitBal[random].transform.rotation);
+                Instantiate(templates.megnyitBal[random], transform.position, Quaternion.identity);
             }else if(megnyitIrany==3){
                 random = Random.Range(0, templates.megnyitFent.Length);
-                Instantiate(templates.megnyitFent[random], transform.position, templates.megnyitFent[random].transform.rotation);
+                Instantiate(templates.megnyitFent[random], transform.position, Quaternion.identity);
             }else if(megnyitIrany==4){
                 random = Random.Range(0, templates.megnyitJobb.Length);
-                Instantiate(templates.megnyitJobb[random], transform.position, templates.megnyitJobb[random].transform.rotation);
+                Instantiate(templates.megnyitJobb[random], transform.position, Quaternion.identity);
             }    
         spawned=true;
         }

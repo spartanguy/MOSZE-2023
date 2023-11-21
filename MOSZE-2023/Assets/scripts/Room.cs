@@ -8,36 +8,45 @@ public class Room : MonoBehaviour
     private float roomSize;
     [SerializeField] 
     private List<GameObject> enemies;
-
     [SerializeField] 
-    private List<GameObject> falak;
+    private List<GameObject> ajtok;
 
-    public GameObject falV;
-    public GameObject falF;
-    private destroyer destroyerIrany;
+    public List<GameObject> ajtoHely; 
+
+    public string szobaType = "harc";
+
+
+    public GameObject ajto;
     private void Awake() {
         enemies = new List<GameObject>();
         roomSize = 6f;
+        if(transform.position.x == 0 && transform.position.y == 0){
+            szobaType = "kezdo";
+        }
     }
     private void OnTriggerEnter2D(Collider2D other) {
         
-        destroyerIrany = GameObject.FindGameObjectWithTag("destroyer").GetComponent<destroyer>();
-
         if (started){
             Kamera_kontroller.instance.aktualSzoba = this;
             return;
         }
         if (other.gameObject.CompareTag("jatekos")) {
-            Kamera_kontroller.instance.aktualSzoba = this;
-            if (destroyerIrany.fallIrany == "v"){
-                falak.Add(Instantiate(falV, destroyerIrany.transform.position, Quaternion.identity));
-            } else if (destroyerIrany.fallIrany == "f"){
-                falak.Add(Instantiate(falF, destroyerIrany.transform.position, Quaternion.identity));
-            };
+            Debug.Log(szobaType);
             started = true;
-            SpawnEnemies();     
-        }
+            if (szobaType == "harc"){
+                Kamera_kontroller.instance.aktualSzoba = this;
+                for(int i=0; i<ajtoHely.Count; i++){
+                    ajtok.Add(Instantiate(ajto, ajtoHely[i].transform.position, Quaternion.identity));
+                }
+                SpawnEnemies();     
+            }
 
+            if(szobaType == "NPC"){
+                started = true;
+                Kamera_kontroller.instance.aktualSzoba = this;
+            }
+
+        }
     }
     private void FixedUpdate() {
         if (!started)
@@ -76,8 +85,8 @@ public class Room : MonoBehaviour
     }
     void FinishRoom()
     {
-        for (int i = 0; i < falak.Count; i++) {
-            Destroy(falak[i]);
+        for (int i = 0; i < ajtok.Count; i++) {
+            Destroy(ajtok[i]);
         }
     }
     public Vector3 szobaKozepe()

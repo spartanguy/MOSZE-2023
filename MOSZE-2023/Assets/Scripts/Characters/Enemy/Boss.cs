@@ -14,12 +14,17 @@ public class Boss : Character
     public GameObject burn;
     public bool putBurn = true; 
     public Vector2 markPos;
+    public GameObject weapon;
+    public GameObject changeWeapon;
+    protected SpriteRenderer firepointSprite;
 
     private void Awake() {
         Instance = this;
         health = 200;
         player = Player.Instance.transform;
         gun = Guns.GetGun(3);
+        firepointSprite = firepoint.GetChild(0).GetComponent<SpriteRenderer>();
+        firepointSprite.sprite = weapon.GetComponent<SpriteRenderer>().sprite;
         desiredDist = 200;
         moveAwayDist = 0;
         health = health + Game.Instance.GetEnemyHealth();
@@ -71,7 +76,8 @@ public class Boss : Character
         gun = Guns.GetGun(1);
         desiredDist = 3;
         moveAwayDist = desiredDist/2;
-        Debug.Log("AAAAAAAAAAAAAh");
+        gun = Guns.GetGun(2);
+        firepointSprite.sprite = changeWeapon.GetComponent<SpriteRenderer>().sprite;
     }
     public override void killCharacter(GameObject chara)
     {

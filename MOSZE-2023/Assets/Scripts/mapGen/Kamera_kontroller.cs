@@ -36,7 +36,6 @@ public class Kamera_kontroller : MonoBehaviour
         }
 
         Vector3 celPozicio = celPozKeres();
-        Debug.Log(celPozicio);
         if (celPozicio != transform.position)
         {
             transform.position = Vector3.MoveTowards(transform.position, celPozicio, Time.deltaTime * kameraSebesseg);

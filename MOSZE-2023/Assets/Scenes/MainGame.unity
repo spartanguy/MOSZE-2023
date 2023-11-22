@@ -514,7 +514,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1151777058}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseMenu, Scripts
         m_MethodName: BackToMainmenu
         m_Mode: 1
@@ -2397,7 +2397,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1151777058}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseMenu, Scripts
         m_MethodName: Resume
         m_Mode: 1
@@ -4842,14 +4842,14 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1556439985}
+  - {fileID: 994313212}
+  - {fileID: 1151777059}
+  - {fileID: 1148654045}
   - {fileID: 926485184}
   - {fileID: 1254174252}
   - {fileID: 577996010}
   - {fileID: 162264902}
-  - {fileID: 1148654045}
-  - {fileID: 1151777059}
   - {fileID: 2102383694}
   - {fileID: 1827136631}
   - {fileID: 977315065}
-  - {fileID: 994313212}
   - {fileID: 1467796816}

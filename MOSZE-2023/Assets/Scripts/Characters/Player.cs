@@ -8,7 +8,7 @@ public class Player : Character
     public static Player Instance { get; set; }
     [SerializeField] 
     protected int maxHp = 5;
-    public Camera cam;
+    //public Camera cam;
     public GameObject currentWeapon = null;
     protected SpriteRenderer weaponSprite;
     protected SpriteRenderer firepointSprite;
@@ -20,7 +20,7 @@ public class Player : Character
     }
 
     private void FixedUpdate() {
-        Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition); 
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); 
         Aim(mousePos);
         if (Instance.gun != null)
         {

@@ -30,7 +30,8 @@ public class szobaTemplates : MonoBehaviour
         if(varakIdo<=0 && spawnedBOSS==false){
             for(int i=0; i<szobak.Count; i++){
                 if(i==szobak.Count-1){
-                    Instantiate(BOSS, szobak[i].transform.position, Quaternion.identity);
+                    GameObject boss = Instantiate(BOSS, szobak[i].transform.position, Quaternion.identity);
+                    boss.SetActive(false);
                     spawnedBOSS=true;
                 };
             }
@@ -44,8 +45,6 @@ public class szobaTemplates : MonoBehaviour
                 szobaHely = (Random.Range(1, szobak.Count));
                 Instantiate(NPC, szobak[szobaHely].transform.position, Quaternion.identity);
                 Room szob = (Room)szobak[szobaHely].gameObject.GetComponentInChildren(typeof(Room));
-                Debug.Log(szobak[szobaHely]);
-                Debug.Log(szob);
                 szob.szobaType = "NPC";
                 if(j==szobaDb){
                     spawnedNPC=true;

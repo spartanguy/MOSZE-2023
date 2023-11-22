@@ -31,7 +31,6 @@ public class Room : MonoBehaviour
             return;
         }
         if (other.gameObject.CompareTag("jatekos")) {
-            Debug.Log(szobaType);
             started = true;
             if (szobaType == "harc"){
                 Kamera_kontroller.instance.aktualSzoba = this;
@@ -57,7 +56,6 @@ public class Room : MonoBehaviour
         if (enemies.Count == 0) 
         {
             FinishRoom();
-            Debug.Log("Goodbye");
             return;
         }
     }

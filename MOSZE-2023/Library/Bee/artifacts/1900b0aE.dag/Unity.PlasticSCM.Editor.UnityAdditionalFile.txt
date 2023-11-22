@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
-C:\Users\User\MOSZE-2023
-=======
-C:\git\MOSZE-2023\MOSZE-2023
->>>>>>> Stashed changes
+C:\Users\womba\Desktop\MOSZEUJ\MOSZE-2023\MOSZE-2023

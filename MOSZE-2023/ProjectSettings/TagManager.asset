@@ -8,11 +8,21 @@ TagManager:
   - Upgrade
   - Enemy
   - Bullet
+  - destroyer
+  - Szoba
+  - jatekos
+  - SpawnPoint
+  - zsakUtca
+  - falV
+  - fal
+  - falF
+  - ajto
+  - npc
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - SzobaCollider
   - Water
   - UI
   - Player

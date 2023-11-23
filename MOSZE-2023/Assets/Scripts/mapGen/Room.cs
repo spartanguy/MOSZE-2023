@@ -8,6 +8,7 @@ public class Room : MonoBehaviour
     private float roomSize;
     [SerializeField] 
     private List<GameObject> enemies;
+    public GameObject ajto;
     [SerializeField] 
     private List<GameObject> ajtok;
 
@@ -15,8 +16,6 @@ public class Room : MonoBehaviour
 
     public string szobaType = "harc";
 
-
-    public GameObject ajto;
     private void Awake() {
         enemies = new List<GameObject>();
         roomSize = 6f;
@@ -30,7 +29,7 @@ public class Room : MonoBehaviour
             Kamera_kontroller.instance.aktualSzoba = this;
             return;
         }
-        if (other.gameObject.CompareTag("jatekos")) {
+        if (other.gameObject.CompareTag("Player")) {
             started = true;
             if (szobaType == "harc"){
                 Kamera_kontroller.instance.aktualSzoba = this;

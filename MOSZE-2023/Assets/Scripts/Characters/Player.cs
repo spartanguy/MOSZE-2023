@@ -8,7 +8,6 @@ public class Player : Character
     public static Player Instance { get; set; }
     [SerializeField] 
     protected int maxHp = 5;
-    //public Camera cam;
     public GameObject currentWeapon = null;
     protected SpriteRenderer weaponSprite;
     protected SpriteRenderer firepointSprite;

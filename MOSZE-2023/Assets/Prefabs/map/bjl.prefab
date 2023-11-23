@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 8532221054207856719}
   - component: {fileID: 1969848615894931889}
   - component: {fileID: 2875299358677271287}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bjl
   m_TagString: Szoba
   m_Icon: {fileID: 0}
@@ -858,7 +858,7 @@ GameObject:
   - component: {fileID: 757185571574732400}
   - component: {fileID: 1208533080261867216}
   - component: {fileID: 1221366461583497653}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ajtok
   m_TagString: falV
   m_Icon: {fileID: 0}

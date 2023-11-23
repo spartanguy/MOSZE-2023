@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3819928193079664047}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.229, y: -0.134, z: 0}
+  m_LocalPosition: {x: -0.438, y: -0.021, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -222,7 +222,7 @@ MonoBehaviour:
   desiredDist: 0
   moveAwayDist: 0
   drop: {fileID: 6380028321467586322, guid: 4ed5bb1a2b52345428ce60fa5b8fd481, type: 3}
-  Weapon: {fileID: 0}
+  weapon: {fileID: 0}
 --- !u!1 &5921220315404347835
 GameObject:
   m_ObjectHideFlags: 0

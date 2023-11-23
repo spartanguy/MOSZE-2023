@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5677678085520971549}
   - component: {fileID: 1596641675269706563}
   - component: {fileID: 6260248860777523191}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ajtok
   m_TagString: falV
   m_Icon: {fileID: 0}

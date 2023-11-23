@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6642729101467970448}
   m_Layer: 6
   m_Name: Player
-  m_TagString: jatekos
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,7 +139,6 @@ MonoBehaviour:
   attackSpeedBuff: 0
   shield: 0
   maxHp: 5
-  cam: {fileID: 130601668941206077, guid: 69ce5b18fcdb21b46a6fc8c3d52ea0b5, type: 3}
   currentWeapon: {fileID: 0}
 --- !u!60 &6642729101467970448
 PolygonCollider2D:

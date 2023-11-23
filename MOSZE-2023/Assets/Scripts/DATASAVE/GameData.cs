@@ -5,19 +5,20 @@ using UnityEngine;
 [System.Serializable]
 public class GameData
 {
-    public int scoreBoardData;
-    public List<Szobak> szobakData = new List<Szobak>();
-
-    public struct Szobak {
-        string prefabName;
-        float xCoord;
-        float yCoord;
-        string RoomType;
+    [System.Serializable]
+    public struct RoomData {
+        public string prefabName;
+        public float xCoord;
+        public float yCoord;
+        public string roomType;
     }
+    public int scoreBoardData;
+    public RoomData asd;
+    public List<RoomData> RoomDataList;
 
-
-    public GameData() {
-        this.scoreBoardData = 0;
+    public void ListDeclaration()
+    {
+        RoomDataList = new List<RoomData>();
     }
 }
 

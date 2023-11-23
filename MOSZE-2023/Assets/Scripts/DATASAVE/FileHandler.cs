@@ -100,4 +100,10 @@ public class FileDataHandler
         }
         return modifiedData;
     }
+
+    public string GetFullPath(){
+        string fullPath = Path.Combine(dataDirPath, dataFileName);
+        Debug.Log(fullPath);
+        return fullPath;
+    }
 }

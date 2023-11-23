@@ -17,10 +17,9 @@ public class MainMenu : MonoBehaviour
     }
     // Ez a funkció fogja ellenőrizni, hogy van-e mentett játék, ha van akkor betölti azt.
     public void LoadGameYes(){
-
+        string fileLocation = FileHandler.GetFullPath()
         if(PlayerPrefs.HasKey("SavedLevel")) {
-            levelToLoad = PlayerPrefs.GetString("SavedLevel");
-            SceneManager.LoadScene(levelToLoad);
+            SceneManager.LoadScene("MainGame");
         } else {
             noSavedGameDialog.SetActive(true);
         }

@@ -15,6 +15,7 @@ public class Room : MonoBehaviour
     public List<GameObject> ajtoHely; 
 
     public string szobaType = "harc";
+    public string prefabName;
 
     private void Awake() {
         enemies = new List<GameObject>();

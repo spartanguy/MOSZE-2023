@@ -61,6 +61,7 @@ public class DataPersistenceManager : MonoBehaviour
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects) 
         {
             dataPersistenceObj.SaveData(ref gameData);
+            Debug.Log(gameData.RoomDataList.Count);
         }
 
         // save that data to a file using the data handler

@@ -12,7 +12,7 @@ public class szobaSpawner : MonoBehaviour
 
 
 
-    void Start(){
+    /*void Start(){
         Destroy(gameObject, waitTime);
         Invoke("Spawn", 0.1f);
     }
@@ -46,5 +46,5 @@ public class szobaSpawner : MonoBehaviour
             }
             spawned=true;    
         }
-    }
+    }*/
 }

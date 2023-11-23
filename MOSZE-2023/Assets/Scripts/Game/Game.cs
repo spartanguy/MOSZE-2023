@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class Game : MonoBehaviour {
+public class Game : MonoBehaviour, IDataPersistence {
     public PhraseList mainList;
     public GameObject player;
     private Vector3 Spwn;
@@ -56,5 +56,13 @@ public class Game : MonoBehaviour {
     }
     public int GetScore() {
         return score;
+    }
+
+
+    public void LoadData(GameData data){
+        this.score = data.scoreBoardData;
+    }
+    public void SaveData(ref GameData data){
+        data.scoreBoardData = this.score;
     }
 }

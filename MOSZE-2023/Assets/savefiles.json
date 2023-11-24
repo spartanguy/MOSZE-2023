@@ -1,0 +1,1967 @@
+{
+    "scoreBoardData": 0,
+    "asd": {
+        "prefabName": "l",
+        "xCoord": 595.776123046875,
+        "yCoord": 23.112003326416017,
+        "roomType": "harc"
+    },
+    "RoomDataList": [
+        {
+            "prefabName": "spawn",
+            "xCoord": 0.0,
+            "yCoord": 0.0,
+            "roomType": "kezdo"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 0.0,
+            "yCoord": 11.556000709533692,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 0.0,
+            "yCoord": -11.556000709533692,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 20.544002532958986,
+            "yCoord": 0.0,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": -20.544002532958986,
+            "yCoord": 0.0,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": -20.544002532958986,
+            "yCoord": -11.556000709533692,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 0.0,
+            "yCoord": 23.112001419067384,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 0.0,
+            "yCoord": -23.112001419067384,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 41.08800506591797,
+            "yCoord": 0.0,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": -41.08800506591797,
+            "yCoord": 0.0,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": -20.544002532958986,
+            "yCoord": 23.112001419067384,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 0.0,
+            "yCoord": -34.66800308227539,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": -20.544002532958986,
+            "yCoord": -23.112001419067384,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": 41.08800506591797,
+            "yCoord": 11.556000709533692,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 41.08800506591797,
+            "yCoord": -11.556000709533692,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": -61.63200759887695,
+            "yCoord": 0.0,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": -41.08800506591797,
+            "yCoord": -11.556000709533692,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": -61.63200759887695,
+            "yCoord": -11.556000709533692,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": -20.544002532958986,
+            "yCoord": 11.556000709533692,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 20.544002532958986,
+            "yCoord": -34.66800308227539,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 0.0,
+            "yCoord": -46.224002838134769,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": -41.08800506591797,
+            "yCoord": -23.112001419067384,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 61.63200759887695,
+            "yCoord": 11.556000709533692,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 41.08800506591797,
+            "yCoord": -23.112001419067384,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": -82.17601013183594,
+            "yCoord": 0.0,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": 20.544002532958986,
+            "yCoord": -23.112001419067384,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 20.544002532958986,
+            "yCoord": -46.224002838134769,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 0.0,
+            "yCoord": -57.78000259399414,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": -20.544002532958986,
+            "yCoord": -46.224002838134769,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": -41.08800506591797,
+            "yCoord": -34.66800308227539,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 82.17601013183594,
+            "yCoord": 11.556000709533692,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": 41.08800506591797,
+            "yCoord": -34.66800308227539,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": -102.72001647949219,
+            "yCoord": 0.0,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": -20.544002532958986,
+            "yCoord": -34.66800308227539,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": -61.63200759887695,
+            "yCoord": -34.66800308227539,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 102.72001647949219,
+            "yCoord": 11.556000709533692,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": -102.72001647949219,
+            "yCoord": 11.556000709533692,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": -61.63200759887695,
+            "yCoord": -23.112003326416017,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": -61.63200759887695,
+            "yCoord": -46.224002838134769,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "b",
+            "xCoord": 123.26402282714844,
+            "yCoord": 11.556000709533692,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 102.72001647949219,
+            "yCoord": 23.112001419067384,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": -123.26402282714844,
+            "yCoord": 11.556000709533692,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": -41.08800506591797,
+            "yCoord": -46.224002838134769,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": -61.63200759887695,
+            "yCoord": -57.78000259399414,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": 123.26402282714844,
+            "yCoord": 23.112001419067384,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 102.72001647949219,
+            "yCoord": 34.66800308227539,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": -143.8080291748047,
+            "yCoord": 11.556000709533692,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": -41.08800506591797,
+            "yCoord": -57.78000259399414,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": -61.63200759887695,
+            "yCoord": -69.33600616455078,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 123.26402282714844,
+            "yCoord": 34.66800308227539,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 102.72001647949219,
+            "yCoord": 46.224002838134769,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 82.17601013183594,
+            "yCoord": 34.66800308227539,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": -143.8080291748047,
+            "yCoord": 23.112001419067384,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": -143.8080291748047,
+            "yCoord": 0.0,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": -41.08800506591797,
+            "yCoord": -69.33600616455078,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 143.8080291748047,
+            "yCoord": 34.66800308227539,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": 123.26402282714844,
+            "yCoord": 46.224002838134769,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 102.72001647949219,
+            "yCoord": 57.78000259399414,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 82.17601013183594,
+            "yCoord": 46.224002838134769,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": -143.8080291748047,
+            "yCoord": 34.66800308227539,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": -143.8080291748047,
+            "yCoord": -11.556000709533692,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": -164.35203552246095,
+            "yCoord": 0.0,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": -164.35203552246095,
+            "yCoord": -11.556000709533692,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": -20.544002532958986,
+            "yCoord": -69.33600616455078,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 143.8080291748047,
+            "yCoord": 23.112003326416017,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 143.8080291748047,
+            "yCoord": 46.224002838134769,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 102.72001647949219,
+            "yCoord": 69.33600616455078,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 61.63200759887695,
+            "yCoord": 46.224002838134769,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "j",
+            "xCoord": -164.35203552246095,
+            "yCoord": 34.66800308227539,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": -123.26402282714844,
+            "yCoord": -11.556000709533692,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": -184.8960418701172,
+            "yCoord": 0.0,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 0.0,
+            "yCoord": -69.33600616455078,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": -20.544002532958986,
+            "yCoord": -57.780006408691409,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "f",
+            "xCoord": 143.8080291748047,
+            "yCoord": 11.556002616882325,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 164.35203552246095,
+            "yCoord": 46.224002838134769,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 143.8080291748047,
+            "yCoord": 57.78000259399414,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 102.72001647949219,
+            "yCoord": 80.89200592041016,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": 61.63200759887695,
+            "yCoord": 57.78000259399414,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 61.63200759887695,
+            "yCoord": 34.66800308227539,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": -102.72001647949219,
+            "yCoord": -11.556000709533692,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": -123.26402282714844,
+            "yCoord": 0.0,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": -184.8960418701172,
+            "yCoord": -11.556000709533692,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": 0.0,
+            "yCoord": -80.89200592041016,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 184.8960418701172,
+            "yCoord": 46.224002838134769,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 164.35203552246095,
+            "yCoord": 34.66800308227539,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 143.8080291748047,
+            "yCoord": 69.33600616455078,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 123.26402282714844,
+            "yCoord": 57.78000259399414,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 82.17601013183594,
+            "yCoord": 80.89200592041016,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 123.26402282714844,
+            "yCoord": 80.89200592041016,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 82.17601013183594,
+            "yCoord": 57.78000259399414,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": -82.17601013183594,
+            "yCoord": -11.556000709533692,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": -184.8960418701172,
+            "yCoord": -23.112001419067384,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": -205.44004821777345,
+            "yCoord": -11.556000709533692,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": 123.26402282714844,
+            "yCoord": 69.33600616455078,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "j",
+            "xCoord": -20.544002532958986,
+            "yCoord": -80.89200592041016,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 205.44004821777345,
+            "yCoord": 46.224002838134769,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 184.8960418701172,
+            "yCoord": 34.66800308227539,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 164.35203552246095,
+            "yCoord": 23.112003326416017,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 164.35203552246095,
+            "yCoord": 69.33600616455078,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 61.63200759887695,
+            "yCoord": 80.89200592041016,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 82.17601013183594,
+            "yCoord": 69.33600616455078,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": -82.17601013183594,
+            "yCoord": -23.112001419067384,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": -164.35203552246095,
+            "yCoord": -23.112001419067384,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": -184.8960418701172,
+            "yCoord": -34.66800308227539,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": -205.44004821777345,
+            "yCoord": 0.0,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": 61.63200759887695,
+            "yCoord": 69.33600616455078,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 205.44004821777345,
+            "yCoord": 57.78000259399414,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 205.44004821777345,
+            "yCoord": 34.66800308227539,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 184.8960418701172,
+            "yCoord": 23.112003326416017,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 164.35203552246095,
+            "yCoord": 11.556002616882325,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 184.8960418701172,
+            "yCoord": 69.33600616455078,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "l",
+            "xCoord": 164.35203552246095,
+            "yCoord": 80.89200592041016,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 61.63200759887695,
+            "yCoord": 92.44800567626953,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "j",
+            "xCoord": -102.72001647949219,
+            "yCoord": -23.112001419067384,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": -164.35203552246095,
+            "yCoord": -34.66800308227539,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": -184.8960418701172,
+            "yCoord": -46.224002838134769,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "j",
+            "xCoord": -205.44004821777345,
+            "yCoord": -34.66800308227539,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": -225.9840545654297,
+            "yCoord": 0.0,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 205.44004821777345,
+            "yCoord": 69.33600616455078,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 225.9840545654297,
+            "yCoord": 34.66800308227539,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 184.8960418701172,
+            "yCoord": 11.556002616882325,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 164.35203552246095,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 184.8960418701172,
+            "yCoord": 57.780006408691409,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 82.17601013183594,
+            "yCoord": 92.44800567626953,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 61.63200759887695,
+            "yCoord": 104.0040054321289,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": -143.8080291748047,
+            "yCoord": -34.66800308227539,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": -184.8960418701172,
+            "yCoord": -57.78000259399414,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": -205.44004821777345,
+            "yCoord": -46.224002838134769,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": -225.9840545654297,
+            "yCoord": 11.556000709533692,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "f",
+            "xCoord": -225.9840545654297,
+            "yCoord": -11.556000709533692,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 205.44004821777345,
+            "yCoord": 80.89200592041016,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 225.9840545654297,
+            "yCoord": 46.224002838134769,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 225.9840545654297,
+            "yCoord": 23.112003326416017,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 164.35203552246095,
+            "yCoord": 57.780006408691409,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 61.63200759887695,
+            "yCoord": 115.56000518798828,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "b",
+            "xCoord": -123.26402282714844,
+            "yCoord": -34.66800308227539,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": -184.8960418701172,
+            "yCoord": -69.33600616455078,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": -205.44004821777345,
+            "yCoord": -57.78000259399414,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": -205.44004821777345,
+            "yCoord": 11.556000709533692,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": -225.9840545654297,
+            "yCoord": 23.112001419067384,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": -205.44004821777345,
+            "yCoord": 23.112001419067384,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 205.44004821777345,
+            "yCoord": 92.44800567626953,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 246.52806091308595,
+            "yCoord": 23.112003326416017,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "f",
+            "xCoord": 225.9840545654297,
+            "yCoord": 11.556002616882325,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 41.08800506591797,
+            "yCoord": 115.56000518798828,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": -184.8960418701172,
+            "yCoord": -80.89200592041016,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": -225.9840545654297,
+            "yCoord": -57.78000259399414,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "l",
+            "xCoord": -225.9840545654297,
+            "yCoord": 34.66800308227539,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 205.44004821777345,
+            "yCoord": 104.0040054321289,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 184.8960418701172,
+            "yCoord": 92.44800567626953,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": 246.52806091308595,
+            "yCoord": 34.66800308227539,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "f",
+            "xCoord": 246.52806091308595,
+            "yCoord": 11.556002616882325,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": 41.08800506591797,
+            "yCoord": 127.11600494384766,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": -164.35203552246095,
+            "yCoord": -80.89200592041016,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": -184.8960418701172,
+            "yCoord": -92.44800567626953,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": -225.9840545654297,
+            "yCoord": -46.224002838134769,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 205.44004821777345,
+            "yCoord": 115.56000518798828,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 164.35203552246095,
+            "yCoord": 92.44800567626953,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 267.0720520019531,
+            "yCoord": 34.66800308227539,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 61.63200759887695,
+            "yCoord": 127.11600494384766,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": -143.8080291748047,
+            "yCoord": -80.89200592041016,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": -164.35203552246095,
+            "yCoord": -69.33600616455078,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": -164.35203552246095,
+            "yCoord": -92.44800567626953,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": -143.8080291748047,
+            "yCoord": -69.33600616455078,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": -143.8080291748047,
+            "yCoord": -92.44800567626953,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 225.9840545654297,
+            "yCoord": 115.56000518798828,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": 205.44004821777345,
+            "yCoord": 127.11600494384766,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 143.8080291748047,
+            "yCoord": 92.44800567626953,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 287.6160583496094,
+            "yCoord": 34.66800308227539,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "l",
+            "xCoord": 267.0720520019531,
+            "yCoord": 46.224002838134769,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 61.63200759887695,
+            "yCoord": 138.67201232910157,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 246.52806091308595,
+            "yCoord": 115.56000518798828,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 225.9840545654297,
+            "yCoord": 104.0040054321289,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 225.9840545654297,
+            "yCoord": 127.11600494384766,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 123.26402282714844,
+            "yCoord": 92.44800567626953,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 143.8080291748047,
+            "yCoord": 104.0040054321289,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 308.1600646972656,
+            "yCoord": 34.66800308227539,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 287.6160583496094,
+            "yCoord": 46.224002838134769,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": 41.08800506591797,
+            "yCoord": 138.67201232910157,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": 308.1600646972656,
+            "yCoord": 46.224002838134769,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 267.0720520019531,
+            "yCoord": 115.56000518798828,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": 225.9840545654297,
+            "yCoord": 92.44800567626953,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "b",
+            "xCoord": 246.52806091308595,
+            "yCoord": 127.11600494384766,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 123.26402282714844,
+            "yCoord": 104.0040054321289,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 164.35203552246095,
+            "yCoord": 104.0040054321289,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 143.8080291748047,
+            "yCoord": 115.56000518798828,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 308.1600646972656,
+            "yCoord": 23.112003326416017,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 287.6160583496094,
+            "yCoord": 115.56000518798828,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 267.0720520019531,
+            "yCoord": 127.11600494384766,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 102.72001647949219,
+            "yCoord": 104.0040054321289,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 184.8960418701172,
+            "yCoord": 104.0040054321289,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": 164.35203552246095,
+            "yCoord": 115.56000518798828,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": 143.8080291748047,
+            "yCoord": 127.11600494384766,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 308.1600646972656,
+            "yCoord": 11.556002616882325,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 287.6160583496094,
+            "yCoord": 23.112003326416017,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": 164.35203552246095,
+            "yCoord": 127.11600494384766,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "b",
+            "xCoord": 308.1600646972656,
+            "yCoord": 115.56000518798828,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 267.0720520019531,
+            "yCoord": 138.67201232910157,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 102.72001647949219,
+            "yCoord": 115.56000518798828,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 102.72001647949219,
+            "yCoord": 92.44800567626953,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 184.8960418701172,
+            "yCoord": 115.56000518798828,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 328.7040710449219,
+            "yCoord": 11.556002616882325,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": 308.1600646972656,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 267.0720520019531,
+            "yCoord": 23.112003326416017,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": 267.0720520019531,
+            "yCoord": 150.22801208496095,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "j",
+            "xCoord": 246.52804565429688,
+            "yCoord": 138.67201232910157,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 123.26402282714844,
+            "yCoord": 115.56000518798828,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": 102.72001647949219,
+            "yCoord": 127.11600494384766,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": 349.2480773925781,
+            "yCoord": 11.556002616882325,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 328.7040710449219,
+            "yCoord": 23.112003326416017,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 287.6160583496094,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": 123.26402282714844,
+            "yCoord": 127.11600494384766,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 287.6160583496094,
+            "yCoord": 150.22801208496095,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 349.2480773925781,
+            "yCoord": 23.112003326416017,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 328.7040710449219,
+            "yCoord": 34.66800308227539,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 267.0720520019531,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 308.1600646972656,
+            "yCoord": 150.22801208496095,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 369.7920837402344,
+            "yCoord": 23.112003326416017,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 349.2480773925781,
+            "yCoord": 34.66800308227539,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 328.7040710449219,
+            "yCoord": 46.224002838134769,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 246.52804565429688,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 267.0720520019531,
+            "yCoord": -11.555998802185059,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": 349.2480773925781,
+            "yCoord": 46.224002838134769,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": 246.52804565429688,
+            "yCoord": -11.555998802185059,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 308.1600646972656,
+            "yCoord": 161.7840118408203,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "f",
+            "xCoord": 308.1600646972656,
+            "yCoord": 138.67201232910157,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 369.7920837402344,
+            "yCoord": 11.556002616882325,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 369.7920837402344,
+            "yCoord": 34.66800308227539,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 225.98403930664063,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 267.0720520019531,
+            "yCoord": -23.11199951171875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "l",
+            "xCoord": 308.1600646972656,
+            "yCoord": 173.3400115966797,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 287.6160583496094,
+            "yCoord": 161.7840118408203,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 369.7920837402344,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 205.44003295898438,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 287.6160583496094,
+            "yCoord": -23.11199951171875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": 267.0720520019531,
+            "yCoord": -34.667999267578128,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 287.6160583496094,
+            "yCoord": 173.3400115966797,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 390.3360900878906,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 349.2480773925781,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": 287.6160583496094,
+            "yCoord": -34.667999267578128,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "j",
+            "xCoord": 246.52804565429688,
+            "yCoord": -34.667999267578128,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": 287.6160583496094,
+            "yCoord": 184.89601135253907,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": 390.3360900878906,
+            "yCoord": 11.556002616882325,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 390.3360900878906,
+            "yCoord": -11.555998802185059,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 349.2480773925781,
+            "yCoord": -11.555998802185059,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 308.1600646972656,
+            "yCoord": 184.89601135253907,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "b",
+            "xCoord": 410.8800964355469,
+            "yCoord": 11.556002616882325,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 410.8800964355469,
+            "yCoord": -11.555998802185059,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 369.7920837402344,
+            "yCoord": -11.555998802185059,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 349.2480773925781,
+            "yCoord": -23.11199951171875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "j",
+            "xCoord": 328.7040710449219,
+            "yCoord": -11.555998802185059,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "b",
+            "xCoord": 328.7040710449219,
+            "yCoord": 184.89601135253907,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 431.4241027832031,
+            "yCoord": -11.555998802185059,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 369.7920837402344,
+            "yCoord": -23.11199951171875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": 451.9681091308594,
+            "yCoord": -11.555998802185059,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 431.4241027832031,
+            "yCoord": -23.11199951171875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 390.3360900878906,
+            "yCoord": -23.11199951171875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 451.9681091308594,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 451.9681091308594,
+            "yCoord": -23.11199951171875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 431.4241027832031,
+            "yCoord": -34.667999267578128,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 390.3360900878906,
+            "yCoord": -34.667999267578128,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 431.4241027832031,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 472.5121154785156,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 410.8800964355469,
+            "yCoord": -34.667999267578128,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 390.3360900878906,
+            "yCoord": -46.2239990234375,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": 410.8800964355469,
+            "yCoord": -46.2239990234375,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 431.4241027832031,
+            "yCoord": 11.556002616882325,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 472.5121154785156,
+            "yCoord": -11.555998802185059,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 369.7920837402344,
+            "yCoord": -46.2239990234375,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 451.9681091308594,
+            "yCoord": 11.556002616882325,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 431.4241027832031,
+            "yCoord": 23.112003326416017,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 493.0561218261719,
+            "yCoord": -11.555998802185059,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 349.2480773925781,
+            "yCoord": -46.2239990234375,
+            "roomType": "NPC"
+        },
+        {
+            "prefabName": "l",
+            "xCoord": 369.7920837402344,
+            "yCoord": -34.667999267578128,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": 451.9681091308594,
+            "yCoord": 23.112003326416017,
+            "roomType": "BOSS"
+        },
+        {
+            "prefabName": "j",
+            "xCoord": 410.8800964355469,
+            "yCoord": 23.112003326416017,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 513.60009765625,
+            "yCoord": -11.555998802185059,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 493.0561218261719,
+            "yCoord": -23.11199951171875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": 328.7040710449219,
+            "yCoord": -46.2239990234375,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "f",
+            "xCoord": 349.2480773925781,
+            "yCoord": -57.779998779296878,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 534.1441040039063,
+            "yCoord": -11.555998802185059,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 513.60009765625,
+            "yCoord": -23.11199951171875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 328.7040710449219,
+            "yCoord": -57.779998779296878,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": 554.6881103515625,
+            "yCoord": -11.555998802185059,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 534.1441040039063,
+            "yCoord": -23.11199951171875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "f",
+            "xCoord": 513.60009765625,
+            "yCoord": -34.667999267578128,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 328.7040710449219,
+            "yCoord": -69.33599853515625,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfj",
+            "xCoord": 308.1600646972656,
+            "yCoord": -57.779998779296878,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 554.6881103515625,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 534.1441040039063,
+            "yCoord": -34.667999267578128,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 328.7040710449219,
+            "yCoord": -80.89199829101563,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 308.1600646972656,
+            "yCoord": -69.33599853515625,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 287.6160583496094,
+            "yCoord": -57.779998779296878,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 308.1600646972656,
+            "yCoord": -46.2239990234375,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": 287.6160583496094,
+            "yCoord": -69.33599853515625,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "j",
+            "xCoord": 534.1441040039063,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bfl",
+            "xCoord": 554.6881103515625,
+            "yCoord": -34.667999267578128,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bl",
+            "xCoord": 349.2480773925781,
+            "yCoord": -80.89199829101563,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 328.7040710449219,
+            "yCoord": -92.447998046875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 267.0720520019531,
+            "yCoord": -57.779998779296878,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 308.1600646972656,
+            "yCoord": -34.667999267578128,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 287.6160583496094,
+            "yCoord": -46.2239990234375,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": 349.2480773925781,
+            "yCoord": -92.447998046875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": 554.6881103515625,
+            "yCoord": -23.11199951171875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 554.6881103515625,
+            "yCoord": -46.2239990234375,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "f",
+            "xCoord": 328.7040710449219,
+            "yCoord": -104.00399780273438,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 246.52804565429688,
+            "yCoord": -57.779998779296878,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 267.0720520019531,
+            "yCoord": -69.33599853515625,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 328.7040710449219,
+            "yCoord": -34.667999267578128,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bjl",
+            "xCoord": 267.0720520019531,
+            "yCoord": -46.2239990234375,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "zart",
+            "xCoord": 246.52804565429688,
+            "yCoord": -46.2239990234375,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jb",
+            "xCoord": 575.2321166992188,
+            "yCoord": -23.11199951171875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": 554.6881103515625,
+            "yCoord": -57.779998779296878,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 267.0720520019531,
+            "yCoord": -80.89199829101563,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "b",
+            "xCoord": 349.2480773925781,
+            "yCoord": -34.667999267578128,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": 595.776123046875,
+            "yCoord": -23.11199951171875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 534.1441040039063,
+            "yCoord": -57.779998779296878,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "bf",
+            "xCoord": 267.0720520019531,
+            "yCoord": -92.447998046875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 595.776123046875,
+            "yCoord": -11.555998802185059,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jl",
+            "xCoord": 534.1441040039063,
+            "yCoord": -46.2239990234375,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "jf",
+            "xCoord": 246.52804565429688,
+            "yCoord": -92.447998046875,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 595.776123046875,
+            "yCoord": 0.0000019073486328125,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fjl",
+            "xCoord": 246.52804565429688,
+            "yCoord": -80.89199829101563,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "fl",
+            "xCoord": 595.776123046875,
+            "yCoord": 11.556002616882325,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "l",
+            "xCoord": 246.52804565429688,
+            "yCoord": -69.33599853515625,
+            "roomType": "harc"
+        },
+        {
+            "prefabName": "l",
+            "xCoord": 595.776123046875,
+            "yCoord": 23.112003326416017,
+            "roomType": "harc"
+        }
+    ]
+}

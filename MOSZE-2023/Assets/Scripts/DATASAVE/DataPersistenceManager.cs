@@ -26,7 +26,7 @@ public class DataPersistenceManager : MonoBehaviour
 
     private void Start() 
     {
-        this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName, useEncryption);
+        this.dataHandler = new FileDataHandler(Application.dataPath, fileName, useEncryption);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         Invoke ("LoadGame", 1f);
     }

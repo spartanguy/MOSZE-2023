@@ -19,7 +19,7 @@ public class MainMenu : MonoBehaviour
     }
     // Ez a funkció fogja ellenőrizni, hogy van-e mentett játék, ha van akkor betölti azt.
     public void LoadGameYes(){
-        string fileLocation = Path.Combine(Application.persistentDataPath, "savefiles.json");
+        string fileLocation = Path.Combine(Application.dataPath, "savefiles.json");
         if(File.Exists(fileLocation)) {
             SceneManager.LoadScene("LoadedGame");
         } else {

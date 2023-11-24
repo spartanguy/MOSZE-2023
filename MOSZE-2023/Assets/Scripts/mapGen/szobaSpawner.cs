@@ -12,9 +12,12 @@ public class szobaSpawner : MonoBehaviour
 
 
 
-    /*void Start(){
-        Destroy(gameObject, waitTime);
-        Invoke("Spawn", 0.1f);
+    void Start(){
+        if(Game.Instance.sceneName == "NewGame")
+        {
+            Destroy(gameObject, waitTime);
+            Invoke("Spawn", 0.1f);
+        }
     }
 
     void Spawn(){
@@ -38,13 +41,16 @@ public class szobaSpawner : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other){
-        templates = GameObject.FindGameObjectWithTag("Szoba").GetComponent<szobaTemplates>();
-        if(other.CompareTag("SpawnPoint")){
-            if(other.GetComponent<szobaSpawner>().spawned==false && spawned==false){
-                Instantiate(templates.zaro, transform.position, Quaternion.identity);
-                Destroy(gameObject);
+        if(Game.Instance.sceneName == "NewGame")
+        {
+            templates = GameObject.FindGameObjectWithTag("Szoba").GetComponent<szobaTemplates>();
+            if(other.CompareTag("SpawnPoint")){
+                if(other.GetComponent<szobaSpawner>().spawned==false && spawned==false){
+                    Instantiate(templates.zaro, transform.position, Quaternion.identity);
+                    Destroy(gameObject);
+                }
+                spawned=true;    
             }
-            spawned=true;    
         }
-    }*/
+    }
 }

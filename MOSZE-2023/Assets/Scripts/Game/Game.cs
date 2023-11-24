@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour, IDataPersistence {
     public PhraseList mainList;
@@ -11,7 +12,9 @@ public class Game : MonoBehaviour, IDataPersistence {
     public List<GameObject> enemies;
     public bool playing;
     public static Game Instance { get; set; }
+    public string sceneName;
     private void Awake() {
+        sceneName = SceneManager.GetActiveScene().name;
         mainList = new PhraseList();
         Instance = this;
         Spwn = new Vector3(0,0,0);

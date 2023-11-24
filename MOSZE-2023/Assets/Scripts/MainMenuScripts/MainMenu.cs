@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
+using System.IO;
+
 
 public class MainMenu : MonoBehaviour
 {
@@ -12,14 +15,13 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject noSavedGameDialog = null;
     // Ez a funkcio vált át a MainMenu Sceneről a MainGame Scene-re, amikor a New Game gombra nyom a user
     public void NewGameYes(){
-
-        SceneManager.LoadScene(newGameLevel);
+        SceneManager.LoadScene("NewGame");
     }
     // Ez a funkció fogja ellenőrizni, hogy van-e mentett játék, ha van akkor betölti azt.
     public void LoadGameYes(){
-        string fileLocation = FileHandler.GetFullPath()
-        if(PlayerPrefs.HasKey("SavedLevel")) {
-            SceneManager.LoadScene("MainGame");
+        string fileLocation = Path.Combine(Application.persistentDataPath, "savefiles.json");
+        if(File.Exists(fileLocation)) {
+            SceneManager.LoadScene("LoadedGame");
         } else {
             noSavedGameDialog.SetActive(true);
         }

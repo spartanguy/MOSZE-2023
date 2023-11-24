@@ -10,8 +10,8 @@ public class Quests : MonoBehaviour
     public static List<Quest> quests;
 
     private void Start() {
-        quest1 = new Quest("Duck Logic", "Gondolkodj gyerek");
-        quest2 = new Quest("Kick Ass", "Csapkodj");
+        quest1 = new Quest("Alfa", "Press Button X near me!");
+        quest2 = new Quest("Alfa", "Press Button X near me!");
         quests = new List<Quest>();
         quests.Add(quest1);
         quests.Add(quest2);

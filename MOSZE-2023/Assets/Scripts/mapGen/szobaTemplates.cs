@@ -5,7 +5,6 @@ using UnityEditor;
 
 public class szobaTemplates : MonoBehaviour, IDataPersistence
 {
-
     public GameObject[] megnyitFent;
     public GameObject[] megnyitJobb;
     public GameObject[] megnyitLent;
@@ -21,6 +20,7 @@ public class szobaTemplates : MonoBehaviour, IDataPersistence
     public GameObject NPC;
     private bool spawnedNPC;
     private int szobaDb, szobaHely;
+    private bool isSaved = false;
 
     void Update(){
         if(Game.Instance.sceneName == "NewGame")
@@ -54,6 +54,11 @@ public class szobaTemplates : MonoBehaviour, IDataPersistence
                     }
                 }
             }
+        }
+        if (varakIdo <= -5 && isSaved == false)
+        {
+            DataPersistenceManager.instance.SaveGame();
+            isSaved = true;
         }
     }
 

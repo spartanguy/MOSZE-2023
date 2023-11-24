@@ -6,7 +6,7 @@ public class PhraseList
 {
     private List<string> phrases = new List<string>
     {
-        "Carpe diem.",
+        "Hello traveller! Can You Do Something For me?",
     };
     private int len;
 
@@ -24,12 +24,17 @@ public class Npc : MonoBehaviour
     public List<GameObject> rewardList;
     public string monologe;
     public Quest quest;
+    private DialogHandler dialogHandler;
+    public Transform dialogBubble;
     public bool isAccepted = false;
     public bool isRewarded = false;
     public bool isCompleted = false;
     public bool isFailed = false;
+    public bool interacted = false;
+
 
     private void Awake() {
+        dialogHandler = (DialogHandler)dialogBubble.GetComponent(typeof(DialogHandler));
         Instance = this;
         monologe = Game.Instance.mainList.getPhrase();
         quest = Quests.GetRandomQuest();
@@ -37,22 +42,36 @@ public class Npc : MonoBehaviour
 
     void Update()
     {
-        Vector2 tp = Player.Instance.gameObject.transform.position;
-        Vector2 p = transform.position;                                                         
-        float dist = Vector2.Distance(tp, p);
-        if (dist < 2)
+        if (Player.Instance.gameObject != null) 
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            Vector2 tp = Player.Instance.gameObject.transform.position;
+            Vector2 p = transform.position;                                                         
+            float dist = Vector2.Distance(tp, p);
+            if (dist < 6)
             {
-                Interact();
+                if (interacted == false)
+                {
+                    dialogBubble.gameObject.SetActive(true);
+                    dialogHandler.Setup("Press E to interact");
+                }
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    Interact();
+                    interacted = true;
+                }
+                if (Input.GetKeyDown(KeyCode.X))
+                {
+                    isCompleted = true;
+                }
+                if (Input.GetKeyDown(KeyCode.Y))
+                {
+                    isFailed = true;
+                }
             }
-            if (Input.GetKeyDown(KeyCode.X))
+            else
             {
-                isCompleted = true;
-            }
-            if (Input.GetKeyDown(KeyCode.Y))
-            {
-                isFailed = true;
+            dialogBubble.gameObject.SetActive(false);
             }
         }
     }
@@ -61,10 +80,10 @@ public class Npc : MonoBehaviour
     {
         if (!isAccepted && !isCompleted && !isFailed)
         {
-            Debug.Log(monologe);
-            Debug.Log(quest.GetQuestName());
-            Debug.Log(quest.GetQuestDescription());
-            Debug.Log("Will u accept? (press e)");
+            dialogHandler.Setup(monologe);
+            dialogBubble.gameObject.SetActive(true);
+            Invoke("AfterMonologe",5f);
+
             if (Input.GetKeyDown(KeyCode.E))
             {
                 isAccepted = true;
@@ -72,22 +91,31 @@ public class Npc : MonoBehaviour
         }
         else if(isAccepted && !isCompleted && !isFailed)
         {
-            Debug.Log("Work on it");
+            dialogHandler.Setup("Work on it");
+            dialogBubble.gameObject.SetActive(true);
         }
         else if(isCompleted && !isRewarded)
         {
-            Debug.Log("Here is your reward!");
+            dialogHandler.Setup("Here is Your Reward");
+            dialogBubble.gameObject.SetActive(true);
             isRewarded = true;
-            Instantiate(rewardList[Random.Range(0,rewardList.Count)], this.transform.position + this.transform.up, new Quaternion(0,0,0,0));
+            Instantiate(rewardList[Random.Range(0,rewardList.Count)], this.transform.position + this.transform.up, Quaternion.identity);
 
         }
         else if(isCompleted && isRewarded)
         {
-            Debug.Log("Nice One!");
+            dialogHandler.Setup("Thank you");
+            dialogBubble.gameObject.SetActive(true);
         }
         else if(isFailed)
         {
-            Debug.Log("You fucked up");
+            dialogHandler.Setup("You failed me");
+            dialogBubble.gameObject.SetActive(true);
         }
+    }
+    private void AfterMonologe()
+    {
+        dialogHandler.Setup(quest.GetQuestDescription());
+        dialogBubble.gameObject.SetActive(true);
     }    
 }

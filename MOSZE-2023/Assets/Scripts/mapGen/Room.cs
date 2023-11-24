@@ -17,6 +17,10 @@ public class Room : MonoBehaviour
     public string szobaType = "harc";
     public string prefabName;
 
+    public GameObject vajto;
+    public GameObject fajto;
+
+
     private void Awake() {
         enemies = new List<GameObject>();
         roomSize = 6f;
@@ -34,8 +38,12 @@ public class Room : MonoBehaviour
             started = true;
             if (szobaType == "harc"){
                 Kamera_kontroller.instance.aktualSzoba = this;
-                for(int i=0; i<ajtoHely.Count; i++){
-                    ajtok.Add(Instantiate(ajto, ajtoHely[i].transform.position, Quaternion.identity));
+                for (int i=0; i<ajtoHely.Count; i++){
+                    if (ajtoHely[i].GetComponent<destroyer>().ajtoForg == "v"){
+                        ajtok.Add(Instantiate(vajto, ajtoHely[i].transform.position, Quaternion.identity));
+                    } else if (ajtoHely[i].GetComponent<destroyer>().ajtoForg == "f"){
+                        ajtok.Add(Instantiate(fajto, ajtoHely[i].transform.position, Quaternion.identity));
+                    }
                 }
                 SpawnEnemies();     
             }

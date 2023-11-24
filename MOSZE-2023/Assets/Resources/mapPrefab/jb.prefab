@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 3194201257510425483}
   - component: {fileID: 8772162210823227085}
   - component: {fileID: 4920541247996123832}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: erzekPont
   m_TagString: zsakUtca
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 2271044126912439295}
   - component: {fileID: 7300942340807568387}
   - component: {fileID: 4664679879466222545}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: destroyer
   m_TagString: destroyer
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 8589013598618778120}
   - component: {fileID: 7049787201415359891}
   - component: {fileID: 5456136238535291359}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ajtok
   m_TagString: falF
   m_Icon: {fileID: 0}
@@ -521,7 +521,8 @@ MonoBehaviour:
   - {fileID: 2491852447547480748}
   - {fileID: 7995545101198885874}
   szobaType: harc
-  vajto: {fileID: 703333256858291274, guid: bc10232109f267446adfdd9414083c93, type: 3}
+  prefabName: jb
+  vajto: {fileID: 703333256858291274, guid: 7bd6b0f2457f72e4eb9eb806e69aba91, type: 3}
   fajto: {fileID: 4457861332647619778, guid: c8fe3c4616dc1494aa086f0addea011f, type: 3}
 --- !u!1 &2916612593711765954
 GameObject:
@@ -535,7 +536,7 @@ GameObject:
   - component: {fileID: 9062615959069095809}
   - component: {fileID: 7990359707815292738}
   - component: {fileID: 4615116214139333557}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spawnpoint
   m_TagString: SpawnPoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -654,7 +655,7 @@ GameObject:
   - component: {fileID: 4350778130529891923}
   - component: {fileID: 1610374624165244684}
   - component: {fileID: 8103271370339175699}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: zsakutcaGat
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -733,7 +734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69cfb26c9fb29cf4985032498bcb40dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fal: {fileID: 7899318133414966621, guid: 9199dc31a07a51b4bbc83b8028b81a96, type: 3}
+  fal: {fileID: 8951019020094748375, guid: 829f6f17cc077bf4fb4f9aebb6490d32, type: 3}
 --- !u!1 &7995545101198885874
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,7 +747,7 @@ GameObject:
   - component: {fileID: 4965066260018983560}
   - component: {fileID: 8404530758301959351}
   - component: {fileID: 8060694644466211155}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: destroyer
   m_TagString: destroyer
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -865,7 +866,7 @@ GameObject:
   - component: {fileID: 4056723139377181541}
   - component: {fileID: 998877157246588933}
   - component: {fileID: 1165214937512144230}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spawnpoint
   m_TagString: SpawnPoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -984,7 +985,7 @@ GameObject:
   - component: {fileID: 8608110436862853145}
   - component: {fileID: 4511592465997350263}
   - component: {fileID: 369034926460518461}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: erzekPont
   m_TagString: zsakUtca
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -1089,7 +1090,7 @@ GameObject:
   - component: {fileID: 2828527374039850378}
   - component: {fileID: 912728178951768815}
   - component: {fileID: 4800179287834692917}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: zsakutcaGat
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1168,4 +1169,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69cfb26c9fb29cf4985032498bcb40dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fal: {fileID: 7899318133414966621, guid: 9199dc31a07a51b4bbc83b8028b81a96, type: 3}
+  fal: {fileID: 8951019020094748375, guid: 829f6f17cc077bf4fb4f9aebb6490d32, type: 3}

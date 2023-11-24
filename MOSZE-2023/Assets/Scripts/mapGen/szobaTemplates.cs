@@ -22,9 +22,6 @@ public class szobaTemplates : MonoBehaviour, IDataPersistence
     private bool spawnedNPC;
     private int szobaDb, szobaHely;
 
-
-
-
     void Update(){
         if(Game.Instance.sceneName == "NewGame")
         {
@@ -45,10 +42,13 @@ public class szobaTemplates : MonoBehaviour, IDataPersistence
             if (varakIdo<=0 && spawnedNPC == false){
                 szobaDb  =((szobak.Count-2)/2);
                 for(int j=0; j<=szobaDb; j++){
-                    szobaHely = (Random.Range(1, szobak.Count));
-                    Instantiate(NPC, szobak[szobaHely].transform.position, Quaternion.identity);
-                    Room szob = (Room)szobak[szobaHely].gameObject.GetComponentInChildren(typeof(Room));
-                    szob.szobaType = "NPC";
+                    szobaHely = (Random.Range(1, szobak.Count-2));
+                    if (szobak[szobaHely] != null)
+                    {
+                        Instantiate(NPC, szobak[szobaHely].transform.position, Quaternion.identity);
+                        Room szob = (Room)szobak[szobaHely].gameObject.GetComponentInChildren(typeof(Room));
+                        szob.szobaType = "NPC";
+                    }
                     if(j==szobaDb){
                         spawnedNPC=true;
                     }
@@ -61,7 +61,7 @@ public class szobaTemplates : MonoBehaviour, IDataPersistence
         if(Game.Instance.sceneName == "LoadedGame")
         {
             for(int i = 0; i<data.RoomDataList.Count; i++){
-                string path = "map/" + data.RoomDataList[i].prefabName;
+                string path = "mapPrefab/" + data.RoomDataList[i].prefabName;
                 GameObject prefab = Resources.Load<GameObject>(path) as GameObject;
                 Vector2 coor = new Vector2(data.RoomDataList[i].xCoord,data.RoomDataList[i].yCoord);
                 GameObject currentRoom  = Instantiate(prefab,coor,Quaternion.identity);
@@ -71,13 +71,7 @@ public class szobaTemplates : MonoBehaviour, IDataPersistence
                 {
                     Instantiate(NPC, currentRoom.transform.position, Quaternion.identity);
                 }
-                else if(szob.szobaType == "BOSS")
-                {
-                    GameObject boss = Instantiate(BOSS, currentRoom.transform.position, Quaternion.identity);
-                    boss.SetActive(false);
-                }
             }
-            return;
         }
     }
 

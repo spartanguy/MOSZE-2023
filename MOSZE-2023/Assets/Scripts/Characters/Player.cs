@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class Player : Character
 {   
@@ -74,6 +75,13 @@ public class Player : Character
             ((Item)other.GetComponent(typeof(Item))).Upgrade();
             BuffManager.Instance.setBuffs();
         }
+    }
+
+    public override void killCharacter(GameObject chara)
+    {
+        Destroy(chara);
+        Time.timeScale = 0f;
+        Game.Instance.lose.SetActive(true);
     }
 
     public int getMaxHp() {

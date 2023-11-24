@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 760899167849837843}
   - component: {fileID: 5563867207597338881}
   - component: {fileID: 6213117361846199915}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: zsakutcaGat
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69cfb26c9fb29cf4985032498bcb40dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fal: {fileID: 7899318133414966621, guid: 9199dc31a07a51b4bbc83b8028b81a96, type: 3}
+  fal: {fileID: 8951019020094748375, guid: 829f6f17cc077bf4fb4f9aebb6490d32, type: 3}
 --- !u!1 &2287323744749552810
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 6594584861395367175}
   - component: {fileID: 456302188809515096}
   - component: {fileID: 3178664619642352040}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: erzekPont
   m_TagString: zsakUtca
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 6057440916626173850}
   - component: {fileID: 3938871463929696219}
   - component: {fileID: 7018306261500935253}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: destroyer
   m_TagString: destroyer
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 3711133817553274593}
   - component: {fileID: 4353141010069165751}
   - component: {fileID: 9018488728999419453}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: destroyer
   m_TagString: destroyer
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -445,7 +445,7 @@ GameObject:
   - component: {fileID: 3534219550720889095}
   - component: {fileID: 2500793579466349178}
   - component: {fileID: 8416700178938500452}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ajtok
   m_TagString: falF
   m_Icon: {fileID: 0}
@@ -532,7 +532,8 @@ MonoBehaviour:
   - {fileID: 3189917120178918368}
   - {fileID: 3256128980482313647}
   szobaType: harc
-  vajto: {fileID: 703333256858291274, guid: bc10232109f267446adfdd9414083c93, type: 3}
+  prefabName: jl
+  vajto: {fileID: 703333256858291274, guid: 7bd6b0f2457f72e4eb9eb806e69aba91, type: 3}
   fajto: {fileID: 4457861332647619778, guid: c8fe3c4616dc1494aa086f0addea011f, type: 3}
 --- !u!1 &4888496549850897113
 GameObject:
@@ -546,7 +547,7 @@ GameObject:
   - component: {fileID: 2581251929775290181}
   - component: {fileID: 224834061886178331}
   - component: {fileID: 7880972914613553421}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spawnpoint
   m_TagString: SpawnPoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -665,7 +666,7 @@ GameObject:
   - component: {fileID: 1836667536844083617}
   - component: {fileID: 2422214644773907806}
   - component: {fileID: 4596264072331391955}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: zsakutcaGat
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -744,7 +745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69cfb26c9fb29cf4985032498bcb40dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fal: {fileID: 5002195041809256416, guid: 8d7a28ea36959534084ec4604d835cea, type: 3}
+  fal: {fileID: 1224794506789749487, guid: f09a6cf3e029a8c41a6d362ee561909e, type: 3}
 --- !u!1 &7383964019262540437
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,7 +757,7 @@ GameObject:
   - component: {fileID: 5970714117618006856}
   - component: {fileID: 4193209469160197242}
   - component: {fileID: 2130422002998485703}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: erzekPont
   m_TagString: zsakUtca
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -862,7 +863,7 @@ GameObject:
   - component: {fileID: 6806772780138226004}
   - component: {fileID: 3185891822226333569}
   - component: {fileID: 5201226443804250564}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spawnpoint (1)
   m_TagString: SpawnPoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}

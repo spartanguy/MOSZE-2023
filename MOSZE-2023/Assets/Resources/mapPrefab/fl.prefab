@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6981283104459992887}
   - component: {fileID: 4085509614694356505}
   - component: {fileID: 8205052104110063038}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spawnpoint
   m_TagString: SpawnPoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 8135881273903825023}
   - component: {fileID: 3482356740039275077}
   - component: {fileID: 343970630966470184}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: erzekPont
   m_TagString: zsakUtca
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 5269877943936768686}
   - component: {fileID: 1273684548306901044}
   - component: {fileID: 7653193312189049862}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: destroyer
   m_TagString: destroyer
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -552,7 +552,7 @@ GameObject:
   - component: {fileID: 7773373803923394905}
   - component: {fileID: 7583810913628157743}
   - component: {fileID: 7922830428178841973}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spawnpoint (1)
   m_TagString: SpawnPoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 5975905384923456724}
   - component: {fileID: 3004897338172484438}
   - component: {fileID: 8931441189692375966}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: destroyer
   m_TagString: destroyer
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -790,7 +790,7 @@ GameObject:
   - component: {fileID: 1694391387661089531}
   - component: {fileID: 6964216073285568903}
   - component: {fileID: 7581297965946966890}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: zsakutcaGat
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -869,7 +869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69cfb26c9fb29cf4985032498bcb40dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fal: {fileID: 5002195041809256416, guid: 8d7a28ea36959534084ec4604d835cea, type: 3}
+  fal: {fileID: 1224794506789749487, guid: f09a6cf3e029a8c41a6d362ee561909e, type: 3}
 --- !u!1 &7960138580305342529
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,7 +881,7 @@ GameObject:
   - component: {fileID: 1891265882689631741}
   - component: {fileID: 7489439930053351467}
   - component: {fileID: 7397924940348165308}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: zsakutcaGat
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -960,7 +960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69cfb26c9fb29cf4985032498bcb40dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fal: {fileID: 5002195041809256416, guid: 8d7a28ea36959534084ec4604d835cea, type: 3}
+  fal: {fileID: 1224794506789749487, guid: f09a6cf3e029a8c41a6d362ee561909e, type: 3}
 --- !u!1 &8061911055752499043
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,7 +972,7 @@ GameObject:
   - component: {fileID: 5625920234382730535}
   - component: {fileID: 3699862025764018935}
   - component: {fileID: 4007412300828934664}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: erzekPont
   m_TagString: zsakUtca
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -1077,7 +1077,7 @@ GameObject:
   - component: {fileID: 9176526128267493870}
   - component: {fileID: 2325393576311977524}
   - component: {fileID: 6304283365229983162}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ajtok
   m_TagString: fal
   m_Icon: {fileID: 0}
@@ -1164,5 +1164,6 @@ MonoBehaviour:
   - {fileID: 6375892684872769447}
   - {fileID: 3935451663359758419}
   szobaType: harc
-  vajto: {fileID: 703333256858291274, guid: bc10232109f267446adfdd9414083c93, type: 3}
+  prefabName: fl
+  vajto: {fileID: 703333256858291274, guid: 7bd6b0f2457f72e4eb9eb806e69aba91, type: 3}
   fajto: {fileID: 4457861332647619778, guid: c8fe3c4616dc1494aa086f0addea011f, type: 3}

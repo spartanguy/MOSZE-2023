@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5677678085520971549}
   - component: {fileID: 1596641675269706563}
   - component: {fileID: 6260248860777523191}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ajtok
   m_TagString: falV
   m_Icon: {fileID: 0}
@@ -96,7 +96,8 @@ MonoBehaviour:
   ajtoHely:
   - {fileID: 4043854430064888755}
   szobaType: harc
-  vajto: {fileID: 703333256858291274, guid: bc10232109f267446adfdd9414083c93, type: 3}
+  prefabName: f
+  vajto: {fileID: 703333256858291274, guid: 7bd6b0f2457f72e4eb9eb806e69aba91, type: 3}
   fajto: {fileID: 4457861332647619778, guid: c8fe3c4616dc1494aa086f0addea011f, type: 3}
 --- !u!1 &2381948688721433844
 GameObject:
@@ -110,7 +111,7 @@ GameObject:
   - component: {fileID: 5474892241495462275}
   - component: {fileID: 421868649837639104}
   - component: {fileID: 1236877035195578389}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spawnpoint
   m_TagString: SpawnPoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -230,7 +231,7 @@ GameObject:
   - component: {fileID: 6747857179247233422}
   - component: {fileID: 7578016961506660467}
   - component: {fileID: 3498922263326048612}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: destroyer
   m_TagString: destroyer
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -348,7 +349,7 @@ GameObject:
   - component: {fileID: 8426741913651623095}
   - component: {fileID: 4627451282234066361}
   - component: {fileID: 9124144462963394148}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: erzekPont
   m_TagString: zsakUtca
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -453,7 +454,7 @@ GameObject:
   - component: {fileID: 6734989588278208475}
   - component: {fileID: 7883604044209328980}
   - component: {fileID: 762566482349353114}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: erzekPont
   m_TagString: zsakUtca
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -558,7 +559,7 @@ GameObject:
   - component: {fileID: 7114849734338681976}
   - component: {fileID: 6679287113253105356}
   - component: {fileID: 3480486157464213525}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: erzekPont
   m_TagString: zsakUtca
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}

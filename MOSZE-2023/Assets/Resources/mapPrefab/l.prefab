@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 1580931525800481633}
   - component: {fileID: 5492361042114362918}
   - component: {fileID: 922326479391231784}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'erzekPont '
   m_TagString: zsakUtca
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 4137690451144210681}
   - component: {fileID: 8034318388782362128}
   - component: {fileID: 7736540125908037513}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spawnpoint
   m_TagString: SpawnPoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 4606241113861799157}
   - component: {fileID: 2896955186478572291}
   - component: {fileID: 7704545495918144674}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ajtok
   m_TagString: falV
   m_Icon: {fileID: 0}
@@ -513,7 +513,8 @@ MonoBehaviour:
   ajtoHely:
   - {fileID: 6205908732826757669}
   szobaType: harc
-  vajto: {fileID: 703333256858291274, guid: bc10232109f267446adfdd9414083c93, type: 3}
+  prefabName: l
+  vajto: {fileID: 703333256858291274, guid: 7bd6b0f2457f72e4eb9eb806e69aba91, type: 3}
   fajto: {fileID: 4457861332647619778, guid: c8fe3c4616dc1494aa086f0addea011f, type: 3}
 --- !u!1 &3730660745324080296
 GameObject:
@@ -526,7 +527,7 @@ GameObject:
   - component: {fileID: 8538460328872166587}
   - component: {fileID: 3722310834275998538}
   - component: {fileID: 8054071602632579884}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: erzekPont
   m_TagString: zsakUtca
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -631,7 +632,7 @@ GameObject:
   - component: {fileID: 2793158893730405433}
   - component: {fileID: 3483406925429783682}
   - component: {fileID: 3658827846620537151}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: erzekPont
   m_TagString: zsakUtca
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -737,7 +738,7 @@ GameObject:
   - component: {fileID: 1836938014155407212}
   - component: {fileID: 5218977132423384789}
   - component: {fileID: 2091702208521268032}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: destroyer
   m_TagString: destroyer
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}

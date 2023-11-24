@@ -4,15 +4,19 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.SceneManagement;
 
-public class Game : MonoBehaviour, IDataPersistence {
+public class Game : MonoBehaviour
+{
     public PhraseList mainList;
     public GameObject player;
     private Vector3 Spwn;
     public int score = 0;
     public List<GameObject> enemies;
+    public GameObject Boss;
     public bool playing;
     public static Game Instance { get; set; }
     public string sceneName;
+    public GameObject win;
+    public GameObject lose;
     private void Awake() {
         sceneName = SceneManager.GetActiveScene().name;
         mainList = new PhraseList();
@@ -21,7 +25,7 @@ public class Game : MonoBehaviour, IDataPersistence {
         StartGame();
     }
     public void StartGame() {
-        GameObject p = Instantiate(player, Spwn, Quaternion.identity);
+        Instantiate(player, Spwn, Quaternion.identity);
         Invoke("",0.1f);
         playing = true;
     }
@@ -59,13 +63,5 @@ public class Game : MonoBehaviour, IDataPersistence {
     }
     public int GetScore() {
         return score;
-    }
-
-
-    public void LoadData(GameData data){
-        this.score = data.scoreBoardData;
-    }
-    public void SaveData(ref GameData data){
-        data.scoreBoardData = this.score;
     }
 }

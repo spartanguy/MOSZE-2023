@@ -8,7 +8,6 @@ public class Room : MonoBehaviour
     private float roomSize;
     [SerializeField] 
     private List<GameObject> enemies;
-    public GameObject ajto;
     [SerializeField] 
     private List<GameObject> ajtok;
 
@@ -38,19 +37,20 @@ public class Room : MonoBehaviour
             started = true;
             if (szobaType == "harc"){
                 Kamera_kontroller.instance.aktualSzoba = this;
-                for (int i=0; i<ajtoHely.Count; i++){
-                    if (ajtoHely[i].GetComponent<destroyer>().ajtoForg == "v"){
-                        ajtok.Add(Instantiate(vajto, ajtoHely[i].transform.position, Quaternion.identity));
-                    } else if (ajtoHely[i].GetComponent<destroyer>().ajtoForg == "f"){
-                        ajtok.Add(Instantiate(fajto, ajtoHely[i].transform.position, Quaternion.identity));
-                    }
-                }
+                SpawnDoors();
                 SpawnEnemies();     
             }
 
             if(szobaType == "NPC"){
                 started = true;
                 Kamera_kontroller.instance.aktualSzoba = this;
+            }
+            if(szobaType == "BOSS"){
+                started = true;
+                Kamera_kontroller.instance.aktualSzoba = this;
+                SpawnDoors();
+                Vector3 p = (transform.position + new Vector3(Random.Range(-roomSize / 2, roomSize / 2),Random.Range(-roomSize / 2, roomSize / 2), 0));
+                enemies.Add(Instantiate(Game.Instance.Boss, p, Quaternion.identity));      
             }
 
         }
@@ -98,5 +98,18 @@ public class Room : MonoBehaviour
     public Vector3 szobaKozepe()
     {
         return new Vector3(this.transform.position.x, this.transform.position.y);
+    }
+    private void SpawnDoors()
+    {
+        for (int i=0; i<ajtoHely.Count; i++){
+            if (ajtoHely[i].GetComponent<destroyer>().ajtoForg == "v")
+            {
+                ajtok.Add(Instantiate(vajto, ajtoHely[i].transform.position, Quaternion.identity));
+            } 
+            else if (ajtoHely[i].GetComponent<destroyer>().ajtoForg == "f")
+            {
+                ajtok.Add(Instantiate(fajto, ajtoHely[i].transform.position, Quaternion.identity));
+            }
+        }
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5521833084036242879}
   - component: {fileID: 337590121627712888}
   - component: {fileID: 632121858860162297}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: zsakutcaGat
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69cfb26c9fb29cf4985032498bcb40dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fal: {fileID: 5002195041809256416, guid: 8d7a28ea36959534084ec4604d835cea, type: 3}
+  fal: {fileID: 1224794506789749487, guid: f09a6cf3e029a8c41a6d362ee561909e, type: 3}
 --- !u!1 &1437613608163310154
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 2289538265682471662}
   - component: {fileID: 1819086922718813612}
   - component: {fileID: 4271871729954184361}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: zsakutcaGat
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69cfb26c9fb29cf4985032498bcb40dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fal: {fileID: 7899318133414966621, guid: 9199dc31a07a51b4bbc83b8028b81a96, type: 3}
+  fal: {fileID: 8951019020094748375, guid: 829f6f17cc077bf4fb4f9aebb6490d32, type: 3}
 --- !u!1 &1622136894666577969
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 2508264356796549340}
   - component: {fileID: 2552568706357765207}
   - component: {fileID: 290021006792889317}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: destroyer
   m_TagString: destroyer
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -516,7 +516,7 @@ GameObject:
   - component: {fileID: 7827460390091228675}
   - component: {fileID: 7472284867249125242}
   - component: {fileID: 6732572062229333806}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: erzekPont
   m_TagString: zsakUtca
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -622,7 +622,7 @@ GameObject:
   - component: {fileID: 4249583986827435025}
   - component: {fileID: 5958855151815922586}
   - component: {fileID: 1837865594210125616}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spawnpoint (2)
   m_TagString: SpawnPoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -741,7 +741,7 @@ GameObject:
   - component: {fileID: 4133601833507934719}
   - component: {fileID: 2382536438573336493}
   - component: {fileID: 5771914675299384581}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: zsakutcaGat
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -820,7 +820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69cfb26c9fb29cf4985032498bcb40dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fal: {fileID: 7899318133414966621, guid: 9199dc31a07a51b4bbc83b8028b81a96, type: 3}
+  fal: {fileID: 8951019020094748375, guid: 829f6f17cc077bf4fb4f9aebb6490d32, type: 3}
 --- !u!1 &5382578230621455142
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,7 +832,7 @@ GameObject:
   - component: {fileID: 4030707633381833666}
   - component: {fileID: 4971820076363310258}
   - component: {fileID: 2453422898514439065}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ajtok
   m_TagString: falF
   m_Icon: {fileID: 0}
@@ -921,7 +921,8 @@ MonoBehaviour:
   - {fileID: 7348177931668563846}
   - {fileID: 9072343544431009287}
   szobaType: harc
-  vajto: {fileID: 703333256858291274, guid: bc10232109f267446adfdd9414083c93, type: 3}
+  prefabName: bfj
+  vajto: {fileID: 703333256858291274, guid: 7bd6b0f2457f72e4eb9eb806e69aba91, type: 3}
   fajto: {fileID: 4457861332647619778, guid: c8fe3c4616dc1494aa086f0addea011f, type: 3}
 --- !u!1 &7348177931668563846
 GameObject:
@@ -935,7 +936,7 @@ GameObject:
   - component: {fileID: 7469589169425027234}
   - component: {fileID: 5190622703024289173}
   - component: {fileID: 4984781334541677105}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: destroyer
   m_TagString: destroyer
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1054,7 +1055,7 @@ GameObject:
   - component: {fileID: 6497076253004998675}
   - component: {fileID: 7898370980817338480}
   - component: {fileID: 5764055355536444818}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spawnpoint
   m_TagString: SpawnPoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1174,7 +1175,7 @@ GameObject:
   - component: {fileID: 9212401265207252454}
   - component: {fileID: 4508487402518303810}
   - component: {fileID: 7075859720014499816}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spawnpoint (1)
   m_TagString: SpawnPoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1294,7 +1295,7 @@ GameObject:
   - component: {fileID: 8780673206683021464}
   - component: {fileID: 3993116679860450408}
   - component: {fileID: 6990060189097686909}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: destroyer
   m_TagString: destroyer
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}

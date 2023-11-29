@@ -30,6 +30,10 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
+
+    public void SaveGameMenu(){
+        Debug.Log("Loading menuuu");
+    }
     //Ezzel a funkcióval lehet visszamenni a MainMenübe
     public void BackToMainmenu() {
         SceneManager.LoadScene("NewMainMenu");

@@ -20,7 +20,6 @@ public class PhraseList
 
 public class Npc : MonoBehaviour
 {
-    public static Npc Instance { get; set; }
     public List<GameObject> rewardList;
     public string monologe;
     public Quest quest;
@@ -35,7 +34,6 @@ public class Npc : MonoBehaviour
 
     private void Awake() {
         dialogHandler = (DialogHandler)dialogBubble.GetComponent(typeof(DialogHandler));
-        Instance = this;
         monologe = Game.Instance.mainList.getPhrase();
         quest = Quests.GetRandomQuest();
     }

@@ -5,8 +5,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour {
 
-    [SerializeField]
-    private float timer = 0;
+    public float timer = 0;
 
     public static Timer Instance { get; set; }
 
@@ -36,6 +35,6 @@ public class Timer : MonoBehaviour {
         return (int) Mathf.Floor(timer / 60);
     }
     public int GetSeconds(){
-        return (int) Mathf.Floor(timer % 60);
+        return (int) Mathf.Floor(timer);
     }
 }

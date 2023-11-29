@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Ranged : Character
 {
-    public static Ranged Instance { get; set; }
     public List<GameObject> weaponList;
     protected Transform player;
     public float desiredDist;
@@ -14,7 +13,7 @@ public class Ranged : Character
     protected SpriteRenderer firepointSprite;
 
     private void Awake() {
-        Instance = this;
+        moveSpeed = 3;
         //Játékos becélzása
         player = Player.Instance.transform;
         //Random fegyver választás
@@ -73,10 +72,9 @@ public class Ranged : Character
     }
     protected float GetFireRange(Gun gun)
     {
-        if (gun.GetDescription() == "Pistol"){return 5;}
-        if (gun.GetDescription() == "Shotgun"){return 3;}
-        if (gun.GetDescription() == "Rifle"){return 3;}
-        if (gun.GetDescription() == "Sniper"){return 8;}
+        if (gun.GetDescription() == "Pistol"){return 6;}
+        if (gun.GetDescription() == "Shotgun"){return 4;}
+        if (gun.GetDescription() == "Rifle"){return 4;}
         else {return 0;}
     }
 }

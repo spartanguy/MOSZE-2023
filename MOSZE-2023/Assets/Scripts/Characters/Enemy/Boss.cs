@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Boss : Character
 {
-    public static Boss Instance { get; set; }
     protected Transform player;
     public float desiredDist;
     public float moveAwayDist;
@@ -20,7 +19,6 @@ public class Boss : Character
     protected SpriteRenderer firepointSprite;
 
     private void Awake() {
-        Instance = this;
         health = 200;
         player = Player.Instance.transform;
         gun = Guns.GetGun(3);

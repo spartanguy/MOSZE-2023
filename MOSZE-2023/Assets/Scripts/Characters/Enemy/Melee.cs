@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Melee : Character
 {
-    public static Melee Instance { get; set; }
+
     protected Transform player;
     protected int damage;
     protected bool readyToHit;
     public GameObject drop;
 
     private void Awake() {
-        Instance = this;
+        moveSpeed = 8f;
         player = Player.Instance.transform;
         damage = 1;
         readyToHit = true;

@@ -7,8 +7,7 @@ using UnityEngine.SceneManagement;
 public class Player : Character
 {   
     public static Player Instance { get; set; }
-    [SerializeField] 
-    protected int maxHp = 5;
+    public int maxHp = 5;
     public GameObject currentWeapon = null;
     protected SpriteRenderer weaponSprite;
     protected SpriteRenderer firepointSprite;

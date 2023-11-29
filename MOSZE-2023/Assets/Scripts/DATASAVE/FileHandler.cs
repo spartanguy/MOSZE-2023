@@ -25,7 +25,7 @@ public class FileDataHandler
         string fullPath = Path.Combine(dataDirPath, dataFileName);
         GameData loadedData = null;
 
-        if (File.Exists(fullPath)) 
+        if (File.Exists(fullPath)) //Csekkeljuk, hogy a fullpathen található-e fájl.
         {
             try 
             {
@@ -86,7 +86,7 @@ public class FileDataHandler
         }
         catch (Exception e) 
         {
-            Debug.LogError("Error occured when trying to save data to file: " + fullPath + "\n" + e);
+            Debug.LogError("Error a fájl mentésekor: " + fullPath + "\n" + e);
         }
     }
 
@@ -100,7 +100,7 @@ public class FileDataHandler
         }
         return modifiedData;
     }
-
+    //Ez a függvény fogja visszaadni a mentésfájl teljes elérhetőségi vonalát.
     public string GetFullPath(){
         string fullPath = Path.Combine(dataDirPath, dataFileName);
         Debug.Log(fullPath);

@@ -19,7 +19,7 @@ public class BuffManager : MonoBehaviour
     void Awake(){
         Instance = this;
     }
-
+    //Ebben a függvényben állítjuk be változókat, majd formázzuk úgy, hogy ki lehessen íratni a képernyőre
     public void setBuffs() {
         speedBuffNumber = Player.Instance.getSpeedBuffUI();
         attackSpeedBuffNumber = Player.Instance.getAttackSpeedBuffUI();

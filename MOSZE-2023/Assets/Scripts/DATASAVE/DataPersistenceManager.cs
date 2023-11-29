@@ -5,7 +5,6 @@ using System.Linq;
 
 public class DataPersistenceManager : MonoBehaviour
 {
-    [Header("File Storage Config")]
     [SerializeField] private string fileName;
     [SerializeField] private bool useEncryption;
 
@@ -19,36 +18,38 @@ public class DataPersistenceManager : MonoBehaviour
     {
         if (instance != null) 
         {
-            Debug.LogError("Found more than one Data Persistence Manager in the scene.");
+            Debug.LogError("Nem található fájl, alapértékre inicializálás.");
         }
         instance = this;
     }
 
     private void Start() 
     {
+        // Itt történik meg az objectek inicializálása
         this.dataHandler = new FileDataHandler(Application.dataPath, fileName, useEncryption);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         Invoke ("LoadGame", 1f);
     }
 
     public void NewGame() 
-    {
+    {   
+        //Új játéknál létrehoz egy új GameData objectet.
         this.gameData = new GameData();
     }
 
     public void LoadGame()
     {
-        // load any saved data from a file using the data handler
+        // load any saved data from a file using the data handler Itt töltődnek be a fájlből az adatok
         this.gameData = dataHandler.Load();
         
-        // if no data can be loaded, initialize to a new game
+        // Ha nincs adat, amit be lehetne tölteni, akkor alapértelmezettre állítja
         if (this.gameData == null) 
         {
-            Debug.Log("No data was found. Initializing data to defaults.");
+            Debug.Log("Nincs adat");
             NewGame();
         }
 
-        // push the loaded data to all other scripts that need it
+        // Ez a ciklus végigmegy az objecteken és betölti az adatokat a többi scripthez
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects) 
         {
             dataPersistenceObj.LoadData(gameData);
@@ -57,22 +58,18 @@ public class DataPersistenceManager : MonoBehaviour
 
     public void SaveGame()
     {
-        // pass the data to other scripts so they can update it
+        // pass the data to other scripts so they can update it Ez a ciklus végigmegy az objecteken és az adatokat elmenti a többi scripthez.
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects) 
         {
             dataPersistenceObj.SaveData(ref gameData);
             Debug.Log(gameData.RoomDataList.Count);
         }
 
-        // save that data to a file using the data handler
+        //Itt elmenti a fájlba az adott data-t.
         dataHandler.Save(gameData);
     }
 
-    /*private void OnApplicationQuit() 
-    {
-        SaveGame();
-    }*/
-
+    // Itt csekkeljük, hogy mely objectek MonoBehaviorok és IDataPersistencek. Majd ezeket eltároljuk egy listában
     private List<IDataPersistence> FindAllDataPersistenceObjects() 
     {
         IEnumerable<IDataPersistence> dataPersistenceObjects = FindObjectsOfType<MonoBehaviour>()

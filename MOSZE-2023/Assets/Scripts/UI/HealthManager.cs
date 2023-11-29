@@ -15,6 +15,7 @@ public class HealthManager : MonoBehaviour
     public int plusHP = 0;
     public int maxPlusHP = 5;
 
+    //Ez a funkció frissíti a kijelzendő életét a játékosnak, ha plusz maxhp-t vesz fel, akkor plusz szív került a canvasra 
     void FixedUpdate() {
         maxHp = Player.Instance.getMaxHp();
         health = Player.Instance.getHealth();

@@ -18,6 +18,7 @@ public class GameData
 
     public void ListDeclaration()
     {
+        //Deklaráljuk a Szobaadatoknak a 
         RoomDataList = new List<RoomData>();
     }
 }

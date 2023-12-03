@@ -1251,7 +1251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: savefiles.json
-  useEncryption: 0
+  useEncryption: 1
 --- !u!4 &303175065
 Transform:
   m_ObjectHideFlags: 0

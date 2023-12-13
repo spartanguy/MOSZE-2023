@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Burn a fő ellenfél által lerakott "csapda".
 public class Burn : MonoBehaviour
 {
+    //Ez vizsgálja mennyi időnként sebez a burn.
     public bool tick = false;
+
+    //Ha a benne álló karakter játékos és tick igaz akkor a játékos megsebzódik.
     private void OnTriggerStay2D(Collider2D other) {
         if (other.tag == "Player")
         {
@@ -18,6 +22,8 @@ public class Burn : MonoBehaviour
             }
         }        
     }
+
+    //tick visszaállítása.
     public void SetTick()
     {
         tick = false;

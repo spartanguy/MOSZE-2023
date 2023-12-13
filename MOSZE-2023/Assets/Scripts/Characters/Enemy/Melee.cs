@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Charater classból származtatott, a közelharci ellenfelek irányításáért felelős class.
 public class Melee : Character
 {
-
+    /*palyer, játékos pozíciója.
+    drop, objektum amit halálkor el tud dobni.
+    damage, az érték amennyivel megsebzi a játékost
+    readyToHit vizsgálja tud e ütni a karakter.*/
     protected Transform player;
     protected int damage;
     protected bool readyToHit;
@@ -20,6 +24,7 @@ public class Melee : Character
         SetSpeed();
     }
 
+    //Frissül a játékos pozíciója, majd ez alapján mozog a karakter, ha elég közel ér megsebzi, majd deaktiválja az ütést.. 
     void FixedUpdate()
     {
         if (player == null) return;
@@ -38,6 +43,7 @@ public class Melee : Character
         }
         MoveCharacter(dir);
     }
+    //Felülírja a karakter killCharacter funkcíóját. Ha meghal egy ellenfél a játékos pontot kap érte, és van esély arra hogy halálakor eldob egy droppot.
     public override void killCharacter(GameObject chara)
     {
         int random = Random.Range(0,4);
@@ -48,6 +54,8 @@ public class Melee : Character
         }
         Destroy(chara);
     }
+
+    //Ütés ujraaktiválása
     protected void getHitReady()
     {
         readyToHit = true;

@@ -2,8 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Charater classból származtatott, a távolharci ellenfelek irányításáért felelős class.
 public class Ranged : Character
 {
+    /*weaponList, fegyverek listája amíből egyet majd megkap.
+    palyer, játékos pozíciója.
+    moveAwayDistance, az az érték aminél távolabb szeretne állni a játékostól.
+    desiredDist az az érték aminél közelebb szeretne állni a játékostól.
+    drop, objektum amit halálkor el tud dobni.
+    firepointSprite a karakterre rögzített fegyver spriteja.*/
     public List<GameObject> weaponList;
     protected Transform player;
     public float desiredDist;
@@ -12,13 +19,13 @@ public class Ranged : Character
     public GameObject weapon;
     protected SpriteRenderer firepointSprite;
 
+    /*Létrejövetelkor meagdjuk a sebességet, beállítjuk a "kergetni" kívánt játékost.
+    Ezek után kap egy random fegyvert a weaponListből, majd a fegyver kinézetét, és a karakter fegyver értékét beállítjuk ezére.
+    beálltjuk a desiredDistet és a moveAwayDistet, majd az életet és az erősítéseket.*/
     private void Awake() {
         moveSpeed = 3;
-        //Játékos becélzása
         player = Player.Instance.transform;
-        //Random fegyver választás
         weapon = weaponList[Random.Range(0,weaponList.Count)];
-        //Ellenfél fegyverRenderer megkeresése
         firepointSprite = firepoint.GetChild(0).GetComponent<SpriteRenderer>();
         Weapon w = (Weapon)weapon.GetComponent(typeof(Weapon));
         w.asd();
@@ -33,6 +40,7 @@ public class Ranged : Character
         
     }
 
+    //Frissül a játékos pozíciója, majd ez alapján mozog a karakter, ha elég közel ér lő.  
     void FixedUpdate()
     {
         if (player == null) return;
@@ -60,6 +68,8 @@ public class Ranged : Character
             Shoot();
         }
     }
+
+    //Felülírja a karakter killCharacter funkcíóját. Ha meghal egy ellenfél a játékos pontot kap érte, és van esély arra hogy halálakor eldob egy droppot.
     public override void killCharacter(GameObject chara)
     {
         int random = Random.Range(0,4);
@@ -70,6 +80,8 @@ public class Ranged : Character
         }
         Destroy(chara);
     }
+
+    //DesiredDist beállytására szolgáló értékek.
     protected float GetFireRange(Gun gun)
     {
         if (gun.GetDescription() == "Pistol"){return 6;}

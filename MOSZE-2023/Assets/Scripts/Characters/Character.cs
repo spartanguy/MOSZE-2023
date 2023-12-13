@@ -2,8 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*A character class felel a jatékos, és az ellenfelek tevékenységéért, ebből vannak származtatva.*/
 public class Character : MonoBehaviour
 {
+    /*firepoint, a karakterre rögzített fegyver pizícióját tárolja.
+    gunEnd  a karakterre rögzített fegyver lövési pontjának pizícióját tárolja.
+    moveSpeed, mozgási sebesség.
+    rb a karakter szimulált "teste".
+    bulletprefab, egy objektumot kell belehelyezni, ez fog lovéskor lövedékként szolgálni.
+    gun, a gun class egyik eleme, a játékos fegyvere.
+    readyToFire, vizsgálja hogy a játékos készen áll-e a lövésre.
+    pickup, vizsgálja hogy a játékos készen áll-e uj tárgy felvételére.
+    health, karakter élete.
+    speedBuff, attackSpeedBuff, shield a játékban megszerzett erősítések száma.*/
     public Transform firepoint;
     public Transform gunEnd;
     public float moveSpeed = 5;
@@ -16,16 +27,22 @@ public class Character : MonoBehaviour
     public int health = 5;
     public int speedBuff, attackSpeedBuff, shield;
 
+    //rb-t egyenlővé tesszük a karakter objektumon elhelyezett RigiBodyval.
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
+    //JKarakter mozgatásáért szolgál az rb-n keresztül.
     public void MoveCharacter(Vector2 direction)
     {
         rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
     }
 
+    /*Karakter lövéséért felel, megvizsgáljuk van-e fegyver és tudunk-e lőni.
+    Ha ezekre a válasz igen, megnézzük az aktuális fegyver hány golyót lő egyszerre, majd ennyi a buletPrefabban elhelyezett objektumot jelenítünk meg.
+    Beállítjuk a megfelelő layerre, majd megadjuk a méretét.
+    Ha mindez megtörtént, lendületet adunk neki a megfelelő irányba, majd szünetetltetjük a lövése lehetőséget.*/
     public void Shoot()
     {
         if (gun == null) return;
@@ -55,6 +72,7 @@ public class Character : MonoBehaviour
         Invoke(nameof(FireCooldown), gun.GetFireRate()*getAttackSpeedBuff());
     }
 
+    //Vizsgálja az egér koordinátáját és az alapjány forgatja és tükrözi a karaktert a megfelelő irányba.
     public void Aim(Vector3 target) 
     {
         Vector3 dir = (firepoint.transform.position - target).normalized;
@@ -72,31 +90,37 @@ public class Character : MonoBehaviour
         }
     }
 
+    //Tüzelés ujra engedélyezése.
     public void FireCooldown() 
     {
         readyToFire = true;
     }
 
+    //Tárgyfelvétel ujra engedéyezése.
     public void PickupCooldown() 
     {
         pickup = true;
     }
 
+    //AttackSpeedBuff getter
     public float getAttackSpeedBuff()
     {
         return (float)(1 - (attackSpeedBuff * 0.05));
     }
-
+    //Sebesség beállítása a speedBuff alapján.
     public void SetSpeed()
     {
         moveSpeed += (float)(speedBuff*0.20);
     }
 
+    //Karakter halála, virtuális class, midnen ebből származtatott classban felül van írva.
     public virtual void killCharacter(GameObject chara)
     {
         Destroy(chara);
     }
 
+    /*Karakter sebződése. Ha van páncél, először az sérül.
+    Amennyiben az élet 0-ra esik, meghíjuk a killCharactert.*/
     public void Damage(int damage, GameObject go) {
         if (shield > 0)
         {
@@ -116,14 +140,17 @@ public class Character : MonoBehaviour
         }
     }
 
+    //Ui
     public int getSpeedBuffUI(){
         return speedBuff;
     }
 
+    //UI
     public int getAttackSpeedBuffUI(){
         return attackSpeedBuff;
     }
     
+    //Ui      
     public int getShieldUI(){
         return shield;
     }

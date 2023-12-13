@@ -1,7 +1,15 @@
 using UnityEngine;
 
+//Gun class konstruktorja alapján tudunk fegyvereket hozzáadni a játékhoz.
 public class Gun {
 
+    /*fireRate, fegyver lovései sebesség.
+    bullets, fegyver hány lövedéket lő.
+    spread, mekkora a fegyver "hordása".
+    speed, a fegyver lövedékének sebessége.
+    damage, fegyver sebzése.
+    description, fegyver neve.
+    */
     private float fireRate;
     private float bullets;
     private float spread;
@@ -9,6 +17,7 @@ public class Gun {
     private int damage;
     private string description;
     
+    //konstruktor.
     public Gun(float fireRate, float bullets, float spread, float speed, int damage, string desc) {
         this.fireRate = fireRate;
         this.bullets = bullets;
@@ -18,6 +27,7 @@ public class Gun {
         this.damage = damage;
     }
 
+    //getterek.
     public float GetFireRate() {
         return fireRate;
     }

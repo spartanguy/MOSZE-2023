@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//A történetelemek eltárolására készült class.
 public class PhraseList
 {
+    /*phrases tárolja a történet részleteket amiket az npck mondhatnak nekünk.*/
     private List<string> phrases = new List<string>
     {
         "Hello traveller! Can You Do Something For me?",
     };
     private int len;
 
+    //Visszaad egyet a történet elemek közül.
     public string getPhrase()
     {
         string phrase = phrases[len];
@@ -17,9 +20,19 @@ public class PhraseList
     }
 
 }
-
+/*Az npc-k karakterek akikkel interakcióba lehet lépni. 
+Mesélnek kicsit majd ajánlanak egy Questet amit ha a játkéos teljesit jutalmat kap.*/
 public class Npc : MonoBehaviour
 {
+    /*rewardlist a lehetséges jutalmak listája.
+    monologe a történet részlet amit a phraseList classtól kap.
+    quest a küldetés amit a játékosnak ad, a Quests classtól kapja.
+    dialogHandler felel a képen megjelenő beszélgetésért.
+    dialogBubble maga a beszélgetésbuborék.
+    isAccepted, a player elfogata e a küldetést.
+    isRevarded, ha megcsinálta megkapta-e érte a jutalmat.
+    isFailed, isCompleted, sikerült-e a küldetés vagy nem.
+    interacted, megtörtént-e az első interakció.*/
     public List<GameObject> rewardList;
     public string monologe;
     public Quest quest;
@@ -31,13 +44,14 @@ public class Npc : MonoBehaviour
     public bool isFailed = false;
     public bool interacted = false;
 
-
+    //Megjelenéskor beállitjuk a dialoghandlert, a monologot, és a questet.
     private void Awake() {
         dialogHandler = (DialogHandler)dialogBubble.GetComponent(typeof(DialogHandler));
         monologe = Game.Instance.mainList.getPhrase();
         quest = Quests.GetRandomQuest();
     }
 
+    //Az updateben vizsgáljuk a játékossal történő interkciókat.
     void Update()
     {
         if (Player.Instance.gameObject != null) 
@@ -74,6 +88,8 @@ public class Npc : MonoBehaviour
         }
     }
 
+    /*Maga az interkció menete, a fenti bool értékek alapján.
+    Ha a játkos teljesítette a küldetést, a rewardListből kap egy random itemet.*/
     void Interact()
     {
         if (!isAccepted && !isCompleted && !isFailed)
@@ -111,6 +127,8 @@ public class Npc : MonoBehaviour
             dialogBubble.gameObject.SetActive(true);
         }
     }
+
+    //
     private void AfterMonologe()
     {
         dialogHandler.Setup(quest.GetQuestDescription());

@@ -72,9 +72,9 @@ public class Ranged : Character
     //Felülírja a karakter killCharacter funkcíóját. Ha meghal egy ellenfél a játékos pontot kap érte, és van esély arra hogy halálakor eldob egy droppot.
     public override void killCharacter(GameObject chara)
     {
-        int random = Random.Range(0,4);
+        int random = Random.Range(0,2);
         Game.Instance.score += 25;
-        if (random == 2)
+        if (random == 1)
         {
             Instantiate(drop,this.transform.position,Quaternion.identity);
         }
@@ -84,9 +84,9 @@ public class Ranged : Character
     //DesiredDist beállytására szolgáló értékek.
     protected float GetFireRange(Gun gun)
     {
-        if (gun.GetDescription() == "Pistol"){return 6;}
-        if (gun.GetDescription() == "Shotgun"){return 4;}
-        if (gun.GetDescription() == "Rifle"){return 4;}
+        if (gun.GetDescription() == "Pistol"){return 9;}
+        if (gun.GetDescription() == "Shotgun"){return 2;}
+        if (gun.GetDescription() == "Rifle"){return 6;}
         else {return 0;}
     }
 }

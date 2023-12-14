@@ -20,6 +20,13 @@ public class Bullet : MonoBehaviour
             DestroyBullet();
             
         }
+        else if(other.tag == "Box")
+        {
+            Box a = (Box)other.gameObject.GetComponent(typeof(Box));
+            GameObject b = other.gameObject;
+            a.Damage(damage,b);
+            DestroyBullet();
+        }
         else DestroyBullet();
     }
 

@@ -15,7 +15,7 @@ public class Melee : Character
     public GameObject drop;
 
     private void Awake() {
-        moveSpeed = 8f;
+        moveSpeed = 5f;
         player = Player.Instance.transform;
         damage = 1;
         readyToHit = true;

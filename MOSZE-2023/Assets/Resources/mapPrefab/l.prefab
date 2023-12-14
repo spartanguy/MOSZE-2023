@@ -514,6 +514,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 003645d2f503b074ab4ad74d40e39bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponDrop:
+  - {fileID: 2476887755027303027, guid: 75198c8afab32ac40a58615fba5c339f, type: 3}
+  - {fileID: 5451918954009619523, guid: 39a05af1a07edb64aa895cd3a01b2e7d, type: 3}
+  - {fileID: 3090932841557699474, guid: e6c6ae610cad9ef4081d6e924dcfc685, type: 3}
   enemies: []
   ajtok: []
   ajtoHely:

@@ -32,7 +32,9 @@ public class Npc : MonoBehaviour
     isAccepted, a player elfogata e a küldetést.
     isRevarded, ha megcsinálta megkapta-e érte a jutalmat.
     isFailed, isCompleted, sikerült-e a küldetés vagy nem.
-    interacted, megtörtént-e az első interakció.*/
+    interacted, megtörtént-e az első interakció.
+    parenten keresztül érjük el a szülő objektumát az NPC-nek, ez más classok eléréséért szükséges
+    playerspeed játékos gyorsaságát tárolja.*/
     public List<GameObject> rewardList;
     public string monologe;
     public Quest quest;
@@ -43,6 +45,8 @@ public class Npc : MonoBehaviour
     public bool isCompleted = false;
     public bool isFailed = false;
     public bool interacted = false;
+    public Transform parent;
+    float playerSpeed; 
 
     //Megjelenéskor beállitjuk a dialoghandlert, a monologot, és a questet.
     private void Awake() {
@@ -66,41 +70,43 @@ public class Npc : MonoBehaviour
                     dialogBubble.gameObject.SetActive(true);
                     dialogHandler.Setup("Press E to interact");
                 }
-
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     Interact();
                     interacted = true;
                 }
-                if (Input.GetKeyDown(KeyCode.X))
-                {
-                    isCompleted = true;
-                }
-                if (Input.GetKeyDown(KeyCode.Y))
-                {
-                    isFailed = true;
-                }
             }
             else
             {
-            dialogBubble.gameObject.SetActive(false);
+                dialogBubble.gameObject.SetActive(false);
             }
         }
     }
 
     /*Maga az interkció menete, a fenti bool értékek alapján.
-    Ha a játkos teljesítette a küldetést, a rewardListből kap egy random itemet.*/
+    Ha a játkos teljesítette a küldetést, a rewardListből kap egy random itemet.
+    Megállítjuk a játékost, hogy ne tudjon elmenni amig az NPC beszél.*/
     void Interact()
     {
         if (!isAccepted && !isCompleted && !isFailed)
         {
+            playerSpeed = Player.Instance.moveSpeed;
+            Player.Instance.moveSpeed = 0;
             dialogHandler.Setup(monologe);
             dialogBubble.gameObject.SetActive(true);
             Invoke("AfterMonologe",5f);
+            Invoke("SetPlayerSpeed",5f);
 
             if (Input.GetKeyDown(KeyCode.E))
             {
                 isAccepted = true;
+                if (isAccepted && quest.GetQuestName() == "Moving The Chest")
+                {
+                    parent = transform.parent;
+                    GameObject room = parent.GetChild(0).gameObject;
+                    Room roomScript =  (Room) room.GetComponent((typeof(Room)));
+                    roomScript.SpawnBoxDestination();
+                }
             }
         }
         else if(isAccepted && !isCompleted && !isFailed)
@@ -126,6 +132,12 @@ public class Npc : MonoBehaviour
             dialogHandler.Setup("You failed me");
             dialogBubble.gameObject.SetActive(true);
         }
+    }
+
+    //Visszaállítjuk a sebességet ha végig ért a beszéd
+    private void SetPlayerSpeed()
+    {
+        Player.Instance.moveSpeed = playerSpeed;
     }
 
     //

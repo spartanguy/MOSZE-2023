@@ -18,6 +18,7 @@ TagManager:
   - falF
   - ajto
   - npc
+  - Box
   layers:
   - Default
   - TransparentFX

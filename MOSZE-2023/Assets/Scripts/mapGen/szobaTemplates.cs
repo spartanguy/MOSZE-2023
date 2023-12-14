@@ -23,8 +23,6 @@ public class szobaTemplates : MonoBehaviour, IDataPersistence
 
     public GameObject NPC;
     private bool spawnedNPC;
-
-    public GameObject MINIBOSS;
     private bool spawnedMiniboss;
 
     private int szobaDb, szobaHely;
@@ -59,7 +57,8 @@ public class szobaTemplates : MonoBehaviour, IDataPersistence
                     {
                         szobaLista szobaL = (szobaLista)szobak[szobaHely].gameObject.GetComponent(typeof(szobaLista));
                         if(szobaL.szobaFoglalt == false){
-                            Instantiate(NPC, szobak[szobaHely].transform.position, Quaternion.identity);
+                            GameObject npc = Instantiate(NPC, szobak[szobaHely].transform.position, Quaternion.identity);
+                            npc.transform.parent = szobak[szobaHely].gameObject.transform;
                             Room szob = (Room)szobak[szobaHely].gameObject.GetComponentInChildren(typeof(Room));
                             szob.szobaType = "NPC";
                             szobaL.szobaFoglalt = true;
@@ -73,6 +72,7 @@ public class szobaTemplates : MonoBehaviour, IDataPersistence
 
             if (varakIdo<=(-1) && spawnedMiniboss == false){
                 szobaDb  = 3;
+                if (szobak.Count < 10){szobaDb = 1;}
                 for(int j=0; j<=szobaDb; j++){
                     szobaHely = (Random.Range(1, szobak.Count-2));
                     if (szobak[szobaHely] != null)
@@ -85,6 +85,7 @@ public class szobaTemplates : MonoBehaviour, IDataPersistence
                         } else {
                             while(szobaL.szobaFoglalt == true){
                                 szobaHely = (Random.Range(1, szobak.Count-2));
+                                if (szobaHely >= szobak.Count || szobak[szobaHely] == null){return;}
                                 szobaL = (szobaLista)szobak[szobaHely].gameObject.GetComponent(typeof(szobaLista));
                             } 
                             Room szob = (Room)szobak[szobaHely].gameObject.GetComponentInChildren(typeof(Room));
@@ -126,9 +127,11 @@ public class szobaTemplates : MonoBehaviour, IDataPersistence
 
     public void SaveData(ref GameData data){
 
-        data.ListDeclaration(); 
         for (int i = 0; i<szobak.Count; i++){
             if (szobak[i] == null){szobak.RemoveAt(i);}
+        }
+        data.ListDeclaration(); 
+        for (int i = 0; i<szobak.Count; i++){
             data.asd.xCoord = szobak[i].transform.position.x;
             data.asd.yCoord = szobak[i].transform.position.y;
             Room szob = (Room)szobak[i].gameObject.GetComponentInChildren(typeof(Room));

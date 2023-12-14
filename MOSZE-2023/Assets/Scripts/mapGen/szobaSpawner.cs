@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class szobaSpawner : MonoBehaviour
 {
+    //szobak megnyitasi iranyait 1-től 4-ig ebben adjuk meg
     public int megnyitIrany;
     private szobaTemplates templates;
     private int random;
@@ -12,14 +13,17 @@ public class szobaSpawner : MonoBehaviour
 
 
 
+    //a játek inditásáért felelős
     void Start(){
         if(Game.Instance.sceneName == "NewGame")
         {
-            Destroy(gameObject, waitTime);
-            Invoke("Spawn", 0.1f);
-        }
+                Destroy(gameObject, waitTime);
+                Invoke("Spawn", 0.1f);
+            }
+    //    }
     }
 
+    //a fent megadott megnyitási irányt figyelembe véve elkezdi egymás mellé spawnolni a megfelelő szobákat
     void Spawn(){
         templates = GameObject.FindGameObjectWithTag("Szoba").GetComponent<szobaTemplates>();
         if(spawned == false){
@@ -40,6 +44,8 @@ public class szobaSpawner : MonoBehaviour
         }
     }
 
+    //a spawn szekvencia végén a "semmibe" nyíló szobák után egy szoba méretű de teljesen zárt úgy nevezett záró szobával biztosítjuk, 
+    //hogy ne lehessen a játékteret elhagyni
     void OnTriggerEnter2D(Collider2D other){
         if(Game.Instance.sceneName == "NewGame")
         {

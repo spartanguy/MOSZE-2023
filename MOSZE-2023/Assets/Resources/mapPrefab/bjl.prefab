@@ -204,7 +204,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2e3187328f2bb61469cd3dd7470ba2b3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ea7af65d9267dc340a3043d3ddf3c79b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -286,27 +286,28 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -9.564628, y: -1.0933377}
+    - - {x: -9.574379, y: -0.9340685}
       - {x: -8.948244, y: -4.835804}
-      - {x: -0.963027, y: -5.385215}
-      - {x: -0.9628586, y: -4.574034}
-      - {x: -8.626597, y: -4.5793595}
-      - {x: -8.631185, y: -1.0954762}
-    - - {x: 8.610985, y: -4.5837393}
-      - {x: 1.1628463, y: -4.577107}
-      - {x: 1.1570606, y: -5.3825836}
+      - {x: -1.0044699, y: -5.371401}
+      - {x: -0.84763813, y: -5.370588}
+      - {x: -0.84584457, y: -4.587848}
+      - {x: -8.789117, y: -4.584235}
+      - {x: -8.784431, y: -0.9332918}
+    - - {x: 8.783257, y: -4.5837393}
+      - {x: 0.8597474, y: -4.5860457}
+      - {x: 0.85883725, y: -5.370394}
       - {x: 8.867106, y: -4.9902062}
-      - {x: 9.584471, y: -0.94589096}
-      - {x: 8.622291, y: -0.94450223}
+      - {x: 9.5669565, y: -0.9351885}
+      - {x: 8.796561, y: -0.93864536}
     - - {x: 9.048911, y: 5.0214276}
       - {x: -8.978742, y: 5.0265694}
-      - {x: -9.582815, y: 1.0932202}
-      - {x: -8.629899, y: 1.0888475}
-      - {x: -8.618613, y: 2.8253112}
-      - {x: -8.627848, y: 4.5591445}
-      - {x: 8.625342, y: 4.5766435}
-      - {x: 8.619257, y: 0.95447224}
-      - {x: 9.564499, y: 0.95519674}
+      - {x: -9.575607, y: 0.93555725}
+      - {x: -8.782156, y: 0.9428967}
+      - {x: -8.7870865, y: 2.815401}
+      - {x: -8.78461, y: 4.5852714}
+      - {x: 8.783006, y: 4.5856533}
+      - {x: 8.785027, y: 0.9400573}
+      - {x: 9.559093, y: 0.93357426}
   m_UseDelaunayMesh: 0
 --- !u!114 &798393697676407263
 MonoBehaviour:
@@ -320,6 +321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3860fc7c9cea09b428911bdaea091072, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  szobaFoglalt: 0
   templates: {fileID: 0}
 --- !u!1 &2437288035155780862
 GameObject:
@@ -469,7 +471,7 @@ Transform:
   m_GameObject: {fileID: 3177446404664711175}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.1, y: 0, z: 0}
+  m_LocalPosition: {x: -9.19, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -587,7 +589,7 @@ Transform:
   m_GameObject: {fileID: 4046789163716211498}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.9, z: 0}
+  m_LocalPosition: {x: 0, y: -4.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -798,7 +800,7 @@ Transform:
   m_GameObject: {fileID: 4997309983574178249}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.1, y: 0, z: 0}
+  m_LocalPosition: {x: 9.19, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1097,7 +1099,7 @@ Transform:
   m_GameObject: {fileID: 7623247833133160042}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.1, y: 0, z: 0}
+  m_LocalPosition: {x: -9.19, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1189,7 +1191,7 @@ Transform:
   m_GameObject: {fileID: 7637974888302721283}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.9, z: 0}
+  m_LocalPosition: {x: 0, y: -4.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1308,7 +1310,7 @@ Transform:
   m_GameObject: {fileID: 8477772538785705750}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.1, y: 0, z: 0}
+  m_LocalPosition: {x: 9.19, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

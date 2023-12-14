@@ -53,6 +53,13 @@ public class Room : MonoBehaviour
                 enemies.Add(Instantiate(Game.Instance.Boss, p, Quaternion.identity));      
             }
 
+            if(szobaType == "MINIBOSS"){
+                started = true;
+                Kamera_kontroller.instance.aktualSzoba = this;
+                SpawnDoors();
+                Vector3 p = (transform.position + new Vector3(Random.Range(-roomSize / 2, roomSize / 2),Random.Range(-roomSize / 2, roomSize / 2), 0));
+                enemies.Add(Instantiate(Game.Instance.Boss, p, Quaternion.identity));      
+            }
         }
     }
     private void FixedUpdate() {

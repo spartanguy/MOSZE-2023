@@ -43,8 +43,9 @@ GameObject:
   - component: {fileID: 8032483304650048576}
   - component: {fileID: 1058982232289927762}
   - component: {fileID: 7251356307527706868}
-  - component: {fileID: -3007303072697803606}
   - component: {fileID: 1176841238001204932}
+  - component: {fileID: 1305994854031740848}
+  - component: {fileID: 25632909032745028}
   m_Layer: 7
   m_Name: Ranged_Enemy
   m_TagString: Enemy
@@ -147,8 +148,60 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &-3007303072697803606
-BoxCollider2D:
+--- !u!114 &1176841238001204932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4235685729967272311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1e38b971cb03e14dabc86d1c3f9ef0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firepoint: {fileID: 292271538086161819}
+  gunEnd: {fileID: 1127674898417569202}
+  moveSpeed: 5
+  rb: {fileID: 7251356307527706868}
+  bulletPrefab: {fileID: 3997948411031634298, guid: 1d0006c672028f4408f51623458a8f15, type: 3}
+  readyToFire: 1
+  pickup: 1
+  health: 5
+  speedBuff: 0
+  attackSpeedBuff: 0
+  shield: 0
+  weaponList:
+  - {fileID: 2160116635939693460, guid: b1d87d7079465e845bf67fe610309e6e, type: 3}
+  - {fileID: 2476887755027303027, guid: 75198c8afab32ac40a58615fba5c339f, type: 3}
+  - {fileID: 5451918954009619523, guid: 39a05af1a07edb64aa895cd3a01b2e7d, type: 3}
+  desiredDist: 0
+  moveAwayDist: 0
+  drop: {fileID: 6380028321467586322, guid: 4ed5bb1a2b52345428ce60fa5b8fd481, type: 3}
+  weapon: {fileID: 0}
+--- !u!95 &1305994854031740848
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4235685729967272311}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 16751b27e82717e468fcf9e669692ec1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!60 &25632909032745028
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -189,40 +242,40 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &1176841238001204932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4235685729967272311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1e38b971cb03e14dabc86d1c3f9ef0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firepoint: {fileID: 292271538086161819}
-  gunEnd: {fileID: 1127674898417569202}
-  moveSpeed: 5
-  rb: {fileID: 7251356307527706868}
-  bulletPrefab: {fileID: 3997948411031634298, guid: 1d0006c672028f4408f51623458a8f15, type: 3}
-  readyToFire: 1
-  pickup: 1
-  health: 5
-  speedBuff: 0
-  attackSpeedBuff: 0
-  shield: 0
-  weaponList:
-  - {fileID: 2160116635939693460, guid: b1d87d7079465e845bf67fe610309e6e, type: 3}
-  - {fileID: 2476887755027303027, guid: 75198c8afab32ac40a58615fba5c339f, type: 3}
-  - {fileID: 5451918954009619523, guid: 39a05af1a07edb64aa895cd3a01b2e7d, type: 3}
-  desiredDist: 0
-  moveAwayDist: 0
-  drop: {fileID: 6380028321467586322, guid: 4ed5bb1a2b52345428ce60fa5b8fd481, type: 3}
-  weapon: {fileID: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 0.35, y: -0.71}
+      - {x: 0.34, y: -0.59999996}
+      - {x: 0.24, y: -0.44}
+      - {x: 0.17, y: -0.35}
+      - {x: 0.28, y: -0.21}
+      - {x: 0.28, y: -0.14999999}
+      - {x: 0.26, y: -0.13}
+      - {x: 0.21, y: -0.11}
+      - {x: 0.24, y: -0.12}
+      - {x: 0.35, y: -0.14}
+      - {x: 0.35999998, y: -0.099999994}
+      - {x: 0.35999998, y: 0}
+      - {x: 0.29999998, y: 0.14}
+      - {x: 0.14999999, y: 0.28}
+      - {x: 0.21, y: 0.35999998}
+      - {x: 0.24, y: 0.48}
+      - {x: 0.17999999, y: 0.64}
+      - {x: 0.12, y: 0.69}
+      - {x: -0.11, y: 0.69}
+      - {x: -0.19999999, y: 0.64}
+      - {x: -0.25, y: 0.52}
+      - {x: -0.25, y: 0.41}
+      - {x: -0.21, y: 0.26999998}
+      - {x: -0.25, y: 0.19}
+      - {x: -0.25, y: -0.099999994}
+      - {x: -0.22999999, y: -0.66999996}
+      - {x: -0.19999999, y: -0.71}
+      - {x: 0.049999997, y: -0.71}
+      - {x: 0, y: -0.42999998}
+      - {x: 0.08, y: -0.68}
+      - {x: 0.099999994, y: -0.71}
+  m_UseDelaunayMesh: 0
 --- !u!1 &5921220315404347835
 GameObject:
   m_ObjectHideFlags: 0

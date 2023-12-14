@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 7298243288430573104}
   - component: {fileID: 5392046617434415790}
   - component: {fileID: 3306758015049989279}
-  - component: {fileID: 7253542159889288960}
+  - component: {fileID: 5646777772629830130}
+  - component: {fileID: 4162129554014281638}
   m_Layer: 7
   m_Name: Melee
   m_TagString: Enemy
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f2e8a994f02a2324dad64002b46a7557, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -138,7 +139,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!60 &7253542159889288960
+--- !u!60 &5646777772629830130
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,7 +175,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.8828125}
+    oldSize: {x: 0.81, y: 1.5}
     newSize: {x: 1, y: 0.8828125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -182,10 +183,68 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.273831, y: 0.46338248}
-      - {x: -0.5357465, y: -0.002978921}
-      - {x: -0.273831, y: -0.4663614}
-      - {x: 0.2619155, y: -0.4663614}
-      - {x: 0.5327674, y: -0.0029788613}
-      - {x: 0.2619155, y: 0.46040356}
+    - - {x: 0.005, y: -0.66999996}
+      - {x: 0.035, y: -0.68}
+      - {x: 0.195, y: -0.68}
+      - {x: 0.205, y: -0.59}
+      - {x: 0.114999995, y: -0.35999998}
+      - {x: 0.105, y: -0.089999996}
+      - {x: 0.325, y: 0.11}
+      - {x: 0.39499998, y: 0.22999999}
+      - {x: 0.39499998, y: 0.26}
+      - {x: 0.305, y: 0.35}
+      - {x: 0.21499999, y: 0.37}
+      - {x: 0.095, y: 0.22}
+      - {x: 0.095, y: 0.65}
+      - {x: 0.015, y: 0.69}
+      - {x: -0.024999999, y: 0.65}
+      - {x: -0.024999999, y: 0.61}
+      - {x: -0.024999999, y: 0.66999996}
+      - {x: -0.044999998, y: 0.71999997}
+      - {x: -0.095, y: 0.74}
+      - {x: -0.285, y: 0.74}
+      - {x: -0.345, y: 0.64}
+      - {x: -0.345, y: 0.55}
+      - {x: -0.325, y: 0.53999996}
+      - {x: -0.205, y: 0.32999998}
+      - {x: -0.175, y: 0.29}
+      - {x: -0.185, y: -0.14999999}
+      - {x: -0.255, y: -0.38}
+      - {x: -0.265, y: -0.66999996}
+      - {x: -0.265, y: -0.68}
+      - {x: -0.095, y: -0.68}
+      - {x: -0.065, y: -0.66999996}
+      - {x: -0.074999996, y: -0.59}
+      - {x: -0.085, y: -0.35999998}
+      - {x: -0.035, y: -0.31}
+    - - {x: -0.125, y: 0.63}
+      - {x: -0.145, y: 0.63}
+      - {x: -0.155, y: 0.64}
+      - {x: -0.155, y: 0.63}
+      - {x: -0.125, y: 0.65999997}
+      - {x: -0.13499999, y: 0.66999996}
+      - {x: -0.145, y: 0.65}
+      - {x: -0.105, y: 0.61}
+      - {x: -0.105, y: 0.62}
   m_UseDelaunayMesh: 0
+--- !u!95 &4162129554014281638
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554747834034392446}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b2dc3eaa5b6915943ac8c4ad24ea9a39, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

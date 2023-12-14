@@ -138,6 +138,7 @@ public class Character : MonoBehaviour
         {
             killCharacter(go);
         }
+        BuffManager.Instance.setBuffs();
     }
 
     //Ui

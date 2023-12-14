@@ -8,7 +8,7 @@ public class Shield : Item
     public override void Upgrade()
     {
         //Möveljuk a karakter shield értékét majd és elpusztítjuk a tárgyat.
-        Player.Instance.shield += 4;
+        Player.Instance.shield += 8;
         Destroy(gameObject);
 
     }

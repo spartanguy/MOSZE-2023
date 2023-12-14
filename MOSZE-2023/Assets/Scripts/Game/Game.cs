@@ -61,7 +61,7 @@ public class Game : MonoBehaviour
     //timer segítségével meghatározzuk a az ellenfelek számát.
     public int GetEnemyAmount() {
         int min = Timer.Instance.GetMinutes();
-        int mi = 1 + (int) Mathf.Floor(min / 2);
+        int mi = 1 + (int) Mathf.Floor(min / 3);
         int ma = (int) Mathf.Floor(min / 1.5f);
         if (ma < 3) ma = 3;
         if (ma > 10) ma = 10;

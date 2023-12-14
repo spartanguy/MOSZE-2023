@@ -23,7 +23,7 @@ public class Ranged : Character
     Ezek után kap egy random fegyvert a weaponListből, majd a fegyver kinézetét, és a karakter fegyver értékét beállítjuk ezére.
     beálltjuk a desiredDistet és a moveAwayDistet, majd az életet és az erősítéseket.*/
     private void Awake() {
-        moveSpeed = 3;
+        moveSpeed = 2;
         player = Player.Instance.transform;
         weapon = weaponList[Random.Range(0,weaponList.Count)];
         firepointSprite = firepoint.GetChild(0).GetComponent<SpriteRenderer>();
@@ -86,7 +86,7 @@ public class Ranged : Character
     {
         if (gun.GetDescription() == "Pistol"){return 9;}
         if (gun.GetDescription() == "Shotgun"){return 2;}
-        if (gun.GetDescription() == "Rifle"){return 6;}
+        if (gun.GetDescription() == "Rifle"){return 3;}
         else {return 0;}
     }
 }

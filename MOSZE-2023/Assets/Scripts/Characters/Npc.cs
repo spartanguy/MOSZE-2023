@@ -8,15 +8,22 @@ public class PhraseList
     /*phrases tárolja a történet részleteket amiket az npck mondhatnak nekünk.*/
     private List<string> phrases = new List<string>
     {
-        "Hello traveller! Can You Do Something For me?",
+        "I'm glad we ran into each other again, it's been 1334 years since I've seen you.\n I saw you here with your father then",
+        "What brings you here?\n You were declared dead in the Norville War 5 years ago...",
+        "Be careful on your way!\n You'll have a hard time getting past Jack Winger.",
+        "Jack Winger wants your head bad\n you're the only one who can beat him",
+        "Since you disappeared our lives have been in ruins...\n Welcome back",
+        "They want your life on every corner\n then watch your back on the road",
+        "I see you got a chip in you...",
+        "They told me about you\n I knew I could trust you! Thanks for your help!",
+        "Jack Winger is crippling our lives...\n you are our only hope",
+        "Watch out for the soldiers\n they're real dangerous mercenaries"
     };
-    private int len;
 
     //Visszaad egyet a történet elemek közül.
-    public string getPhrase()
+    public string getPhrase(int szam)
     {
-        string phrase = phrases[len];
-        return phrase;
+        return phrases[szam];
     }
 
 }
@@ -51,7 +58,7 @@ public class Npc : MonoBehaviour
     //Megjelenéskor beállitjuk a dialoghandlert, a monologot, és a questet.
     private void Awake() {
         dialogHandler = (DialogHandler)dialogBubble.GetComponent(typeof(DialogHandler));
-        monologe = Game.Instance.mainList.getPhrase();
+        monologe = Game.Instance.mainList.getPhrase(Random.Range(0,10));
         quest = Quests.GetRandomQuest();
     }
 
@@ -103,7 +110,7 @@ public class Npc : MonoBehaviour
                 if (isAccepted && quest.GetQuestName() == "Moving The Chest")
                 {
                     parent = transform.parent;
-                    GameObject room = parent.GetChild(0).gameObject;
+                    GameObject room = parent.Find("ajtok").gameObject;
                     Room roomScript =  (Room) room.GetComponent((typeof(Room)));
                     roomScript.SpawnBoxDestination();
                 }

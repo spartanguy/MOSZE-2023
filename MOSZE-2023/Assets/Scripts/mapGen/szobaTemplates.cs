@@ -119,7 +119,8 @@ public class szobaTemplates : MonoBehaviour, IDataPersistence
                 Room szob = (Room)currentRoom.gameObject.GetComponentInChildren(typeof(Room));
                 szob.szobaType = data.RoomDataList[i].roomType;
                 if (szob.szobaType == "NPC"){
-                    Instantiate(NPC, currentRoom.transform.position, Quaternion.identity);
+                    GameObject npc = Instantiate(NPC, currentRoom.transform.position, Quaternion.identity);
+                    npc.transform.parent = currentRoom.transform;
                 }
             }
         }

@@ -90,7 +90,7 @@ public class Room : MonoBehaviour
                 started = true;
                 Kamera_kontroller.instance.aktualSzoba = this;
                 SpawnDoors();
-                Vector3 p = (transform.position + new Vector3(Random.Range(-roomSize / 2, roomSize / 2),Random.Range(-roomSize / 2, roomSize / 2), 0));
+                Vector3 p = (transform.position + new Vector3(Random.Range(-roomSize / 3, roomSize / 3),Random.Range(-roomSize / 3, roomSize / 3), 0));
                 enemies.Add(Instantiate(Game.Instance.Boss, p, Quaternion.identity));      
             }
 
@@ -98,12 +98,12 @@ public class Room : MonoBehaviour
                 started = true;
                 Kamera_kontroller.instance.aktualSzoba = this;
                 SpawnDoors();
-                Vector3 p = (transform.position + new Vector3(Random.Range(-roomSize / 2, roomSize / 2),Random.Range(-roomSize / 2, roomSize / 2), 0));
+                Vector3 p = (transform.position + new Vector3(Random.Range(-roomSize / 3, roomSize / 3),Random.Range(-roomSize / 3, roomSize / 3), 0));
                 enemies.Add(Instantiate(Game.Instance.enemies[0], p, Quaternion.identity));
                 GameObject miniBoss = enemies[0];
                 Ranged script = (Ranged) miniBoss.GetComponent((typeof(Ranged)));
-                script.health += 20;
-                script.attackSpeedBuff += 2;   
+                script.health += 15;
+                script.attackSpeedBuff += 1;   
             }
         }
     }
@@ -159,7 +159,7 @@ public class Room : MonoBehaviour
     //Egy ellenfél megjelenéséért felelős funkció
     private void SpawnOneEnemy() {
         GameObject e = SelectEnemy();
-        Vector3 p = (transform.position + new Vector3(Random.Range(-roomSize / 2, roomSize / 2),Random.Range(-roomSize / 2, roomSize / 2), 0));
+        Vector3 p = (transform.position + new Vector3(Random.Range(-roomSize / 3, roomSize / 3),Random.Range(-roomSize / 3, roomSize / 3), 0));
         enemies.Add(Instantiate(e, p, Quaternion.identity));
     }
 

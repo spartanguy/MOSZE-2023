@@ -27,6 +27,7 @@ public class Game : MonoBehaviour
     public string sceneName;
     public GameObject win;
     public GameObject lose;
+    public GameObject storyCanvas;
 
     //Kezdéskor beállítódik a scene neve és elindul a játék.
     private void Awake() {
@@ -40,8 +41,20 @@ public class Game : MonoBehaviour
     //Lerakódik a játékos és a playing true-ra válik.
     public void StartGame() {
         Instantiate(player, Spwn, Quaternion.identity);
+        Player.Instance.moveSpeed = 0;
         Invoke("",0.1f);
-        playing = true;
+    }
+
+
+    void FixedUpdate() {
+        if (!playing) {
+            if(Input.GetKeyDown(KeyCode.E)){
+                storyCanvas.SetActive(false);
+                playing = true;
+                Player.Instance.moveSpeed = 5;
+                Timer.Instance.timer = 0;
+            }
+        }
     }
 
     //timer segítségével meghatározzuk a firemultiplayer értékét.

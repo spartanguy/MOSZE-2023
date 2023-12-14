@@ -25,17 +25,10 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
     }
     //Ez a funkció állítja le a játékot az InGameMenu elhozatalakor.
-    void Pause() {
+    public void Pause() {
         ingameMenu.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
 
-    public void SaveGameMenu(){
-        Debug.Log("Loading menuuu");
-    }
-    //Ezzel a funkcióval lehet visszamenni a MainMenübe
-    public void BackToMainmenu() {
-        SceneManager.LoadScene("NewMainMenu");
-    }
 }

@@ -1,296 +1,336 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1702604850962706, "dur":28931, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1702604850991648, "dur":189, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1702604850991905, "dur":547, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1702604850992592, "dur":56, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":0, "ts":1702604850992501, "dur":5439, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1702604850997942, "dur":5308141, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1702604856306085, "dur":228, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1702604856306484, "dur":2631, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1702604850992737, "dur":5213, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1702604850997953, "dur":6523, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1702604851139143, "dur":953, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
-,{ "pid":12345, "tid":1, "ts":1702604851140105, "dur":250, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1702604851141618, "dur":789, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Player1bb2ec25-inputdata.json" }}
-,{ "pid":12345, "tid":1, "ts":1702604851142678, "dur":146, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.Data.dll" }}
-,{ "pid":12345, "tid":1, "ts":1702604851142838, "dur":92, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Options.dll" }}
-,{ "pid":12345, "tid":1, "ts":1702604851140102, "dur":2859, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1702604851147366, "dur":166, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1702604851148273, "dur":193184, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1702604851348656, "dur":135, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1702604851348655, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1702604851348816, "dur":1486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1702604851350307, "dur":4955780, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1702604850992793, "dur":5181, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1702604850997977, "dur":1235, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1702604850999212, "dur":5270, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1702604851004512, "dur":74, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":2, "ts":1702604851004492, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":2, "ts":1702604851006633, "dur":3539, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":2, "ts":1702604851010234, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1702604851011454, "dur":2433, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1702604851014024, "dur":207, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
-,{ "pid":12345, "tid":2, "ts":1702604851014021, "dur":211, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":2, "ts":1702604851014525, "dur":3587, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":2, "ts":1702604851019815, "dur":10422, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851033166, "dur":140, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1702604851030331, "dur":3034, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851034956, "dur":86, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1702604851033504, "dur":1574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851035185, "dur":3668, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851039266, "dur":75, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1702604851039376, "dur":3048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851042558, "dur":3379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851046044, "dur":3811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851049939, "dur":2514, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Scripts.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851052540, "dur":1556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851054216, "dur":2944, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.2D.IK.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851057235, "dur":2128, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851059518, "dur":3898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851063528, "dur":2399, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851069701, "dur":68, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1702604851066034, "dur":3756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851069914, "dur":2299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851072415, "dur":3828, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851076435, "dur":3215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851079850, "dur":2395, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851082380, "dur":2464, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851084949, "dur":1627, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851086663, "dur":1865, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851090648, "dur":71, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1702604851088616, "dur":2145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851090905, "dur":2185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851093291, "dur":2031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1702604851095422, "dur":2944, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":2, "ts":1702604851098496, "dur":2711, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":2, "ts":1702604851101284, "dur":208, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":2, "ts":1702604851101281, "dur":217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":2, "ts":1702604851101598, "dur":61, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1702604851104617, "dur":288, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1702604851101693, "dur":3250, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":2, "ts":1702604851105192, "dur":2112, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":2, "ts":1702604851107464, "dur":4077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/resources.assets" }}
-,{ "pid":12345, "tid":2, "ts":1702604851111661, "dur":10202, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/level2" }}
-,{ "pid":12345, "tid":2, "ts":1702604851122011, "dur":1602, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/level0" }}
-,{ "pid":12345, "tid":2, "ts":1702604851123729, "dur":3997, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":2, "ts":1702604851127820, "dur":5178287, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1702604850992773, "dur":5187, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1702604850997972, "dur":1084, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1702604850999057, "dur":147, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1702604850999205, "dur":5280, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1702604851004493, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":3, "ts":1702604851006513, "dur":3106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":3, "ts":1702604851009682, "dur":59, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1702604851009679, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1702604851010432, "dur":2456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1702604851012964, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1702604851013323, "dur":928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1702604851014306, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":3, "ts":1702604851014563, "dur":2109, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":3, "ts":1702604851016742, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851016739, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851016950, "dur":7920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851027249, "dur":4129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851031455, "dur":2993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851034642, "dur":51, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1702604851034718, "dur":2653, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851037480, "dur":2698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851042985, "dur":94, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1702604851040299, "dur":2830, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851043285, "dur":2618, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.Burst.Unsafe.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851049806, "dur":262, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1702604851045997, "dur":4101, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851050194, "dur":2477, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851052788, "dur":1447, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851057601, "dur":63, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1702604851054436, "dur":3243, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851057825, "dur":2489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851063828, "dur":133, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1702604851060439, "dur":3536, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851064181, "dur":3184, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851067463, "dur":2565, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851070109, "dur":2785, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851073003, "dur":2338, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851075435, "dur":3455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.PropertiesModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851078989, "dur":2616, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851081729, "dur":3588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851085470, "dur":2361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851088003, "dur":2548, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851090700, "dur":210, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1702604851090927, "dur":2341, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851093333, "dur":55, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityPlayer.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851093330, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851093406, "dur":31941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":3, "ts":1702604851125495, "dur":2080, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":3, "ts":1702604851127633, "dur":5178473, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1702604850992821, "dur":5162, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1702604850997987, "dur":1194, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1702604850999181, "dur":5430, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1702604851004625, "dur":80, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
-,{ "pid":12345, "tid":4, "ts":1702604851004611, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1702604851138399, "dur":2885, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1702604851141491, "dur":5164576, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1702604850992855, "dur":5140, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1702604850998000, "dur":1340, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1702604850999341, "dur":5139, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1702604851004927, "dur":168, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.IK.Runtime.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851005097, "dur":479, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Burst.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851005578, "dur":925, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851006506, "dur":182, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Animation.Runtime.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851006690, "dur":124, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Tilemap.Extras.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851006816, "dur":600, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851007420, "dur":114, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InternalAPIEngineBridge.001.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851007537, "dur":136, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Common.Runtime.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851007675, "dur":431, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851008108, "dur":238, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851008349, "dur":154, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Scripts.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851008506, "dur":596, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Collections.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851009107, "dur":265, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.SpriteShape.Runtime.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851009375, "dur":104, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.PixelPerfect.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851009481, "dur":928, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851010412, "dur":552, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851010966, "dur":127, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":5, "ts":1702604851011190, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"ProjectSettings\\BurstAotSettings_StandaloneWindows.json" }}
-,{ "pid":12345, "tid":5, "ts":1702604851004491, "dur":6809, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
-,{ "pid":12345, "tid":5, "ts":1702604851012213, "dur":92, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1702604851016127, "dur":5283791, "ph":"X", "name": "GenerateNativePluginsForAssemblies",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
-,{ "pid":12345, "tid":5, "ts":1702604856304911, "dur":1122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Plugins/x86_64/lib_burst_generated.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604850992897, "dur":5105, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1702604850998005, "dur":1025, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1702604850999031, "dur":726, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1702604850999757, "dur":4726, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1702604851004514, "dur":75, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
-,{ "pid":12345, "tid":6, "ts":1702604851004493, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":6, "ts":1702604851007983, "dur":2566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":6, "ts":1702604851010969, "dur":1404, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":6, "ts":1702604851012599, "dur":1566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1702604851014267, "dur":146, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1702604851014265, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1702604851014706, "dur":3282, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1702604851018076, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":6, "ts":1702604851019691, "dur":10980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":6, "ts":1702604851030800, "dur":6102, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851036978, "dur":4010, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851041123, "dur":3842, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851045058, "dur":2345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851047517, "dur":2822, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.Collections.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851053062, "dur":182, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1702604851050453, "dur":2833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.2D.Common.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851056833, "dur":81, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1702604851053374, "dur":3596, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851057066, "dur":2472, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851059687, "dur":2313, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851062140, "dur":2875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851065114, "dur":2751, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851068001, "dur":2899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851074173, "dur":91, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1702604851070983, "dur":3301, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851076762, "dur":98, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1702604851074420, "dur":2459, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851077005, "dur":2428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851080237, "dur":57, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1702604851080299, "dur":4466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851084962, "dur":3017, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851088161, "dur":131, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1702604851088298, "dur":2684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851091073, "dur":2373, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1702604851093533, "dur":2324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":6, "ts":1702604851095947, "dur":9804, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1702604851105858, "dur":45781, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1702604851151776, "dur":5154309, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1702604850992939, "dur":5071, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1702604850998013, "dur":1197, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1702604850999210, "dur":5269, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1702604851004501, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1702604851006312, "dur":3313, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/app.info" }}
-,{ "pid":12345, "tid":7, "ts":1702604851009629, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":7, "ts":1702604851010134, "dur":2092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":7, "ts":1702604851012402, "dur":147, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
-,{ "pid":12345, "tid":7, "ts":1702604851012394, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":7, "ts":1702604851012565, "dur":1874, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":7, "ts":1702604851014501, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":7, "ts":1702604851015147, "dur":1288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":7, "ts":1702604851016511, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851016508, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851016885, "dur":1874, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851019711, "dur":5367, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851025232, "dur":74, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1702604851027250, "dur":3928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851037871, "dur":60, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1702604851031282, "dur":6712, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851038071, "dur":70, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1702604851038147, "dur":3089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851041311, "dur":3608, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851045005, "dur":2373, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851047516, "dur":3273, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851050912, "dur":3428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851057481, "dur":179, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1702604851054431, "dur":3242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851057772, "dur":90, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1702604851060449, "dur":87, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1702604851057866, "dur":2682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851060632, "dur":2621, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851063338, "dur":2154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851065606, "dur":1860, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851067542, "dur":3113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851070745, "dur":3129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851074112, "dur":134, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1702604851074253, "dur":3188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851077552, "dur":2831, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851082975, "dur":116, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1702604851080499, "dur":2628, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851083226, "dur":2788, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851086098, "dur":2164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851088362, "dur":1903, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851092026, "dur":211, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1702604851090388, "dur":1871, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851092378, "dur":2277, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1702604851094760, "dur":9603, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1702604851104528, "dur":21971, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":7, "ts":1702604851104525, "dur":21979, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":7, "ts":1702604851126524, "dur":94, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1702604851126631, "dur":2009, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":7, "ts":1702604851128701, "dur":5177371, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1702604850992978, "dur":5068, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1702604850998047, "dur":1064, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1702604850999111, "dur":5499, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1702604851004611, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":8, "ts":1702604851007861, "dur":1864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":8, "ts":1702604851009782, "dur":216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":8, "ts":1702604851010358, "dur":1904, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":8, "ts":1702604851012332, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1702604851012530, "dur":1530, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1702604851014138, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1702604851014553, "dur":2523, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1702604851017149, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Temp\\StagingArea\\WindowsPlayer.exe" }}
-,{ "pid":12345, "tid":8, "ts":1702604851017147, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MOSZE-2023.exe" }}
-,{ "pid":12345, "tid":8, "ts":1702604851017222, "dur":2113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023.exe" }}
-,{ "pid":12345, "tid":8, "ts":1702604851019795, "dur":10570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851030441, "dur":6091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851036626, "dur":7646, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851044407, "dur":2260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851046810, "dur":3074, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.2D.PixelPerfect.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851049954, "dur":2176, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851052236, "dur":1637, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851053941, "dur":3187, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/Unity.Burst.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851057231, "dur":1778, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851059187, "dur":2379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851061654, "dur":2504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851064292, "dur":2345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851066862, "dur":3156, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851070104, "dur":2395, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851072693, "dur":2393, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851075482, "dur":2941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851078495, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851078572, "dur":2216, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851080924, "dur":2379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851083391, "dur":2947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851086446, "dur":2406, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851088957, "dur":2413, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851091455, "dur":2518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1702604851094062, "dur":26084, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/sharedassets1.resource" }}
-,{ "pid":12345, "tid":8, "ts":1702604851120254, "dur":2769, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/level1" }}
-,{ "pid":12345, "tid":8, "ts":1702604851123157, "dur":6273, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/ASadg/MOSZE-2023_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1702604851129526, "dur":5176543, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1702604856314041, "dur":2090, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1702608138643834, "dur":37670, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1702608138681516, "dur":202, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1702608138681771, "dur":443, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1702608138682359, "dur":97, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":0, "ts":1702608138682551, "dur":55, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/level1" }}
+,{ "pid":12345, "tid":0, "ts":1702608138682614, "dur":52, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/level2" }}
+,{ "pid":12345, "tid":0, "ts":1702608138682714, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1702608138682820, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":0, "ts":1702608138683059, "dur":78, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1702608138683143, "dur":58, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":0, "ts":1702608138683714, "dur":88, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1702608138684304, "dur":52, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1702608138684706, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1702608138685335, "dur":63, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1702608138685518, "dur":63, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1702608138685721, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1702608138685777, "dur":78, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1702608138687475, "dur":54, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":0, "ts":1702608138687817, "dur":68, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":0, "ts":1702608138688001, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":0, "ts":1702608138689152, "dur":62, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":0, "ts":1702608138682252, "dur":7036, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1702608138689291, "dur":378471, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1702608139067764, "dur":265, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1702608139068277, "dur":4218, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1702608138682799, "dur":6501, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1702608138689303, "dur":9296, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1702608138706873, "dur":1161, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":1, "ts":1702608138708041, "dur":152, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1702608138708215, "dur":203, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1702608138708748, "dur":529, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":1, "ts":1702608138709284, "dur":614, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1702608138709902, "dur":121, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":1, "ts":1702608138710025, "dur":272, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1702608138710299, "dur":20830, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1702608138731300, "dur":321, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Player140d0dfe-inputdata.json" }}
+,{ "pid":12345, "tid":1, "ts":1702608138708039, "dur":24308, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1702608138736046, "dur":324, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1702608138736377, "dur":118, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1702608138736923, "dur":320686, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1702608139065940, "dur":194, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1702608139065938, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1702608139066170, "dur":1535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1702608138682957, "dur":6411, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1702608138689706, "dur":630, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138690713, "dur":788, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138689372, "dur":2683, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1702608138692056, "dur":6552, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1702608138698651, "dur":75, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1702608138698619, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1702608138701796, "dur":2768, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1702608138704628, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1702608138704625, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1702608138704740, "dur":3062, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1702608138707971, "dur":83, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1702608138707967, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1702608138708183, "dur":2884, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1702608138711139, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1702608138711136, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1702608138711379, "dur":1943, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1702608138713400, "dur":72, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138713396, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138714598, "dur":15049, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138734721, "dur":701, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1702608138729749, "dur":5691, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138735650, "dur":1426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138737162, "dur":1638, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138738880, "dur":2661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138741630, "dur":3336, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138745073, "dur":4795, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138749965, "dur":4363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138754469, "dur":5611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138760199, "dur":3473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138763800, "dur":4381, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138768275, "dur":2967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138771350, "dur":3324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138774795, "dur":2360, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138777270, "dur":4091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138781484, "dur":5063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138786668, "dur":4240, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138791115, "dur":4099, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138795314, "dur":4144, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1702608138799594, "dur":4902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":2, "ts":1702608138804834, "dur":3045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1702608138807992, "dur":53141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1702608138861225, "dur":206521, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1702608138682865, "dur":6443, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1702608138690765, "dur":630, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\PlayerBuildProgramLibrary.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1702608138689354, "dur":2583, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1702608138691937, "dur":6669, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1702608138698642, "dur":97, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1702608138698620, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1702608138700668, "dur":5026, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1702608138705770, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1702608138705888, "dur":2385, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1702608138708379, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1702608138711496, "dur":76, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1702608138708466, "dur":3209, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1702608138711756, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1702608138712075, "dur":1816, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1702608138713969, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":3, "ts":1702608138714094, "dur":1171, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1702608138719641, "dur":4353, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":3, "ts":1702608138724188, "dur":4213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1702608138728573, "dur":2548, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1702608138736489, "dur":280, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1702608138731241, "dur":5549, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1702608138736930, "dur":3297, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll" }}
+,{ "pid":12345, "tid":3, "ts":1702608138740323, "dur":2912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Scripts.dll" }}
+,{ "pid":12345, "tid":3, "ts":1702608138743323, "dur":4322, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1702608138747736, "dur":5109, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1702608138752941, "dur":7156, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1702608138763198, "dur":16493, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1702608138779852, "dur":5852, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1702608138790759, "dur":118, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1702608138785786, "dur":5236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1702608138791157, "dur":3563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1702608138794936, "dur":4123, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1702608138799151, "dur":2997, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":3, "ts":1702608138802285, "dur":3251, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1702608138806670, "dur":3178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":3, "ts":1702608138810003, "dur":10579, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/resources.assets" }}
+,{ "pid":12345, "tid":3, "ts":1702608138820710, "dur":4896, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1702608138825670, "dur":242093, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1702608138682922, "dur":6437, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1702608138689602, "dur":501, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.TundraBackend.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138689363, "dur":1866, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1702608138691229, "dur":7678, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1702608138698920, "dur":66, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
+,{ "pid":12345, "tid":4, "ts":1702608138698908, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1702608138706181, "dur":50, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1702608138702913, "dur":3405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1702608138706477, "dur":76, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
+,{ "pid":12345, "tid":4, "ts":1702608138706474, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1702608138706871, "dur":4114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1702608138711049, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1702608138711372, "dur":2473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1702608138713928, "dur":69, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Temp\\StagingArea\\WindowsPlayer.exe" }}
+,{ "pid":12345, "tid":4, "ts":1702608138713927, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023.exe" }}
+,{ "pid":12345, "tid":4, "ts":1702608138714006, "dur":177, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1702608138714187, "dur":3680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023.exe" }}
+,{ "pid":12345, "tid":4, "ts":1702608138725090, "dur":98, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1702608138717990, "dur":7229, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138725352, "dur":4755, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138730289, "dur":5643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138736068, "dur":1902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138740917, "dur":203, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1702608138738103, "dur":3032, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138741242, "dur":4515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138745870, "dur":5461, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138755975, "dur":124, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1702608138751451, "dur":4736, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138756346, "dur":135, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1702608138756488, "dur":4845, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138765751, "dur":58, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1702608138761446, "dur":4433, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138766569, "dur":2306, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138768967, "dur":3735, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138775673, "dur":139, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1702608138772789, "dur":3039, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138776030, "dur":2556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138778686, "dur":6994, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138785771, "dur":5261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138791292, "dur":3668, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138795060, "dur":3499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138798637, "dur":77, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityPlayer.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138798633, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138798771, "dur":68582, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":4, "ts":1702608138867412, "dur":200332, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1702608138682984, "dur":6392, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1702608138690028, "dur":724, "ph":"X", "name": "File",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Scripts.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138689379, "dur":2050, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1702608138691430, "dur":7420, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1702608138698851, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":5, "ts":1702608138708093, "dur":2471, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":5, "ts":1702608138710658, "dur":84, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
+,{ "pid":12345, "tid":5, "ts":1702608138710654, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1702608138711330, "dur":1652, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1702608138713098, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138713095, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138714566, "dur":3380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138718118, "dur":11168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138733911, "dur":1473, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1702608138729410, "dur":6021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138747292, "dur":88, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1702608138742016, "dur":5398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138748462, "dur":6322, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138754880, "dur":5260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138760242, "dur":4149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138764694, "dur":3954, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138768767, "dur":3648, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138775588, "dur":129, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1702608138772516, "dur":3226, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138775858, "dur":2181, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138778267, "dur":7142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138790524, "dur":72, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1702608138785524, "dur":5097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138790781, "dur":2576, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138796575, "dur":196, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1702608138793501, "dur":3286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138796892, "dur":4100, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1702608138801155, "dur":11604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1702608138812955, "dur":6777, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/level1" }}
+,{ "pid":12345, "tid":5, "ts":1702608138819841, "dur":14981, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1702608138835164, "dur":232578, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1702608138683058, "dur":6325, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1702608138689387, "dur":1146, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1702608138691255, "dur":639, "ph":"X", "name": "File",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\sharedassets1.assets" }}
+,{ "pid":12345, "tid":6, "ts":1702608138690534, "dur":2041, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1702608138692577, "dur":6028, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1702608138699114, "dur":147, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138699263, "dur":600, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Burst.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138699867, "dur":7497, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138707368, "dur":238, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138707797, "dur":1674, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138709475, "dur":844, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138710329, "dur":5936, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138716270, "dur":393, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138716665, "dur":196, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Scripts.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138716864, "dur":630, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Collections.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138717498, "dur":251, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138717751, "dur":124, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138717877, "dur":1206, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138719089, "dur":650, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138719743, "dur":158, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138720021, "dur":69, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"ProjectSettings\\BurstAotSettings_StandaloneWindows.json" }}
+,{ "pid":12345, "tid":6, "ts":1702608138720092, "dur":67, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\User\\Desktop\\IMRE\\MOSZE-2023\\MOSZE-2023\\Library\\PackageCache\\com.unity.burst@1.8.8\\.Runtime\\bcl.exe" }}
+,{ "pid":12345, "tid":6, "ts":1702608138698620, "dur":21541, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":6, "ts":1702608138720164, "dur":207, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1702608138721081, "dur":71, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\AsyncPluginsFromLinker\\x86_64\\lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138721078, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138721915, "dur":2112, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138724069, "dur":2364, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138726560, "dur":3867, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138734809, "dur":640, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1702608138730509, "dur":4971, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138737250, "dur":1710, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138739044, "dur":3358, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.Collections.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138742503, "dur":3634, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138746226, "dur":5571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138756364, "dur":218, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1702608138751908, "dur":4749, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138760823, "dur":111, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1702608138756776, "dur":4175, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138761152, "dur":2588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138763830, "dur":3991, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138767998, "dur":5199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138773290, "dur":3605, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138782374, "dur":52, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1702608138776991, "dur":5515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138782728, "dur":8799, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138791617, "dur":7174, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1702608138799724, "dur":10671, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1702608138819357, "dur":292, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1702608138810531, "dur":9166, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/level2" }}
+,{ "pid":12345, "tid":6, "ts":1702608138819907, "dur":5995, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1702608138826006, "dur":241759, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1702608138683101, "dur":6369, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1702608138689474, "dur":1137, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1702608138690612, "dur":849, "ph":"X", "name": "File",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":7, "ts":1702608138690612, "dur":1181, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1702608138691794, "dur":6809, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1702608138698630, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1702608138700057, "dur":4139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/app.info" }}
+,{ "pid":12345, "tid":7, "ts":1702608138704201, "dur":241, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1702608138704543, "dur":1861, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1702608138706560, "dur":206, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1702608138706937, "dur":2157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1702608138709171, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1702608138710209, "dur":1767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1702608138712042, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1702608138712594, "dur":1305, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1702608138714091, "dur":107, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1702608138714819, "dur":5675, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138720592, "dur":4117, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138724847, "dur":54, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1702608138724909, "dur":4845, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138729870, "dur":3241, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138736383, "dur":152, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1702608138733235, "dur":3316, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138736658, "dur":1664, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138740878, "dur":217, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1702608138738433, "dur":2680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138741238, "dur":3150, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138744499, "dur":6307, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138750933, "dur":6081, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138757102, "dur":3212, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138760497, "dur":4147, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138764783, "dur":5421, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138770292, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138770278, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138770372, "dur":15107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138796537, "dur":212, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1702608138785568, "dur":11203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138801601, "dur":94, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1702608138796874, "dur":4852, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1702608138802019, "dur":24067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":7, "ts":1702608138826165, "dur":241588, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1702608138683151, "dur":6372, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1702608138690014, "dur":688, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1702608138689524, "dur":2242, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1702608138691766, "dur":7020, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1702608138698787, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":8, "ts":1702608138702381, "dur":3709, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":8, "ts":1702608138706166, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1702608138716475, "dur":58, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1702608138707433, "dur":9134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1702608138717106, "dur":4282, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":8, "ts":1702608138721583, "dur":108, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1702608138721700, "dur":3864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":8, "ts":1702608138725707, "dur":228, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1702608138725943, "dur":4835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":8, "ts":1702608138740932, "dur":252, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1702608138730873, "dur":10324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":8, "ts":1702608138741318, "dur":2715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1702608138744114, "dur":5826, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":8, "ts":1702608138750071, "dur":6924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1702608138757094, "dur":4589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1702608138762003, "dur":488, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1702608138762498, "dur":8390, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1702608138771026, "dur":4073, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1702608138775401, "dur":294, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1702608138783692, "dur":584, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1702608138775702, "dur":8610, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1702608138784450, "dur":7394, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1702608138796580, "dur":207, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1702608138791982, "dur":4819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1702608138796896, "dur":4107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1702608138818936, "dur":469, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1702608138801125, "dur":18310, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":8, "ts":1702608138824611, "dur":181, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1702608138819728, "dur":5092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/User/Desktop/Mosze_Vegleges/MOSZE-2023_Data/level0" }}
+,{ "pid":12345, "tid":8, "ts":1702608138824898, "dur":242849, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1702608139079131, "dur":2998, "ph":"X", "name": "ProfilerWriteOutput" }
 ,

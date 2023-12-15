@@ -8,7 +8,7 @@ public class PhraseList
     /*phrases tárolja a történet részleteket amiket az npck mondhatnak nekünk.*/
     private List<string> phrases = new List<string>
     {
-        "I'm glad we ran into each other again, it's been 1334 years since I've seen you.\n I saw you here with your father then",
+        "I'm glad we ran into each other again,\n it's been 1334 years since I've seen you.\n I saw you here with your father then",
         "What brings you here?\n You were declared dead in the Norville War 5 years ago...",
         "Be careful on your way!\n You'll have a hard time getting past Jack Winger.",
         "Jack Winger wants your head bad\n you're the only one who can beat him",

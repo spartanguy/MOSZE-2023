@@ -33,6 +33,7 @@ ScriptsOnlyBuild:
     - Quests
     - Ranged
     - Room
+    - RoomNumberScripts
     - ScoreboardManager
     - Shield
     - SpeedBuff
@@ -210,6 +211,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -284,6 +289,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9402}
     - Class: 114
       Script: {instanceID: 9510}
+    - Class: 114
+      Script: {instanceID: 9718}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -328,6 +335,10 @@ ScriptsOnlyBuild:
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -415,6 +426,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9402}
     - Class: 114
       Script: {instanceID: 9510}
+    - Class: 114
+      Script: {instanceID: 9718}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -497,9 +510,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7328}
     - Class: 114
-      Script: {instanceID: 9718}
-    - Class: 114
       Script: {instanceID: 9722}
+    - Class: 114
+      Script: {instanceID: 9726}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1709,6 +1722,12 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 86a3734225dad0b522cbc3188e574063
+    assemblyName: Scripts
+    namespaceName: 
+    className: RoomNumberScripts
+  - hash:
+      serializedVersion: 2
       Hash: 1605308c89369c737ec075633b81f9c2
     assemblyName: Scripts
     namespaceName: 
@@ -1724,4 +1743,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/NewMainMenu.unity
   - Assets/Scenes/NewGame.unity
   - Assets/Scenes/LoadedGame.unity
-  playerPath: C:/Users/User/Desktop/sd/MOSZE-2023.exe
+  playerPath: C:/Users/User/Desktop/ASadg/MOSZE-2023.exe

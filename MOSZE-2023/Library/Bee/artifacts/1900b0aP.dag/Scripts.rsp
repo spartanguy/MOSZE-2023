@@ -340,6 +340,7 @@
 "Assets/Scripts/Quests/Quests.cs"
 "Assets/Scripts/UI/BuffManager.cs"
 "Assets/Scripts/UI/HealthManager.cs"
+"Assets/Scripts/UI/RoomNumberScripts.cs"
 "Assets/Scripts/UI/ScoreboardManager.cs"
 "Assets/Scripts/Weapons/Bullet.cs"
 "Assets/Scripts/Weapons/Burn.cs"

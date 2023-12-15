@@ -14,6 +14,8 @@ public class szobaTemplates : MonoBehaviour, IDataPersistence
 
     public List<GameObject> szobak;
 
+
+    public static szobaTemplates Instance {get; set;}
     //várakozási idő, ami után a különleges (NPC, BOSS, MINIBOSS) szobákat helyezi el a program
     public float varakIdo;
 
@@ -29,7 +31,9 @@ public class szobaTemplates : MonoBehaviour, IDataPersistence
     private bool isSaved = false;
 
 
-
+    void Awake(){
+        Instance = this;
+    }
     //a fent említett különleges szobák elhelyezései random, vagy a BOSS esetén az utolsó spawnolt szobába
     void Update(){
 
@@ -140,5 +144,9 @@ public class szobaTemplates : MonoBehaviour, IDataPersistence
             data.asd.prefabName = szob.prefabName; 
             data.RoomDataList.Add(data.asd);
         }   
+    }
+
+    public int GetRoomNumber() {
+        return szobak.Count;
     }
 }

@@ -7,7 +7,7 @@ public class Box : MonoBehaviour
 {
     //keyQuestThing, megkülönbözető jelzés a tárgyra hogy az egyik quest ne keverje össze a msikkal.
     public Transform parent;
-    int health = 10;
+    int health = 5;
     public bool keyQuestThing = false;
 
     //2 esetet vizsgálunk, az egyikben ha elpustul a tárgy elvesztjünk a küldetést,

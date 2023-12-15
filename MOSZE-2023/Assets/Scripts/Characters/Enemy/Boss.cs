@@ -35,7 +35,7 @@ public class Boss : Character
     Ezek után kap egy random fegyvert a weaponListből, majd a fegyver kinézetét, és a karakter fegyver értékét beállítjuk ezére.
     Beállítódik a desiredDiste és a moveAwayDistet majd az erősítéseket.*/
     private void Awake() {
-        health = 200;
+        health = 100;
         player = Player.Instance.transform;
         gun = Guns.GetGun(3);
         firepointSprite = firepoint.GetChild(0).GetComponent<SpriteRenderer>();
